@@ -1,5 +1,5 @@
 body {
-    background-color: darkslategrey;
+    background-color: #0F3236;
     padding: 0;
     margin: 0;
 }
@@ -7,19 +7,58 @@ body {
 /* Navbar */
 
 .navbar {
+    padding: 15px;
     margin-bottom: 10px;
     height: 2.5em;
     background: transparent;
 }
 
-/* Intro Body */
+.resume-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #D1A60B;
+    border: none;
+    width: 6em;
+    height: 1.5em;
+}
 
-.intro {
-    padding: 15px 50px;
-    margin: 5em auto 1em auto;
-    font-size: 20px;
-    letter-spacing: .8px;
-    line-height: 23px;
+.resume-btn a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+/* Home Container */
+
+.home-container {
+    padding: 0;
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+}
+
+#home-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    margin: 3em auto 0 1em;
+    color: #D1A60B;
+}
+
+#home-sub {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin: 0 auto 2em 1.5em;
+    opacity: 75%;
+    color: #79620c;
+}
+
+.intro-body {
+    font-size: 25px;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
 }
 
 /* Featured Container */
