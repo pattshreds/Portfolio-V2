@@ -1,3 +1,5 @@
+/* Laptop Styling */
+
 body {
     background-color: #0F3236;
     padding: 0;
@@ -24,6 +26,7 @@ body {
     width: 6em;
     height: 1.5em;
     opacity: 100%;
+    border-radius: 3px;
 }
 
 .resume-btn:hover {
@@ -44,33 +47,75 @@ body {
     width: 5em;
 }
 
+.dropdown-toggle-container {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    z-index: 1;
+    font-size: 4em;
+}
+
+.close-menu {
+    position: relative;
+    right: -9em;
+    top: -.5em;
+    padding: 0;
+}
+
+.dropdown-btn:hover {
+    animation: loop .8s infinite;
+}
+
+@keyframes loop {
+    0% {
+        width: 5em;
+    }
+    50% {
+        width: 4em;
+    }
+    100% {
+        width: 5em;
+    }
+}
+
+.dropdown-item {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin: 40px
+}
+
 /* Home Container */
 
 .home-container {
     padding: 0;
     width: 80%;
-    height: 60vh;
+    height: 64vh;
     margin: 0 auto;
 }
 
 #home-title {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 75px;
-    margin: 3em auto 0 1em;
+    font-size: 70px;
+    margin: 3em auto 0 0;
     color: #D1A60B;
 }
 
 #home-sub {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-    margin: 0 auto 2em 1.5em;
+    margin: 0 auto 1em 0em;
     opacity: 75%;
     color: #79620c;
 }
 
 .intro-body {
-    font-size: 25px;
-    width: 50%;
+    font-size: 1.5em;
+    width: 60%;
     margin: 0 auto;
     color: rgb(194, 213, 216);
     font-family: Arial, Helvetica, sans-serif;
@@ -80,44 +125,45 @@ body {
 /* Featured Container */
 
 .featured {
-    padding: 15px 50px;
-    margin: 2em auto 2em auto;
-    font-size: 20px;
-    letter-spacing: .8px;
-    line-height: 23px;
+    /* For some reason flexbox removes the 2 HR tags... */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    padding: 0;
+    margin-top: 0;
 }
 
-#featuredHeader {
-    margin: 20px 0 20px 0;
-    line-height: 70%;
+#featured-header {
     font-size: 55px;
     color: rgb(200, 197, 226);
     font-family: helvetica;
     text-shadow: .3px .4px 1px black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 #hr-1, #hr-2 {
     background: rgb(36, 34, 54);
     height: 4px;
-    position: relative;
     border: none;
     box-shadow: .3px .4px 1px black;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 #hr-1 {
+    position: relative;
     left: -8em;
-    margin: 2em auto 0 auto;
 }
 
 #hr-2 {
-    width: 110%;
-    margin: 2px auto 0 auto;
+    position: relative;
+    right: -8em;
 }
 
-#featuredAbout {
+#featured-about {
     padding: 15px 50px;
-    margin: .5em 1em 0 1em;
     font-size: 20px;
     letter-spacing: .8px;
     line-height: 23px;
@@ -206,21 +252,68 @@ body {
 
 /* Footer */
 
-footer {
+.footer {
     display: flex;
-    justify-content: flex-end;
-    padding: 0 60px;
-    margin: 0;
-    height: 2.5em;
-    background: transparent;
+    justify-content: center;
+    width: 100%;
+    margin: 4em auto 2em auto;
 }
 
 .to-top-link img {
-    position: relative;
-    bottom: 3em;
     cursor: pointer;
     background: transparent;
     border: none;
     text-decoration: none;
-    width: 7em;
+    width: 3em;
+    height: 4em;
 }
+
+.to-top-text {
+    display: none;
+}
+
+/* Mobile Styling */
+
+@media screen and (max-width: 412px) {
+    #home-sub {
+        margin-bottom: 4.8em;
+    }
+
+    .home-container {
+        height: 85vh;
+    }
+
+    .intro-body {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    #featuredAbout {
+        padding: 0;
+    }
+
+    .carousel-nav {
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        border: 2px solid gold;
+    }
+
+    .to-top-link img {
+        width: 4em;
+        margin-top: 7em;
+    }
+
+    .to-top-text {
+        font-size: 25px;
+        display: block;
+        color: black;
+        text-decoration: none;
+        margin-top: -1.5em;
+    }
+}
+
+/* Tablet Styling */
+
+/* Large Monitor Styling */
