@@ -48,7 +48,7 @@ body {
 }
 
 .dropdown-toggle-container {
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,11 +59,21 @@ body {
     font-size: 4em;
 }
 
-.close-menu {
+@keyframes dropdown {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.close-menu-btn {
     position: relative;
     right: -9em;
     top: -.5em;
     padding: 0;
+    cursor: pointer;
 }
 
 .dropdown-btn:hover {
