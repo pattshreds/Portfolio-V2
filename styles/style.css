@@ -1,4 +1,5 @@
-/* Laptop Styling */
+/*//////////////////////////////////////////////
+/// Default styling; 15" Macbook Air ///////*/
 
 body {
     background-color: #0F3236;
@@ -6,7 +7,8 @@ body {
     margin: 0;
 }
 
-/* Navbar */
+/*////////////////////
+/// Navbar ///////*/
 
 .navbar {
     display: flex;
@@ -15,6 +17,10 @@ body {
     margin-bottom: 10px;
     height: 2.5em;
     background: transparent;
+}
+
+.buttons-box {
+    display: flex;
 }
 
 .resume-btn {
@@ -39,12 +45,31 @@ body {
     font-size: 15px;
 }
 
+.email {
+    padding: 0;
+    width: 400px;
+    margin: 0 0 0 1em;
+    color: darkgoldenrod;
+    font-size: 16px;
+    font-family: Helvetica;
+    opacity: 50%;
+}
+
+.email:hover {
+    color: darkorange;
+    opacity: 100%;
+}
+
 .dropdown-btn {
     cursor: pointer;
     background: transparent;
     border: none;
     text-decoration: none;
     width: 5em;
+}
+
+.dropdown-btn:hover {
+    animation: loop .8s infinite;
 }
 
 .dropdown-toggle-container {
@@ -54,19 +79,20 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: green;
+    background-color: darkgoldenrod;
     z-index: 1;
     font-size: 4em;
+    opacity: 95%;
 }
 
-@keyframes dropdown {
-    0% {
-        opacity: 0%;
+    @keyframes dropdown {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
     }
-    100% {
-        opacity: 100%;
-    }
-}
 
 .close-menu-btn {
     position: relative;
@@ -74,23 +100,20 @@ body {
     top: -.5em;
     padding: 0;
     cursor: pointer;
+    margin: 0;
 }
 
-.dropdown-btn:hover {
-    animation: loop .8s infinite;
-}
-
-@keyframes loop {
-    0% {
-        width: 5em;
+    @keyframes loop {
+        0% {
+            width: 5em;
+        }
+        50% {
+            width: 4em;
+        }
+        100% {
+            width: 5em;
+        }
     }
-    50% {
-        width: 4em;
-    }
-    100% {
-        width: 5em;
-    }
-}
 
 .dropdown-item {
     cursor: pointer;
@@ -99,7 +122,25 @@ body {
     margin: 40px
 }
 
-/* Home Container */
+/* Figure out how to have this animation affect only the .dropdown-item that's being hovered. Also how to not let the animation affect the close menu button. */
+.dropdown-item:hover {
+    animation: hop 200ms ease-in-out  1;
+}
+
+    @keyframes hop {
+        0% {
+            margin-top: 40px;
+        }
+        70% {
+            margin-top: 30px;
+        }
+        100% {
+            margin-top: 40px;
+        }
+    }
+
+/*////////////////////////////
+/// Home Container ///////*/
 
 .home-container {
     padding: 0;
@@ -110,6 +151,7 @@ body {
 
 #home-title {
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: .3px .4px 1px black;
     font-size: 70px;
     margin: 3em auto 0 0;
     color: #D1A60B;
@@ -132,7 +174,8 @@ body {
     letter-spacing: 1px;
 }
 
-/* Featured Container */
+/*///////////////////////////////
+/// Feature Container ///////*/
 
 .featured {
     /* For some reason flexbox removes the 2 HR tags... */
@@ -145,7 +188,7 @@ body {
 
 #featured-header {
     font-size: 55px;
-    color: rgb(200, 197, 226);
+    color: #D1A60B;
     font-family: helvetica;
     text-shadow: .3px .4px 1px black;
     text-align: center;
@@ -154,7 +197,7 @@ body {
 }
 
 #hr-1, #hr-2 {
-    background: rgb(36, 34, 54);
+    background: rgb(194, 213, 216);
     height: 4px;
     border: none;
     box-shadow: .3px .4px 1px black;
@@ -179,7 +222,8 @@ body {
     line-height: 23px;
 }
 
-/* Carousel Image Containers and Images */
+/*//////////////////////
+/// Carousel ///////*/
 
 .carousel {
     position: relative;
@@ -260,29 +304,52 @@ body {
     background: rgba(0, 0, 0, .75)
 }
 
-/* Footer */
+/*////////////////////
+/// Footer ///////*/
 
 .footer {
-    display: flex;
-    justify-content: center;
     width: 100%;
     margin: 4em auto 2em auto;
+    text-align: right;
 }
 
-.to-top-link img {
+.to-top-btn {
     cursor: pointer;
     background: transparent;
     border: none;
     text-decoration: none;
-    width: 3em;
-    height: 4em;
+    width: 3.3em;
+    margin-right: 32px;
 }
+
+.temp-issue {
+    /* Working on figuring out why this animation moves the entire page */
+    font-size: 10px;
+    margin: 0 15px auto auto;
+}
+
+.to-top-btn:hover {
+    animation: loop2 .8s infinite;
+}
+
+    @keyframes loop2 {
+        0% {
+            width: 3.3em;
+        }
+        50% {
+            width: 2.3em;
+        }
+        100% {
+            width: 3.3em;
+        }
+    }
 
 .to-top-text {
     display: none;
 }
 
-/* Mobile Styling */
+/*////////////////////////////
+/// Mobile Styling ///////*/
 
 @media screen and (max-width: 412px) {
     #home-sub {
@@ -324,6 +391,8 @@ body {
     }
 }
 
-/* Tablet Styling */
+/*////////////////////////////
+/// Tablet Styling ///////*/
 
-/* Large Monitor Styling */
+/*///////////////////////////////////
+/// Large Monitor Styling ///////*/

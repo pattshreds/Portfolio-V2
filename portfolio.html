@@ -9,9 +9,10 @@
 </head>
 <body>
 
+    <!-- dropdown-style menu -->
     <div class="dropdown-toggle-container">
         <p class='close-menu-btn'>x</p>
-        <a class='dropdown-item' href="#">About</a>
+        <a class='dropdown-item' href="about.html">About</a>
         <a class='dropdown-item' href="#">Experience</a>
         <a class='dropdown-item' href="#">Work</a>
         <a  class='dropdown-item' href="#">Contact</a>
@@ -20,10 +21,14 @@
     <a name='top'></a>
 
     <nav class="navbar">
-        <button class="resume-btn">
-            <a href="#">Resume</a>
-        </button>
-        <!-- This is where the drop down menu will go. -->
+        <div class='buttons-box'>
+            <button class="resume-btn">
+                <a href="images/Resume_PM.pdf">Resume</a>
+            </button>
+            <p class='email'>
+                - - - - patrick.mcguigan5@gmail.com - - - - - - - - - - - -
+            </p>
+        </div>
         <div class="dropdown">
             <button class="dropdown-btn">
                 <img src="images/arrow-thin-bottom-icon.svg" alt="dropdown">
@@ -46,7 +51,7 @@
 
     <div class="featured">
         <hr id='hr-1' />
-        <p id='featured-header'>Featured Project!</p>
+        <p id='featured-header'>Featured Project</p>
         <hr id='hr-2' />
         <p id='featured-about'>These are the technologies I use. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et repudiandae, nisi beatae asperiores dicta perspiciatis modi? Dolores, corrupti. Totam ducimus provident sed reiciendis beatae numquam labore, mollitia saepe nulla optio magnam quaerat iste qui, eaque eum earum illum accusantium!></p>
     </div>
@@ -90,9 +95,12 @@
     -------------------------------------->
 
     <div class='footer'>
-        <a class='to-top-link' href='#top'>
-            <img src="images/arrow-thin-top-icon.svg" alt="Back to top">
-        </a>    
+        <button class='to-top-btn' class='to-top-link' href='#top'>
+            <a href='#top'>
+                <img src="images/arrow-thin-top-icon.svg" alt="Back to top">
+            </a>
+        </button>    
+        <p class ='temp-issue'>Trying to figure this out lol.</p>
             <p class="to-top-text">
                 Back To Top
             </p>
