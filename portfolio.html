@@ -9,7 +9,12 @@
 </head>
 <body>
 
-    <!-- dropdown-style menu -->
+    <!-------------------------------------
+    // Dropdown Menu //////////////////////
+    -------------------------------------->
+
+    <!-- See Styling issue related to this menu -->
+
     <div class="dropdown-toggle-container">
         <p class='close-menu-btn'>x</p>
         <a class='dropdown-item' href="about.html">About</a>
@@ -25,9 +30,9 @@
             <button class="resume-btn">
                 <a href="images/Resume_PM.pdf">Resume</a>
             </button>
-            <p class='email'>
-                - - - - patrick.mcguigan5@gmail.com - - - - - - - - - - - -
-            </p>
+            <button id='email' onclick='copyText()'>
+                - - - - <p id='email-text'>patrick.mcguigan5@gmail.com</p> - - - - - - - - - - - -
+            </button>
         </div>
         <div class="dropdown">
             <button class="dropdown-btn">
@@ -53,7 +58,9 @@
         <hr id='hr-1' />
         <p id='featured-header'>Featured Project</p>
         <hr id='hr-2' />
-        <p id='featured-about'>These are the technologies I use. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et repudiandae, nisi beatae asperiores dicta perspiciatis modi? Dolores, corrupti. Totam ducimus provident sed reiciendis beatae numquam labore, mollitia saepe nulla optio magnam quaerat iste qui, eaque eum earum illum accusantium!></p>
+        <p id='featured-about'>
+            These are the technologies I use. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et repudiandae, nisi beatae asperiores dicta perspiciatis modi? Dolores, corrupti. Totam ducimus provident sed reiciendis beatae numquam labore, mollitia saepe nulla optio magnam quaerat iste qui, eaque eum earum illum accusantium!
+        </p>
     </div>
     
     <!-------------------------------------
@@ -108,5 +115,6 @@
 
 <script src="JS/carousel.js"></script>
 <script src="JS/dropdown.js"></script>
+<script src="JS/copyText.js"></script>
 </body>
 </html>
