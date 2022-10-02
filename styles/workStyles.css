@@ -1,0 +1,28 @@
+.proj-page-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#header-section {
+    width: 30%;
+    height: 100vh;
+    margin-top: 4em;
+}
+
+.proj-header {
+    padding: 0;
+    margin: 0;
+    font-size: 10em;
+    font-family: Ranchers;
+    text-align: right;
+    color: #D1A60B;
+}
+
+.proj-desc-container {
+    border: 2px solid gold;
+    width: 70%;
+    height: 100vh;
+    margin-top: 4em;
+    padding: 1em;
+}

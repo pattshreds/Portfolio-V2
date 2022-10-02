@@ -5,44 +5,84 @@
 /// About Container ///////*/
 
 .about-container {
-    display: flex;
     margin-top: 4em;
 }
 
 .about-img {
     width: 40em;
     height: 30em;
-    max-height: 50vw;
     transform: rotate(-90deg);
     object-fit: cover;
     overflow: hidden;
-    margin: 6em auto 2em 4em;
+    margin: 6em 0 2em 4em;
     opacity: 75%;
     border-radius: 20px;
 }
 
+.about-header {
+    display: inline;
+    position: relative;
+    height: 2.4em;
+    top: -1.7em;
+    right: .3em;
+    font-family: Ranchers;
+    color: #D1A60B;;
+    font-size: 14em;
+    letter-spacing: 2px;
+}
+
+.ah2 {
+    position: relative;
+    left: 2.846em;
+    top: -2em;
+}
+
 .about-text-body {
-    width: 20em;
-    height: 23em;
-    padding: 20px 50px;
-    margin: 22.5em 8em 2em auto;
-    font-size: 25px;
+    position: relative;
+    top: -27.5em;
+    left: 44em;
+    width: 40em;
+    height: 100%;
     text-align: right;
+    font-size: 1em;
+    font-family: Slabo;
+    letter-spacing: .5px;
+    line-height: 30px;
     color: rgb(194, 213, 216);
 }
 
-/* Hello text */
-.about-text-body p {
+.about-p {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+
+.p-2 {
+    position: relative;
+    top: 1em;
+    left: -25em;
+    text-align: left;
+}
+
+.p-3 {
+    position: relative;
+    top: 2em;
+}
+
+.p-4 {
+    position: relative;
+    top: 3em;
+}
+
+.sig {
+    position: relative;
+    top: 4em;
+}
+
+#hello-intro {
+    font-size: 2em;
     margin-top: 3.8em;
     padding: 0;
     text-align: left;
     color: darkorange;
-}
-
-#about-header {
-    font-family: Ranchers;
-    color: #D1A60B;;
-    font-size: 8em;
-    margin-top: -2.8em;
-    margin-bottom: 0;
 }

@@ -15,7 +15,7 @@
 }
 
 /*//////////////////////////////////////////////
-/// Default styling; 15" Macbook Air ///////*/
+/// Default styling; 13" Macbook Air /////////*/
 
 body {
     /* background-color: #0F3236; */
@@ -81,13 +81,13 @@ body {
     padding: 0;
     display: inline;
     cursor: pointer;
-
-    /* opacity: 50%; */
+    opacity: 50%;
 }
 
 #email-text:hover {
     color: rgb(255, 149, 0);
     opacity: 100%;
+    font-weight: bold;
 }
 
 .dropdown-btn {
