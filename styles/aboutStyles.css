@@ -9,12 +9,13 @@
 }
 
 .about-img {
+    position: relative;
     width: 40em;
     height: 30em;
     transform: rotate(-90deg);
     object-fit: cover;
     overflow: hidden;
-    margin: 6em 0 2em 4em;
+    margin: 6em 0 0 4em;
     opacity: 75%;
     border-radius: 20px;
 }
@@ -41,7 +42,7 @@
     position: relative;
     top: -27.5em;
     left: 44em;
-    width: 40em;
+    width: 50%;
     height: 100%;
     text-align: right;
     font-size: 1em;
@@ -51,10 +52,33 @@
     color: rgb(194, 213, 216);
 }
 
+#hello-intro {
+    font-size: 2em;
+    margin-top: 5em;
+    padding: 0;
+    text-align: left;
+    color: darkorange;
+}
+
+.image-1Container {
+    position: relative;
+    right: 35em;
+    top: 5em;
+    width: 70%;
+}
+
+.image-1 {
+    width: 100%;
+}
+
 .about-p {
     padding: 0;
-    margin: 0;
+    margin-bottom: 1em;
     font-size: 25px;
+}
+
+.p-1 {
+    margin-top: -8em;
 }
 
 .p-2 {
@@ -77,12 +101,4 @@
 .sig {
     position: relative;
     top: 4em;
-}
-
-#hello-intro {
-    font-size: 2em;
-    margin-top: 3.8em;
-    padding: 0;
-    text-align: left;
-    color: darkorange;
 }

@@ -87,7 +87,6 @@ body {
 #email-text:hover {
     color: rgb(255, 149, 0);
     opacity: 100%;
-    font-weight: bold;
 }
 
 .dropdown-btn {
@@ -154,7 +153,6 @@ body {
     margin: 40px
 }
 
-/* Figure out how to have this animation affect only the .dropdown-item that's being hovered. Also how to not let the animation affect the close menu button. */
 .dropdown-item:hover {
     position: relative;
     animation: hop 200ms ease-in-out  1;
@@ -165,7 +163,7 @@ body {
             top: 0;
         }
         70% {
-            top: 5px;
+            top: -5px;
         }
         100% {
             top: 0;
@@ -200,6 +198,7 @@ body {
 }
 
 .intro-body {
+    position: relative;
     font-size: 1.5em;
     width: 60%;
     margin: 0 auto;
