@@ -24,7 +24,7 @@
     display: inline;
     position: relative;
     height: 2.4em;
-    top: -1.7em;
+    top: -1.6em;
     right: .3em;
     font-family: Ranchers;
     color: #D1A60B;;
@@ -35,70 +35,96 @@
 .ah2 {
     position: relative;
     left: 2.846em;
-    top: -2em;
-}
-
-.about-text-body {
-    position: relative;
-    top: -27.5em;
-    left: 44em;
-    width: 50%;
-    height: 100%;
-    text-align: right;
-    font-size: 1em;
-    font-family: Slabo;
-    letter-spacing: .5px;
-    line-height: 30px;
-    color: rgb(194, 213, 216);
+    top: -1.8em;
 }
 
 #hello-intro {
+    position: relative;
+    top: -10em;
+    left: 20em;
     font-size: 2em;
-    margin-top: 5em;
+    /* margin-top: 5em; */
+    /* margin: 5em 0 0 20em; */
     padding: 0;
-    text-align: left;
     color: darkorange;
 }
 
-.image-1Container {
+/* Eventually rebuild this using flexbox */
+
+.about-text-body {
     position: relative;
-    right: 35em;
-    top: 5em;
-    width: 70%;
+    top: -14em;
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: .8em;
+    font-family: Slabo;
+    padding: 1em;
+    border-radius: 10px;
+    letter-spacing: .5px;
+    line-height: 30px;
+    color: black;
+    background-color: rgba(239, 245, 255, .3);
 }
 
-.image-1 {
+.stock-photo-1-container {
+    position: relative;
+    top: 5em;
+    left: 3em;
+    width: 35%;
+}
+
+.stock-photo-1 {
+    /* position: relative; */
     width: 100%;
+    border-radius: 5%;
+}
+
+.stock-photo-2-container {
+    position: relative;
+    top: -33em;
+    left: 65em;
+    width: 35%;
+}
+
+.stock-photo-2 {
+    width: 100%;
+    border-radius: 5%;
 }
 
 .about-p {
     padding: 0;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     font-size: 25px;
+    line-height: 35px;
 }
 
 .p-1 {
+    position: relative;
+    left: 25em;
+    top: -2em;
     margin-top: -8em;
+    width: 55%;
 }
 
 .p-2 {
     position: relative;
-    top: 1em;
-    left: -25em;
-    text-align: left;
+    top: -1em;
+    left: 1em;
+    width: 55%;
 }
 
 .p-3 {
     position: relative;
-    top: 2em;
+    top: -13em;
 }
 
 .p-4 {
     position: relative;
-    top: 3em;
+    top: -15em;
 }
 
 .sig {
     position: relative;
-    top: 4em;
+    top: -15em;
 }
