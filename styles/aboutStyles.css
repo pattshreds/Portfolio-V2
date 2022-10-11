@@ -42,36 +42,33 @@
     position: relative;
     top: -10em;
     left: 20em;
+    /* For some reason this p tag is reallllllly wide and causes a horizontal scroll, so I added this width. */
+    width: 20%;
     font-size: 2em;
-    /* margin-top: 5em; */
-    /* margin: 5em 0 0 20em; */
-    padding: 0;
     color: darkorange;
 }
 
-/* Eventually rebuild this using flexbox */
-
 .about-text-body {
+    display: flex;
+    flex-flow: row wrap;
     position: relative;
     top: -14em;
-    width: 95%;
-    height: 100%;
+    width: 92%;
     margin: 0 auto;
     font-size: .8em;
     font-family: Slabo;
-    padding: 1em;
+    padding: 2em;
     border-radius: 10px;
-    letter-spacing: .5px;
-    line-height: 30px;
     color: black;
     background-color: rgba(239, 245, 255, .3);
 }
 
 .stock-photo-1-container {
-    position: relative;
+    /* position: relative;
     top: 5em;
-    left: 3em;
+    left: 3em; */
     width: 35%;
+    margin-right: 4em;
 }
 
 .stock-photo-1 {
@@ -81,10 +78,11 @@
 }
 
 .stock-photo-2-container {
-    position: relative;
+    /* position: relative;
     top: -33em;
-    left: 65em;
+    left: 65em; */
     width: 35%;
+    margin-left: 4em;
 }
 
 .stock-photo-2 {
@@ -94,27 +92,26 @@
 
 .about-p {
     padding: 0;
-    margin-bottom: 3em;
     font-size: 25px;
     line-height: 35px;
+    letter-spacing: .5px;
 }
 
 .p-1 {
-    position: relative;
+    /* position: relative;
     left: 25em;
-    top: -2em;
-    margin-top: -8em;
+    top: -2em; */
     width: 55%;
 }
 
 .p-2 {
-    position: relative;
+    /* position: relative;
     top: -1em;
-    left: 1em;
+    left: 1em; */
     width: 55%;
 }
 
-.p-3 {
+/* .p-3 {
     position: relative;
     top: -13em;
 }
@@ -127,4 +124,4 @@
 .sig {
     position: relative;
     top: -15em;
-}
+} */
