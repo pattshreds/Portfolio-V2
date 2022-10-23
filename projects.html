@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PM</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/workStyles.css">
+    <link rel="stylesheet" href="styles/projStyles.css">
 </head>
 <body>
 
@@ -48,63 +48,105 @@
     // Main Body /////////////////////////
     -------------------------------------->
 
+    <!-- I've been trying to figure out a way to recycle the carousel to use for each project, but HTML custom elements don't seem to be able to be reused multiple times over one page. I'm going to hard code each carousel in for now but I want to figure out a way to reuse that element and be able to change the images it recieves with each use without using React components. -->
+
+
     <div class="proj-page-container">
         <section id ='header-section'>
-            <p class="proj-header head-1">
+            <p class="proj-page-header">
                 My
             </p>
-            <p class="proj-header head-2">
+            <p class="proj-page-header">
                 Work
             </p>
         </section>
         <div class="proj-desc-container">
             <section class="individual-proj-box pb-1">
-                <div class="carousel-pb1">
-                    <!-- <div class="carousel">
-
+                <h1 class="project-title">
+                    PokéSearch
+                </h1>
+                <div class="desc-home">
+                    PokéSearch is built with HTML, CSS, Javascript, and jQuery using a third party API. This front end
+                    application allows the user to search the Pokédex-style database to learn information about each
+                    Pokémon, and various berries found in the games.
+                </div>
+                <div class="carousel-home">
+                    <!-- Below is the custom element I created in attempt to reuse in each 'carousel home' div. I'm going to use it in the first project div as it works for one use. -->
+                    <carousel-component>
+                    </carousel-component>
+                </div>
+            </section>
+            <section class="individual-proj-box pb-2">
+                <h1 class="project-title">
+                    Moodset
+                </h1>
+                <div class="desc-home">
+                    Moodset was built with Javascript, NodeJS, Mongoose, ExpressJS, and .EJS in 
+                    an MVC format. This full stack application allows users to create, display, update, and delete playlists in which they can upload their own mp3 files.
+                </div>
+                <div class="carousel-home"> <!-- Here is where I have to start to paste the full carousel HTML in -->
+                    <div class="carousel">
                         <ul class="images-list">
                             <li class="slide current-slide">
-                                <img class='image' src="images/PokeSearch/1.png" alt="PokeSearch">
+                                <img src="images/Moodset/1.png" alt="moodset" class="image">
                             </li>
                             <li class="slide">
-                                <img class='image' src="images/PokeSearch/2.png" alt="PokeSearch">
+                                <img src="images/Moodset/2.png" alt="moodset" class="image">           
                             </li>
                             <li class="slide">
-                                <img class='image' src="images/PokeSearch/3.png" alt="PokeSearch">
+                                <img src="images/Moodset/3.png" alt="moodset" class="image">            
                             </li>
-                        </ul>
-                
+                        </ul>            
                         <button class="carousel-btn btn-prev">
-                            <img src="images/arrow-left.svg" alt="Previous">
+                            <img src="../images/arrow-left.svg" alt="Previous">
                         </button>
                         <button class="carousel-btn btn-next">
                             <img src="
-                            images/arrow-right.svg" alt="Next">
-                        </button>
-                
+                            ../images/arrow-right.svg" alt="Next">
+                        </button>            
                         <div class="carousel-nav">
                             <button class="position-indicator current-dot"></button>
                             <button class="position-indicator"></button>
                             <button class="position-indicator"></button>
-                        </div>
-                
-                    </div> -->
+                        </div>            
+                    </div>
                 </div>
-                <div class="desc-pb1">
-                    <!-- PokéSearch is a front-end application I built using HTML, CSS, Javascript, JQuery, and a third-party Pokemon API.  -->
-                </div>
-            </section>
-            <section class="individual-proj-box pb-2">
-                <div class="carousel-home"></div>
-                <div class="desc-home"></div>
             </section>
             <section class="individual-proj-box pb-3">
-                <div class="carousel-home"></div>
-                <div class="desc-home"></div>
-            </section>
-            <section class="individual-proj-box pb-4">
-                <div class="carousel-home"></div>
-                <div class="desc-home"></div>
+                <h1 class="project-title">
+                    Infinite Savannah
+                </h1>
+                <div class="desc-home">
+                    Infinite Savannah was built with a MERN stack (MongoDB, ExpressJS, React, NodeJS). This full
+                    stack application allows the user to explore a retro-futuristic skateshop, and create, view, edit, and delete items via a user-friendly interface. Infinite Savannah was pair programmed as a team using Agile methodologies, and Trello to manage progress.
+                </div>
+                <div class="carousel-home">
+                    <div class="carousel">
+                        <ul class="images-list">
+                            <li class="slide current-slide">
+                                <img src="images/IF/1.png" alt="infinite savannah" class="image">
+                            </li>
+                            <li class="slide">
+                                <img src="images/IF/2.png" alt="infinite savannah" class="image">           
+                            </li>
+                            <li class="slide">
+                                <img src="images/IF/3.png" alt="infinite savannah" class="image">            
+                            </li>
+                        </ul>            
+                        <button class="carousel-btn btn-prev">
+                            <img src="../images/arrow-left.svg" alt="Previous">
+                        </button>
+                        <button class="carousel-btn btn-next">
+                            <img src="
+                            ../images/arrow-right.svg" alt="Next">
+                        </button>            
+                        <div class="carousel-nav">
+                            <button class="position-indicator current-dot"></button>
+                            <button class="position-indicator"></button>
+                            <button class="position-indicator"></button>
+                        </div>            
+                    </div>
+                </div>
             </section>
         </div>
     </div>
@@ -114,6 +156,7 @@
     -------------------------------------->
 
 
+<script src="components/carousel.js"></script>
 <script src="JS/carousel.js"></script>
 <script src="JS/dropdown.js"></script>
 <script src="JS/copyText.js"></script>
