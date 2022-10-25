@@ -9,35 +9,11 @@
 </head>
 <body>
 
-    <!-------------------------------------
-    // Dropdown Menu //////////////////////
-    -------------------------------------->
-
-    <div class="dropdown-toggle-container">
-        <p class='close-menu-btn'>x</p>
-        <a class='dropdown-item' href="about.html">About</a>
-        <a class='dropdown-item' href="experience.html">Experience</a>
-        <a class='dropdown-item' href="projects.html">Projects</a>
-        <a  class='dropdown-item' href="contact.html">Contact</a>
-    </div>
+    <menu-component></menu-component>
 
     <a name='top'></a>
 
-    <nav class="navbar">
-        <div class='buttons-box'>
-            <button class="resume-btn">
-                <a href="images/Resume_PM.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-            </button>
-            <button id='email' onclick='copyText()'>
-               click email to copy - - - - <p id='email-text'>patrick.mcguigan5@gmail.com</p> - - - - - - - - - - - -
-            </button>
-        </div>
-        <div class="dropdown">
-            <button class="dropdown-btn">
-                <img src="images/arrow-thin-bottom-icon.svg" alt="dropdown">
-            </button>
-        </div>
-    </nav>
+    <nav-component></nav-component>
 
     <div class="home-container">
         <h1 id='home-title'>
@@ -65,7 +41,7 @@
     // Carousel ///////////////////////////
     -------------------------------------->
 
-    <div class="carousel">
+    <!-- <div class="carousel">
 
         <ul class="images-list">
             <li class="slide current-slide">
@@ -93,7 +69,9 @@
             <button class="position-indicator"></button>
         </div>
 
-    </div>
+    </div> -->
+
+    <carousel-component></carousel-component>
 
     <!-------------------------------------
     // Footer ///////////////////////////
@@ -111,6 +89,9 @@
             </p>
         </div>
 
+<script src="components/carousel.js"></script>        
+<script src="components/menu.js"></script>        
+<script src="components/nav.js"></script>
 <script src="JS/carousel.js"></script>
 <script src="JS/dropdown.js"></script>
 <script src="JS/copyText.js"></script>

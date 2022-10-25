@@ -9,7 +9,7 @@
     height: 100vh;
     margin-top: 4em;
     padding: 20px;
-    border-right: 2px dashed #D1A60B;
+    border-right: 2px solid #D1A60B;
 }
 
 .proj-page-header {
@@ -29,7 +29,7 @@
 .proj-desc-container {
     width: 70%;
     height: 100vh;
-    margin-top: 10em;
+    margin-top: 5em;
     margin-left: 1em;
     padding: 1em;
 }
