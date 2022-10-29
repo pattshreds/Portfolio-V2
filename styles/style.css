@@ -88,7 +88,18 @@ body {
 #email-text:hover {
     color: rgb(255, 149, 0);
     opacity: 100%;
+    animation: grow .4s ease-in 1 forwards;
 }
+
+    @keyframes grow {
+        0% {
+            font-size: 16px;
+            color: darkgoldenrod;
+        }
+        100% {
+            font-size: 16.6px;
+        }
+    }
 
 .dropdown-btn {
     cursor: pointer;

@@ -7,6 +7,13 @@
     <title>PM</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/projStyles.css">
+    <script src="components/menu.js" async></script>        
+    <script src="components/nav.js" async></script>
+    <script src="JS/carousel.js" async></script>
+    <script src="JS/dropdown.js" async></script>
+    <script src="JS/copyText.js" async></script>
+    <!-- HTML custom element for carousel -->
+    <!-- <script src="components/carousel.js" async></script>  -->
 </head>
 <body>
 
@@ -44,9 +51,41 @@
                 </div>
                 <div class="carousel-home">
                     <!-- Below is the custom element I created in attempt to reuse in each 'carousel home' div. I'm going to use it in the first project div as it works for one use. -->
-                    <carousel-component>
-                    </carousel-component>
+                    <!-- <carousel-component>
+                    </carousel-component> -->
+                    <div class="carousel carousel-1">
+                        <ul class="images-list">
+                            <li class="slide current-slide">
+                                <img src="images/pokesearch/1.png" alt="pokesearch" class="image">
+                            </li>
+                            <li class="slide">
+                                <img src="images/pokesearch/2.png" alt="pokesearch" class="image">           
+                            </li>
+                            <li class="slide">
+                                <img src="images/pokesearch/3.png" alt="pokesearch" class="image">            
+                            </li>
+                        </ul>            
+                        <button class="carousel-btn btn-prev">
+                            <img src="images/arrow-left.svg" alt="Previous">
+                        </button>
+                        <button class="carousel-btn btn-next">
+                            <img src="images/arrow-right.svg" alt="Next">
+                        </button>            
+                        <div class="carousel-nav">
+                            <button class="position-indicator current-dot"></button>
+                            <button class="position-indicator"></button>
+                            <button class="position-indicator"></button>
+                        </div>            
+                    </div>
                 </div>
+                <section class='btn-home'>
+                    <button class="proj-link-btn">
+                        <a href='#'>GitHub</a>
+                    </button>
+                    <button class="proj-link-btn">
+                        <a href='#'>View</a>
+                    </button>
+                </section>
             </section>
             <section class="individual-proj-box pb-2">
                 <h1 class="project-title">
@@ -56,8 +95,8 @@
                     Moodset was built with Javascript, NodeJS, Mongoose, ExpressJS, and .EJS in 
                     an MVC format. This full stack application allows users to create, display, update, and delete playlists in which they can upload their own mp3 files.
                 </div>
-                <div class="carousel-home"> <!-- Here is where I have to start to paste the full carousel HTML in -->
-                    <div class="carousel">
+                <div class="carousel-home">
+                    <div class="carousel carousel-2">
                         <ul class="images-list">
                             <li class="slide current-slide">
                                 <img src="images/Moodset/1.png" alt="moodset" class="image">
@@ -70,11 +109,10 @@
                             </li>
                         </ul>            
                         <button class="carousel-btn btn-prev">
-                            <img src="../images/arrow-left.svg" alt="Previous">
+                            <img src="images/arrow-left.svg" alt="Previous">
                         </button>
                         <button class="carousel-btn btn-next">
-                            <img src="
-                            ../images/arrow-right.svg" alt="Next">
+                            <img src="images/arrow-right.svg" alt="Next">
                         </button>            
                         <div class="carousel-nav">
                             <button class="position-indicator current-dot"></button>
@@ -83,6 +121,14 @@
                         </div>            
                     </div>
                 </div>
+                <section class='btn-home'>
+                    <button class="proj-link-btn">
+                        <a href='#'>GitHub</a>
+                    </button>
+                    <button class="proj-link-btn">
+                        <a href='#'>View</a>
+                    </button>
+                </section>
             </section>
             <section class="individual-proj-box pb-3">
                 <h1 class="project-title">
@@ -93,7 +139,7 @@
                     stack application allows the user to explore a retro-futuristic skateshop, and create, view, edit, and delete items via a user-friendly interface. Infinite Savannah was pair programmed as a team using Agile methodologies, and Trello to manage progress.
                 </div>
                 <div class="carousel-home">
-                    <div class="carousel">
+                    <div class="carousel carousel-3">
                         <ul class="images-list">
                             <li class="slide current-slide">
                                 <img src="images/IF/1.png" alt="infinite savannah" class="image">
@@ -109,8 +155,7 @@
                             <img src="../images/arrow-left.svg" alt="Previous">
                         </button>
                         <button class="carousel-btn btn-next">
-                            <img src="
-                            ../images/arrow-right.svg" alt="Next">
+                            <img src="../images/arrow-right.svg" alt="Next">
                         </button>            
                         <div class="carousel-nav">
                             <button class="position-indicator current-dot"></button>
@@ -119,6 +164,14 @@
                         </div>            
                     </div>
                 </div>
+                <section class='btn-home'>
+                    <button class="proj-link-btn">
+                        <a href='#'>GitHub</a>
+                    </button>
+                    <button class="proj-link-btn">
+                        <a href='#'>View</a>
+                    </button>
+                </section>
             </section>
         </div>
     </div>
@@ -127,11 +180,5 @@
     // Footer ////////////////////////////
     -------------------------------------->
 
-<script src="components/menu.js"></script>        
-<script src="components/nav.js"></script>
-<script src="components/carousel.js"></script>
-<script src="JS/carousel.js"></script>
-<script src="JS/dropdown.js"></script>
-<script src="JS/copyText.js"></script>
 </body>
 </html>

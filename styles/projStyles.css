@@ -9,7 +9,7 @@
     height: 100vh;
     margin-top: 4em;
     padding: 20px;
-    border-right: 2px solid #D1A60B;
+    /* border-right: 2px solid #D1A60B; */
 }
 
 .proj-page-header {
@@ -52,4 +52,30 @@
     letter-spacing: 2px;
     margin: auto auto .5em 1em;
     color: rgb(255, 149, 0);
+}
+
+.btn-home {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.proj-link-btn {
+    margin: 4em 5px auto 5px;
+    background-color: #79620c;
+    border: none;
+    width: 6em;
+    height: 1.5em;
+    opacity: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.proj-link-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.proj-link-btn:hover {
+    background-color: #D1A60B;
 }
