@@ -14,6 +14,7 @@
         display: block;
         padding: 0;
         height: 3em;
+        background: rgba(5, 93, 80, 0.3);
     }
     .buttons-box {
         padding: 10px 0 0 18px;
@@ -83,6 +84,36 @@
     .btn-primary:hover {
         color: black;
         background-color: #D1A60B;
+    }
+
+    /*////////////////////////////
+    /// Mobile Styling ///////*/
+
+    @media screen and (max-width: 412px) {
+
+        .contact-body {
+            padding: 0 6px;
+        }
+
+        .form-container {
+            width: 90%;
+        }
+
+        .resume-btn {
+            margin: 0;
+            margin-top: 4px;
+            padding: 0;
+            width: 5em;
+        }
+
+        #email {
+            display: none;
+        }
+        #email-mobile {
+            display: block;
+            margin-right: 5em;
+            margin-top: -10px;
+        }
     }
 </style>
 <body>

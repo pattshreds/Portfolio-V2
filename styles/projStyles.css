@@ -9,7 +9,6 @@
     height: 100vh;
     margin-top: 4em;
     padding: 20px;
-    /* border-right: 2px solid #D1A60B; */
 }
 
 .proj-page-header {
@@ -78,4 +77,53 @@
 
 .proj-link-btn:hover {
     background-color: #D1A60B;
+}
+
+/*////////////////////////////
+/// Mobile Styling ///////*/
+
+@media screen and (max-width: 412px) {
+
+    .proj-page-container {
+        flex-direction: column;
+    }
+
+    #header-section {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 100%;
+        margin-bottom: 2em;
+        padding: 0;
+    }
+
+    #header-section p:first-of-type {
+        margin-right: 8px;
+    }
+    
+    .proj-page-header {
+        font-size: 6em;
+        font-family: Ranchers;
+        color: #D1A60B;
+        padding: 0;
+    }
+
+    .individual-proj-box {
+        padding: 0;
+        margin-bottom: 1em;
+    }
+
+    .proj-desc-container {
+        width: 90%;
+        height: 100%;
+        margin: 5em auto 0 auto;
+        padding: 0;
+    }
+
+    .project-title {
+        /* Had trouble figuring out why flexbx wouldn't center align this h1 */
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+
 }

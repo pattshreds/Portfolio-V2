@@ -20,6 +20,6 @@ This time around I'm using HTML, CSS, and Javascript. My new portfolio will serv
   <li> Build Experience and Contact page. </li>
   <li> Find fonts for everything. </li>
   <li> Tune mobile responsiveness. </li>
-  <li>  </li>
+  <li> Figure out how to make resume button animation fade out on hover off. </li>
 </ul>
 
