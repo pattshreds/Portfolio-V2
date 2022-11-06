@@ -14,8 +14,112 @@
     src: url(../fonts/Slabo_27px/Slabo27px-Regular.ttf);
 }
 
-/*//////////////////////////////////////////////
-/// Default styling; 13" Macbook Air /////////*/
+/*///////////////////////
+/// Keyframes ///////*/
+
+@keyframes resume-btn-fade {
+    0%, 100% {
+        background-color: #79620c;
+    }
+    50% {
+        background-color: #D1A60B;
+    }
+}
+
+@keyframes grow {
+    0% {
+        font-size: 16px;
+        color: darkgoldenrod;
+    }
+    100% {
+        font-size: 16.6px;
+    }
+}
+
+@keyframes dropdown {
+    0% {
+        top: -40em;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes dropdown-up {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -40em;
+    }
+}
+
+@keyframes whoa {
+    0% {
+        color: violet;
+    }
+    14% {
+        color: indigo;
+    }
+    28% {
+        color: blue;
+    }
+    42% {
+        color: teal;
+    }
+    54% {
+        color: green;
+    }
+    68% {
+        color: yellow;
+    }
+    82% {
+        color: orange;
+    }
+    96% {
+        color: red;
+    }
+    100% {
+        color: hotpink;
+    }
+}
+
+@keyframes loop {
+    0% {
+        width: 5em;
+    }
+    50% {
+        width: 4em;
+    }
+    100% {
+        width: 5em;
+    }
+}
+
+@keyframes loop2 {
+    0% {
+        width: 3.3em;
+    }
+    50% {
+        width: 2.3em;
+    }
+    100% {
+        width: 3.3em;
+    }
+}
+
+@keyframes hop {
+    0% {
+        top: 0;
+    }
+    70% {
+        top: -5px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
 
 body {
     /* background-color: #0F3236; */
@@ -35,8 +139,8 @@ body {
     justify-content: space-between;
     padding: 15px 25px;
     margin-bottom: 10px;
-    height: 2.5em;
-    background: transparent;
+    height: 1.2em;
+    background: rgba(5, 93, 80, 0.3);
 }
 
 .buttons-box {
@@ -55,10 +159,6 @@ body {
     border-radius: 3px;
 }
 
-.resume-btn:hover {
-    background-color: #D1A60B;
-}
-
 .resume-btn a {
     text-decoration: none;
     color: black;
@@ -70,7 +170,20 @@ body {
     border: none;
     text-decoration: none;
     padding: 0;
-    margin: -20px 0 0 20px;
+    margin: -5px 0 0 20px;
+    color: darkgoldenrod;
+    font-size: 16px;
+    font-family: Slabo;
+    opacity: 50%;
+}
+
+#email-mobile {
+    display: none;
+    background: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    margin: -6px 0 0 20px;
     color: darkgoldenrod;
     font-size: 16px;
     font-family: Slabo;
@@ -88,18 +201,8 @@ body {
 #email-text:hover {
     color: rgb(255, 149, 0);
     opacity: 100%;
-    animation: grow .4s ease-in 1 forwards;
+    animation: grow .2s ease-in 1 forwards;
 }
-
-    @keyframes grow {
-        0% {
-            font-size: 16px;
-            color: darkgoldenrod;
-        }
-        100% {
-            font-size: 16.6px;
-        }
-    }
 
 .dropdown-btn {
     cursor: pointer;
@@ -128,24 +231,6 @@ body {
     opacity: 90%;
 }
 
-    @keyframes dropdown {
-        0% {
-            top: -40em;
-        }
-        100% {
-            top: 0;
-        }
-    }
-
-    @keyframes dropdown-up {
-        0% {
-            top: 0;
-        }
-        100% {
-            top: -40em;
-        }
-    }
-
 .close-menu-btn {
     position: relative;
     right: -9em;
@@ -159,48 +244,6 @@ body {
     animation: whoa .6s linear infinite;
 }
 
-    @keyframes whoa {
-        0% {
-            color: violet;
-        }
-        14% {
-            color: indigo;
-        }
-        28% {
-            color: blue;
-        }
-        42% {
-            color: teal;
-        }
-        54% {
-            color: green;
-        }
-        68% {
-            color: yellow;
-        }
-        82% {
-            color: orange;
-        }
-        96% {
-            color: red;
-        }
-        100% {
-            color: hotpink;
-        }
-    }
-
-    @keyframes loop {
-        0% {
-            width: 5em;
-        }
-        50% {
-            width: 4em;
-        }
-        100% {
-            width: 5em;
-        }
-    }
-
 .dropdown-item {
     cursor: pointer;
     text-decoration: none;
@@ -212,18 +255,6 @@ body {
     position: relative;
     animation: hop 200ms ease-in-out  1;
 }
-
-    @keyframes hop {
-        0% {
-            top: 0;
-        }
-        70% {
-            top: -5px;
-        }
-        100% {
-            top: 0;
-        }
-    }
 
 /*////////////////////////////
 /// Home Container ///////*/
@@ -426,18 +457,6 @@ body {
     animation: loop2 .8s infinite;
 }
 
-    @keyframes loop2 {
-        0% {
-            width: 3.3em;
-        }
-        50% {
-            width: 2.3em;
-        }
-        100% {
-            width: 3.3em;
-        }
-    }
-
 .to-top-text {
     display: none;
 }
@@ -446,8 +465,21 @@ body {
 /// Mobile Styling ///////*/
 
 @media screen and (max-width: 412px) {
+
+    #email {
+        display: none;
+    }
+
+    #email-mobile {
+        display: inline;
+    }
+
+    #home-title {
+        font-size: 5em;
+    }
+
     #home-sub {
-        margin-bottom: 4.8em;
+        margin-bottom: 2em;
     }
 
     .home-container {
@@ -459,8 +491,8 @@ body {
         width: 100%;
     }
 
-    #featuredAbout {
-        padding: 0;
+    #featured-about {
+        width: 80%;
     }
 
     .carousel-nav {
@@ -468,7 +500,6 @@ body {
     }
 
     .footer {
-        border: 2px solid gold;
     }
 
     .to-top-link img {
@@ -482,6 +513,15 @@ body {
         color: black;
         text-decoration: none;
         margin-top: -1.5em;
+    }
+
+    .close-menu-btn {
+        position: relative;
+        right: 0;
+        top: 0;
+        padding: 0;
+        cursor: pointer;
+        margin: 0;
     }
 }
 

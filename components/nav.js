@@ -12,6 +12,9 @@ class Nav extends HTMLElement {
             <button id='email' onclick='copyText()'>
                click email to copy - - - - <p id='email-text'>patrick.mcguigan5@gmail.com</p> - - - - - - - - - - - -
             </button>
+            <button id='email-mobile' onclick='copyText()'>
+               click email to copy <p id='email-text'>patrick.mcguigan5@gmail.com</p>
+            </button>
         </div>
         <div class="dropdown">
             <button class="dropdown-btn">

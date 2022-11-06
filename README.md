@@ -19,5 +19,7 @@ This time around I'm using HTML, CSS, and Javascript. My new portfolio will serv
   <li> Dropdown menu item animation issue. </li>
   <li> Build Experience and Contact page. </li>
   <li> Find fonts for everything. </li>
+  <li> Tune mobile responsiveness. </li>
+  <li>  </li>
 </ul>
 

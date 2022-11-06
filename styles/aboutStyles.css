@@ -131,3 +131,80 @@
     text-align: right;
     margin-right: 3em;
 }
+
+/*////////////////////////////
+/// Mobile Styling ///////*/
+
+@media screen and (max-width: 412px) {
+
+    .about-img {
+        width: 30em;
+        height: 20em;
+        margin: 5em 0 15em -2em;
+    }
+
+    .about-header {
+        position: relative;
+        top: -2em;
+        left: 14vw; 
+        font-size: 5em;
+    }
+
+    #hello-intro {
+        position: relative;
+        top: -1em;
+        left: 4em;
+        /* For some reason this p tag is reallllllly wide and causes a horizontal scroll, so I added this width. */
+        width: 20%;
+        font-size: 2em;
+        color: darkorange;
+    }
+
+    .about-text-body {
+        text-align: center;
+        top: 0;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        padding: 0;
+    }
+
+    .about-p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .stock-photo-1-container {
+        width: 70%;
+        margin: 15px auto 10px auto;
+        align-self: center;
+    }
+    
+    .stock-photo-1 {
+        width: 100%;
+        border-radius: 2%;
+    }
+
+    .stock-photo-2-container {
+        width: 70%;
+        margin: 15px auto 10px auto;
+        align-self: center;
+    }
+    
+    .stock-photo-2 {
+        width: 100%;
+        border-radius: 2%;
+    }
+    
+    .stock-photo-3-container {
+        width: 70%;
+        margin: 15px auto 10px auto;
+        align-self: center;
+    }
+    
+    .stock-photo-3 {
+        width: 100%;
+        border-radius: 2%;
+    }
+
+}
