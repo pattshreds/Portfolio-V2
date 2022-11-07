@@ -130,6 +130,11 @@
 }
 
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
 body {
     width: 100%;
     background: rgb(3,62,53);
