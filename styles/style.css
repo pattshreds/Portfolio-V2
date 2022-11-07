@@ -482,7 +482,7 @@ body {
 /*////////////////////////////
 /// Mobile Styling ///////*/
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 500px) {
 
     #email {
         display: none;
