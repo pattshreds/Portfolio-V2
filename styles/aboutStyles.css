@@ -36,13 +36,13 @@
     position: relative;
     left: 2.846em;
     top: -1.8em;
+    margin-left: 8px;
 }
 
 #hello-intro {
     position: relative;
     top: -10em;
     left: 20em;
-    /* For some reason this p tag is reallllllly wide and causes a horizontal scroll, so I added this width. */
     width: 20%;
     font-size: 2em;
     color: darkorange;
@@ -64,23 +64,16 @@
 }
 
 .stock-photo-1-container {
-    /* position: relative;
-    top: 5em;
-    left: 3em; */
     width: 35%;
     margin-right: 3em;
 }
 
 .stock-photo-1 {
-    /* position: relative; */
     width: 100%;
     border-radius: 2%;
 }
 
 .stock-photo-2-container {
-    /* position: relative;
-    top: -33em;
-    left: 65em; */
     width: 35%;
     margin-left: 3em;
 }
@@ -109,21 +102,15 @@
 }
 
 .p-1 {
-    /* position: relative;
-    left: 25em;
-    top: -2em; */
     width: 55%;
 }
 
 .p-2 {
-    /* position: relative;
-    top: -1em;
-    left: 1em; */
     width: 55%;
 }
 
 .p-3 {
-    width: 60%;
+    width: 55%;
 }
 
 .p-4, .sig {
@@ -152,9 +139,8 @@
 
     #hello-intro {
         position: relative;
-        top: -1em;
+        top: -3.2em;
         left: 4em;
-        /* For some reason this p tag is reallllllly wide and causes a horizontal scroll, so I added this width. */
         width: 20%;
         font-size: 2em;
         color: darkorange;
@@ -205,6 +191,10 @@
     .stock-photo-3 {
         width: 100%;
         border-radius: 2%;
+    }
+
+    .p-4, .sig {
+        text-align: center;
     }
 
 }
