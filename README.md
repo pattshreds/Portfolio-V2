@@ -21,5 +21,7 @@ This time around I'm using HTML, CSS, and Javascript. My new portfolio will serv
   <li> Find fonts for everything. </li>
   <li> Tune mobile responsiveness. </li>
   <li> Figure out how to make resume button animation fade out on hover off. </li>
+  <li> Build mobile swipe to scroll for carousels. </li>
+
 </ul>
 
