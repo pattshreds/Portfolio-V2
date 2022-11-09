@@ -79,6 +79,14 @@
     background-color: #D1A60B;
 }
 
+#more-info {
+    position: relative;
+    margin-top: 5em;
+    left: -5em;
+    color: rgb(194, 213, 216);
+    font-family: Slabo;
+}
+
 /*////////////////////////////
 /// Mobile Styling ///////*/
 
@@ -124,6 +132,11 @@
         /* Had trouble figuring out why flexbx wouldn't center align this h1 */
         text-align: center;
         margin: 0 0 10px 0;
+    }
+
+    #more-info {
+        left: -4.7em;
+        margin-top: 5.5em;
     }
 
 }
