@@ -14,17 +14,136 @@
     src: url(../fonts/Slabo_27px/Slabo27px-Regular.ttf);
 }
 
-/*////////////////////////////////////////////////
-/// Default styling; 15" Laptop (1536x763) ///*/
+/*///////////////////////
+/// Keyframes ///////*/
+
+@keyframes resume-btn-fade {
+    0% {
+        background-color: #79620c;
+    }
+    100% {
+        background-color: #D1A60B;
+    }
+}
+
+@keyframes resume-btn-fade-reverse {
+    0% {
+        background-color: #D1A60B;
+    }
+    100% {
+        background-color: #79620c;
+    }
+}
+
+@keyframes grow {
+    0% {
+        font-size: 16px;
+        color: darkgoldenrod;
+    }
+    100% {
+        font-size: 16.6px;
+    }
+}
+
+@keyframes dropdown {
+    0% {
+        top: -40em;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes dropdown-up {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -40em;
+    }
+}
+
+@keyframes whoa {
+    0% {
+        color: violet;
+    }
+    14% {
+        color: indigo;
+    }
+    28% {
+        color: blue;
+    }
+    42% {
+        color: teal;
+    }
+    54% {
+        color: green;
+    }
+    68% {
+        color: yellow;
+    }
+    82% {
+        color: orange;
+    }
+    96% {
+        color: red;
+    }
+    100% {
+        color: hotpink;
+    }
+}
+
+@keyframes loop {
+    0% {
+        width: 5em;
+    }
+    50% {
+        width: 4em;
+    }
+    100% {
+        width: 5em;
+    }
+}
+
+@keyframes loop2 {
+    0% {
+        width: 3.3em;
+    }
+    50% {
+        width: 2.3em;
+    }
+    100% {
+        width: 3.3em;
+    }
+}
+
+@keyframes hop {
+    0% {
+        top: 0;
+    }
+    70% {
+        top: -5px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 body {
-    /* background-color: #0F3236; */
+    width: 100%;
     background: rgb(3,62,53);
     background: linear-gradient(200deg, rgba(3,62,53,1) 0%, rgba(0,23,20,1) 90%);
     background-attachment: fixed;
     padding: 0;
     margin: 0;
 }
+
 
 /*////////////////////
 /// Navbar ///////*/
@@ -34,8 +153,8 @@ body {
     justify-content: space-between;
     padding: 15px 25px;
     margin-bottom: 10px;
-    height: 2.5em;
-    background: transparent;
+    height: 1.2em;
+    background: rgba(5, 93, 80, 0.3);
 }
 
 .buttons-box {
@@ -54,14 +173,19 @@ body {
     border-radius: 3px;
 }
 
-.resume-btn:hover {
-    background-color: #D1A60B;
-}
-
 .resume-btn a {
     text-decoration: none;
     color: black;
     font-size: 15px;
+}
+
+.resume-btn:hover {
+    background-color: #D1A60B;
+    animation: resume-btn-fade .2s ease-out;
+}
+
+.resume-btn:not(:hover) {
+    animation: resume-btn-fade-reverse .2s ease-in;
 }
 
 #email {
@@ -69,7 +193,20 @@ body {
     border: none;
     text-decoration: none;
     padding: 0;
-    margin: -20px 0 0 20px;
+    margin: -5px 0 0 20px;
+    color: darkgoldenrod;
+    font-size: 16px;
+    font-family: Slabo;
+    opacity: 50%;
+}
+
+#email-mobile {
+    display: none;
+    background: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    margin: -6px 0 0 20px;
     color: darkgoldenrod;
     font-size: 16px;
     font-family: Slabo;
@@ -81,14 +218,13 @@ body {
     padding: 0;
     display: inline;
     cursor: pointer;
-
-    /* opacity: 50%; */
+    opacity: 50%;
 }
 
 #email-text:hover {
     color: rgb(255, 149, 0);
     opacity: 100%;
-    font-weight: bold;
+    animation: grow .2s ease-in 1 forwards;
 }
 
 .dropdown-btn {
@@ -107,25 +243,14 @@ body {
 .dropdown-toggle-container {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(202, 111, 0);
+    background-color: rgb(206, 181, 255);
     z-index: 1;
     font-family: Ranchers;
     font-size: 4em;
-    opacity: 95%;
+    opacity: 90%;
 }
-
-    @keyframes dropdown {
-        0% {
-            opacity: 0%;
-        }
-        100% {
-            opacity: 100%;
-        }
-    }
 
 .close-menu-btn {
     position: relative;
@@ -136,42 +261,21 @@ body {
     margin: 0;
 }
 
-    @keyframes loop {
-        0% {
-            width: 5em;
-        }
-        50% {
-            width: 4em;
-        }
-        100% {
-            width: 5em;
-        }
-    }
+.close-menu-btn:hover {
+    animation: whoa .6s linear infinite;
+}
 
 .dropdown-item {
     cursor: pointer;
     text-decoration: none;
     color: black;
-    margin: 40px
+    margin: 8px;
 }
 
-/* Figure out how to have this animation affect only the .dropdown-item that's being hovered. Also how to not let the animation affect the close menu button. */
 .dropdown-item:hover {
     position: relative;
     animation: hop 200ms ease-in-out  1;
 }
-
-    @keyframes hop {
-        0% {
-            top: 0;
-        }
-        70% {
-            top: 5px;
-        }
-        100% {
-            top: 0;
-        }
-    }
 
 /*////////////////////////////
 /// Home Container ///////*/
@@ -201,6 +305,7 @@ body {
 }
 
 .intro-body {
+    position: relative;
     font-size: 1.5em;
     width: 60%;
     margin: 0 auto;
@@ -219,6 +324,7 @@ body {
     /* justify-content: center; */
     padding: 0;
     margin-top: 0;
+    overflow: hidden;
 }
 
 #featured-header {
@@ -372,18 +478,6 @@ body {
     animation: loop2 .8s infinite;
 }
 
-    @keyframes loop2 {
-        0% {
-            width: 3.3em;
-        }
-        50% {
-            width: 2.3em;
-        }
-        100% {
-            width: 3.3em;
-        }
-    }
-
 .to-top-text {
     display: none;
 }
@@ -391,9 +485,22 @@ body {
 /*////////////////////////////
 /// Mobile Styling ///////*/
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 500px) {
+
+    #email {
+        display: none;
+    }
+
+    #email-mobile {
+        display: inline;
+    }
+
+    #home-title {
+        font-size: 5em;
+    }
+
     #home-sub {
-        margin-bottom: 4.8em;
+        margin-bottom: 2em;
     }
 
     .home-container {
@@ -405,8 +512,8 @@ body {
         width: 100%;
     }
 
-    #featuredAbout {
-        padding: 0;
+    #featured-about {
+        width: 80%;
     }
 
     .carousel-nav {
@@ -414,7 +521,6 @@ body {
     }
 
     .footer {
-        border: 2px solid gold;
     }
 
     .to-top-link img {
@@ -428,6 +534,15 @@ body {
         color: black;
         text-decoration: none;
         margin-top: -1.5em;
+    }
+
+    .close-menu-btn {
+        position: relative;
+        right: 0;
+        top: 0;
+        padding: 0;
+        cursor: pointer;
+        margin: 0;
     }
 }
 

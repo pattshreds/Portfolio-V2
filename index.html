@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <menu-component></menu-component>
+
+    <a name='top'></a>
+
+    <nav-component></nav-component>
+
+    <div class="home-container">
+        <h1 id='home-title'>
+            Patrick McGuigan
+        </h1>
+        <h2 id="home-sub">
+            Full-Stack Software Engineering Enthusiast
+        </h2>
+        <p class="intro-body">
+            I am  an engineer of software. An artist of code.
+            I build full-scale web applications and try my best on CodeWars right here in delightful Denver, Colorado. 
+        </p>    
+    </div>
+
+    <div class="featured">
+        <hr id='hr-1' />
+        <p id='featured-header'>Featured Project</p>
+        <hr id='hr-2' />
+        <p id='featured-about'>
+            PokéSearch is built with HTML, CSS, Javascript, and jQuery using a third party API. This front end
+            application allows the user to search the Pokédex-style database to learn information about each
+            Pokémon, and various berries found in the games.
+        </p>
+    </div>
+    
+    <!-------------------------------------
+    // Carousel ///////////////////////////
+    -------------------------------------->
+
+    <!-- <div class="carousel">
+
+        <ul class="images-list">
+            <li class="slide current-slide">
+                <img class='image' src="images/PokeSearch/1.png" alt="PokeSearch">
+            </li>
+            <li class="slide">
+                <img class='image' src="images/PokeSearch/2.png" alt="PokeSearch">
+            </li>
+            <li class="slide">
+                <img class='image' src="images/PokeSearch/3.png" alt="PokeSearch">
+            </li>
+        </ul>
+
+        <button class="carousel-btn btn-prev">
+            <img src="images/arrow-left.svg" alt="Previous">
+        </button>
+        <button class="carousel-btn btn-next">
+            <img src="
+            images/arrow-right.svg" alt="Next">
+        </button>
+
+        <div class="carousel-nav">
+            <button class="position-indicator current-dot"></button>
+            <button class="position-indicator"></button>
+            <button class="position-indicator"></button>
+        </div>
+
+    </div> -->
+
+    <carousel-component></carousel-component>
+
+    <!-------------------------------------
+    // Footer ///////////////////////////
+    -------------------------------------->
+
+    <div class='footer'>
+        <button class='to-top-btn' class='to-top-link' href='#top'>
+            <a href='#top'>
+                <img src="images/arrow-thin-top-icon.svg" alt="Back to top">
+            </a>
+        </button>    
+        <p class ='temp-issue'>Trying to figure this out lol.</p>
+            <p class="to-top-text">
+                Back To Top
+            </p>
+        </div>
+
+<script src="components/carousel.js"></script>        
+<script src="components/menu.js"></script>        
+<script src="components/nav.js"></script>
+<script src="JS/carousel.js"></script>
+<script src="JS/dropdown.js"></script>
+<script src="JS/copyText.js"></script>
+</body>
+</html>

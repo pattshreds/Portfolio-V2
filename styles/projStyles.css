@@ -1,0 +1,142 @@
+.proj-page-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#header-section {
+    width: 30%;
+    height: 100vh;
+    margin-top: 4em;
+    padding: 20px;
+}
+
+.proj-page-header {
+    padding: 0;
+    margin: 0;
+    font-size: 10em;
+    font-family: Ranchers;
+    text-align: right;
+    color: #D1A60B;
+}
+
+.individual-proj-box {
+    padding: 4em;
+    border-bottom: 2px dashed #D1A60B;
+}
+
+.proj-desc-container {
+    width: 70%;
+    height: 100vh;
+    margin-top: 5em;
+    margin-left: 1em;
+    padding: 1em;
+}
+
+.desc-home {
+    font-family: Slabo;
+    color: rgb(194, 213, 216);
+    font-size: 1.4em;
+    letter-spacing: 1.5px;
+    line-height: 28px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    
+}
+
+.project-title {
+    font-family: Slabo;
+    font-size: 4em;
+    letter-spacing: 2px;
+    margin: auto auto .5em 1em;
+    color: rgb(255, 149, 0);
+}
+
+.btn-home {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.proj-link-btn {
+    margin: 4em 5px 2em 5px;
+    background-color: #79620c;
+    border: none;
+    width: 6em;
+    height: 1.5em;
+    opacity: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.proj-link-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.proj-link-btn:hover {
+    background-color: #D1A60B;
+}
+
+#more-info {
+    position: relative;
+    margin-top: 5em;
+    left: -5em;
+    color: rgb(194, 213, 216);
+    font-family: Slabo;
+}
+
+/*////////////////////////////
+/// Mobile Styling ///////*/
+
+@media screen and (max-width: 500px) {
+
+    .proj-page-container {
+        flex-direction: column;
+    }
+
+    #header-section {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 100%;
+        margin-bottom: 2em;
+        padding: 0;
+    }
+
+    #header-section p:first-of-type {
+        margin-right: 8px;
+    }
+    
+    .proj-page-header {
+        font-size: 6em;
+        font-family: Ranchers;
+        color: #D1A60B;
+        padding: 0;
+    }
+
+    .individual-proj-box {
+        padding: 0;
+        margin-bottom: 1em;
+    }
+
+    .proj-desc-container {
+        width: 90%;
+        height: 100%;
+        margin: 5em auto 0 auto;
+        padding: 0;
+    }
+
+    .project-title {
+        /* Had trouble figuring out why flexbx wouldn't center align this h1 */
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+
+    #more-info {
+        left: -4.7em;
+        margin-top: 5.5em;
+    }
+
+}

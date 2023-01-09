@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/projStyles.css">
+    <script src="components/carousel.js" async></script> 
+    <script src="components/menu.js" async></script>        
+    <script src="components/nav.js" async></script>
+    <script src="JS/carousel.js" async></script>
+    <script src="JS/dropdown.js" async></script>
+    <script src="JS/copyText.js" async></script>
+</head>
+<body>
+
+<menu-component></menu-component>
+
+    <a name='top'></a>
+
+<nav-component></nav-component>
+
+    <!-------------------------------------
+    // Main Body /////////////////////////
+    -------------------------------------->
+
+    <!-- I've been trying to figure out a way to recycle the carousel to use for each project, but HTML custom elements don't seem to be able to be reused multiple times over one page. I'm going to hard code each carousel in for now but I want to figure out a way to reuse that element and be able to change the images it recieves with each use without using React components. -->
+
+
+    <div class="proj-page-container">
+        <section id ='header-section'>
+            <p class="proj-page-header">
+                My
+            </p>
+            <p class="proj-page-header">
+                Work
+            </p>
+        </section>
+        <div class="proj-desc-container">
+            <section class="individual-proj-box pb-1">
+                <h1 class="project-title">
+                    PokéSearch
+                </h1>
+                <div class="desc-home">
+                    PokéSearch is built with HTML, CSS, Javascript, and jQuery using a third party API. This front end
+                    application allows the user to search the Pokédex-style database to learn information about each
+                    Pokémon, and various berries found in the games.
+                </div>
+                <div class="carousel-home">
+                    <!-- Below is the custom element I created in attempt to reuse in each 'carousel home' div. I'm going to use it in the first project div as it works for one use. -->
+                    <carousel-component>
+                    </carousel-component>
+                    <!-- <div class="carousel carousel-1">
+                        <ul class="images-list">
+                            <li class="slide current-slide">
+                                <img src="images/pokesearch/1.png" alt="pokesearch" class="image">
+                            </li>
+                            <li class="slide">
+                                <img src="images/pokesearch/2.png" alt="pokesearch" class="image">           
+                            </li>
+                            <li class="slide">
+                                <img src="images/pokesearch/3.png" alt="pokesearch" class="image">            
+                            </li>
+                        </ul>            
+                        <button class="carousel-btn btn-prev">
+                            <img src="images/arrow-left.svg" alt="Previous">
+                        </button>
+                        <button class="carousel-btn btn-next">
+                            <img src="images/arrow-right.svg" alt="Next">
+                        </button>            
+                        <div class="carousel-nav">
+                            <button class="position-indicator current-dot"></button>
+                            <button class="position-indicator"></button>
+                            <button class="position-indicator"></button>
+                        </div>            
+                    </div> -->
+                </div>
+                <section class='btn-home'>
+                    <button class="proj-link-btn">
+                        <a href='https://github.com/pattshreds/pokedex_app'>GitHub</a>
+                    </button>
+                    <button class="proj-link-btn">
+                        <a href='https://pattshreds.github.io/pokedex_app/'>View</a>
+                    </button>
+                </section>
+            </section>
+            <section class="individual-proj-box pb-2">
+                <h1 class="project-title">
+                    Moodset
+                </h1>
+                <div class="desc-home">
+                    Moodset was built with Javascript, NodeJS, Mongoose, ExpressJS, and .EJS in 
+                    an MVC format. This full stack application allows users to create, display, update, and delete playlists in which they can upload their own mp3 files.
+                </div>
+                <div class="carousel-home">
+                    <div class="carousel carousel-2">
+                        <ul class="images-list">
+                            <li class="slide current-slide">
+                                <img src="images/Moodset/1.png" alt="moodset" class="image">
+                            </li>
+                            <li class="slide">
+                                <img src="images/Moodset/2.png" alt="moodset" class="image">           
+                            </li>
+                            <li class="slide">
+                                <img src="images/Moodset/3.png" alt="moodset" class="image">            
+                            </li>
+                        </ul>            
+                        <button class="carousel-btn btn-prev">
+                            <img src="images/arrow-left.svg" alt="Previous">
+                        </button>
+                        <button class="carousel-btn btn-next">
+                            <img src="images/arrow-right.svg" alt="Next">
+                        </button>            
+                        <div class="carousel-nav">
+                            <button class="position-indicator current-dot"></button>
+                            <button class="position-indicator"></button>
+                            <button class="position-indicator"></button>
+                        </div>            
+                    </div>
+                </div>
+                <section class='btn-home'>
+                    <button class="proj-link-btn">
+                        <a href='https://github.com/pattshreds/music-app'>GitHub</a>
+                    </button>
+                    <button class="proj-link-btn">
+                        <a href='https://seir-music-app.herokuapp.com/landing/landing'>View</a>
+                    </button>
+                </section>
+            </section>
+            <section class="individual-proj-box pb-3">
+                <h1 class="project-title">
+                    Infinite Savannah
+                </h1>
+                <div class="desc-home">
+                    Infinite Savannah was built with a MERN stack (MongoDB, ExpressJS, React, NodeJS). This full
+                    stack application allows the user to explore a retro-futuristic skateshop, and create, view, edit, and delete items via a user-friendly interface. Infinite Savannah was pair programmed as a team using Agile methodologies, and Trello to manage progress.
+                </div>
+                <div class="carousel-home">
+                    <div class="carousel carousel-3">
+                        <ul class="images-list">
+                            <li class="slide current-slide">
+                                <img src="images/IF/1.png" alt="infinite savannah" class="image">
+                            </li>
+                            <li class="slide">
+                                <img src="images/IF/2.png" alt="infinite savannah" class="image">           
+                            </li>
+                            <li class="slide">
+                                <img src="images/IF/3.png" alt="infinite savannah" class="image">            
+                            </li>
+                        </ul>            
+                        <button class="carousel-btn btn-prev">
+                            <img src="../images/arrow-left.svg" alt="Previous">
+                        </button>
+                        <button class="carousel-btn btn-next">
+                            <img src="../images/arrow-right.svg" alt="Next">
+                        </button>            
+                        <div class="carousel-nav">
+                            <button class="position-indicator current-dot"></button>
+                            <button class="position-indicator"></button>
+                            <button class="position-indicator"></button>
+                        </div>            
+                    </div>
+                </div>
+                <section class='btn-home'>
+                    <button class="proj-link-btn">
+                        <a href='https://github.com/ryanklintworth/infinite-savannah'>GitHub</a>
+                    </button>
+                    <button class="proj-link-btn">
+                        <a href='https://infinite-savannah-23628.herokuapp.com/'>View</a>
+                    </button>
+                </section>
+            </section>
+            <section class="individual-proj-box pb-4">
+                <h1 class="project-title">
+                    Rezu
+                </h1>
+                <div class="desc-home">
+                    Rezu was built with a PERN stack (PostgreSQL, ExpressJS, React, NodeJS). This full stack
+                    application is a responsive and easy-to-use product review website that I built as a passion project
+                    to practice using complex React techniques and tools, and to learn about implementing a
+                    PostgreSQL database in React.
+                </div>
+                <div class="carousel-home">
+                    <div class="carousel carousel-4">
+                        <ul class="images-list">
+                            <li class="slide current-slide">
+                                <img src="images/Rezu/1.png" alt="rezu" class="image">
+                            </li>
+                            <li class="slide">
+                                <img src="images/Rezu/2.png" alt="rezu" class="image">           
+                            </li>
+                            <li class="slide">
+                                <img src="images/Rezu/3.png" alt="rezu" class="image">            
+                            </li>
+                        </ul>            
+                        <button class="carousel-btn btn-prev">
+                            <img src="../images/arrow-left.svg" alt="Previous">
+                        </button>
+                        <button class="carousel-btn btn-next">
+                            <img src="../images/arrow-right.svg" alt="Next">
+                        </button>            
+                        <div class="carousel-nav">
+                            <button class="position-indicator current-dot"></button>
+                            <button class="position-indicator"></button>
+                            <button class="position-indicator"></button>
+                        </div>            
+                    </div>
+                </div>
+                <section class='btn-home'>
+                    <button class="proj-link-btn">
+                        <a href='https://github.com/ryanklintworth/infinite-savannah'>GitHub</a>
+                    </button>
+                        <p id='more-info'>
+                            (This app is actively being optimized for deployment)
+                        </p>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <!-------------------------------------
+    // Footer ////////////////////////////
+    -------------------------------------->
+
+</body>
+</html>

@@ -10,39 +10,11 @@
 </head>
 <body>
 
-    <!-------------------------------------
-    // Drop-Down /////////////////////////
-    -------------------------------------->
-
-    <div class="dropdown-toggle-container">
-        <p class='close-menu-btn'>x</p>
-        <a class='dropdown-item' href="portfolio.html">Home</a>
-        <a class='dropdown-item' href="#">Experience</a>
-        <a class='dropdown-item' href="#">Work</a>
-        <a  class='dropdown-item' href="#">Contact</a>
-    </div>
+<menu-component></menu-component>
 
     <a name='top'></a>
 
-    <!-------------------------------------
-    // Nav //////////////////////////////
-    -------------------------------------->
-
-    <nav class="navbar">
-        <div class='buttons-box'>
-            <button class="resume-btn">
-                <a href="images/Resume_PM.pdf">Resume</a>
-            </button>
-            <button id='email' onclick='copyText()'>
-                - - - - click email to copy - - - - <p id='email-text'>patrick.mcguigan5@gmail.com</p> - - - - - - - - - - - -
-            </button>
-        </div>
-        <div class="dropdown">
-            <button class="dropdown-btn">
-                <img src="images/arrow-thin-bottom-icon.svg" alt="dropdown">
-            </button>
-        </div>
-    </nav>
+<nav-component></nav-component>
 
     <!-------------------------------------
     // Main Body /////////////////////////
@@ -50,10 +22,25 @@
 
     <div class="about-container">
         <img src="images/me.jpeg" alt="Me" class="about-img">
-        <div class="about-text-body">
-            <h1 id='about-header'>About Me</h1>
-            <p>Hello,</p> <br />
-            My name is Patrick McGuigan. Technology is something that I've always had a passion for from as young as I can remember. Fortunatley enough, so have organization, efficiancy, design, and functionality. Having moved quite a few times growing up and into adulthood, adapting to new environments is exciting to me. Eagerness to be continualy learning, as well as elatedness to be able to share my knowledge to help others are two things that drive me to grow and develop not only as an engineer, but as a person.
+        <p class='about-header ah1'>About</p>
+        <p class='about-header ah2'>Me</p>
+        <p id='hello-intro'>Hello,</p>
+        <div class="about-text-body"> 
+            <section class="stock-photo-1-container">
+                <img src="images/stock-photo-1.jpg" alt="Stock photo" class="stock-photo-1">
+            </section>
+            <p class='about-p p-1'>My name is Patrick McGuigan. Technology is something that I've always had a passion for from as young as I can remember. Fortunatley enough, so have organization, efficiancy, design, and functionality. Having moved quite a few times growing up and into adulthood, adapting to new environments is exciting to me. Eagerness to be continually learning, as well as stoke to be able to share my knowledge with others both keep my drive high to grow and develop not only as an engineer, but as a human being.</p>
+            <p class='about-p p-2'>My journey into the professional world began with my pursuit of a college degree in graphic design. I was unsure going into my college career whether or not I wanted to pursue art, or technology. Although I would say graphic design is a balance between art and technology based on the amount of design that is done on the computer, art eventually won and I spent my time in higher education building my skills as not only an aesthetic artist, but also a logical, and efficient thinker learning about the complexities and psychology of design.</p>
+            <section class='stock-photo-2-container'>
+                <img src="images/stock-photo-2.jpg" alt="Stock photo" class="stock-photo-2">
+            </section>
+            <section class="stock-photo-3-container">
+                <img src="images/stock-photo-3.jpg" alt="Stock photo" class="stock-photo-3">
+            </section>
+            <p class='about-p p-3'>Eventually I ended up deciding that I was more passionate about technology rather than purely art. I had taken and enjoyed a course or two in college in web design, so software engineering seemed like a natural next step. I embarked on this new course in my professional journey by making the decision to get some high quality education at General Assembly where I attended a full-time immersive software engineering bootcamp. Having thoroughly enjoyed the logical and critical thinking aspect of building software while still exercising my creative muslces by building layouts, new features, animations, etc., I decided that this was a fantastic path for me to follow. Today, I am pursuing my professional evolution as a software engineer, using my talents in art and design to help me and my work stand out among the crowd.</p>
+            <p class='about-p p-4'>I hope you enjoy what you see, and interact with on this website!</p>
+            <p class='about-p sig'>Thanks for reading. (: <br />
+            - Patrick McGuigan</p>
         </div>
     </div>
 
@@ -61,7 +48,8 @@
     // Footer ////////////////////////////
     -------------------------------------->
 
-
+<script src="components/menu.js"></script>        
+<script src="components/nav.js"></script>
 <script src="JS/carousel.js"></script>
 <script src="JS/dropdown.js"></script>
 <script src="JS/copyText.js"></script>
