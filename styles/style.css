@@ -14,8 +14,8 @@
     src: url(../fonts/Slabo_27px/Slabo27px-Regular.ttf);
 }
 
-/*//////////////////////////////////////////////
-/// Default styling; 15" Macbook Air ///////*/
+/*////////////////////////////////////////////////
+/// Default styling; 15" Laptop (1536x763) ///*/
 
 body {
     /* background-color: #0F3236; */
@@ -88,6 +88,7 @@ body {
 #email-text:hover {
     color: rgb(255, 149, 0);
     opacity: 100%;
+    font-weight: bold;
 }
 
 .dropdown-btn {
