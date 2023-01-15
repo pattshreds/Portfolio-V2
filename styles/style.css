@@ -163,7 +163,6 @@ body {
 
 .resume-btn {
     cursor: pointer;
-    display: flex;
     justify-content: center;
     background-color: #79620c;
     border: none;
@@ -193,7 +192,7 @@ body {
     border: none;
     text-decoration: none;
     padding: 0;
-    margin: -5px 0 0 20px;
+    margin-left: 20px;
     color: darkgoldenrod;
     font-size: 16px;
     font-family: Slabo;

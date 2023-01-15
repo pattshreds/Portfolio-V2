@@ -5,23 +5,23 @@ class Nav extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <nav class="navbar">
-        <div class='buttons-box'>
-            <button class="resume-btn">
-                <a href="images/Resume_PM.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-            </button>
-            <button id='email' onclick='copyText()'>
-               click email to copy - - - - <p id='email-text'>patrick.mcguigan5@gmail.com</p> - - - - - - - - - - - -
-            </button>
-            <button id='email-mobile' onclick='copyText()'>
-               click email to copy <p id='email-text'>patrick.mcguigan5@gmail.com</p>
-            </button>
-        </div>
-        <div class="dropdown">
-            <button class="dropdown-btn">
-                <img src="images/arrow-thin-bottom-icon.svg" alt="dropdown">
-            </button>
-        </div>
-    </nav>
+            <div class='buttons-box'>
+                <button class="resume-btn">
+                    <a href="images/Resume_PM.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                </button>
+                <button id='email' onclick='copyText()'>
+                click email to copy &nbsp; - - - - <p id='email-text'>patrick.mcguigan5@gmail.com</p> - - - - - - - - - - - -
+                </button> 
+                <button id='email-mobile' onclick='copyText()'>
+                click email to copy <p id='email-text'>patrick.mcguigan5@gmail.com</p>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn">
+                    <img src="images/arrow-thin-bottom-icon.svg" alt="dropdown">
+                </button>
+            </div>
+        </nav>
         `;
     }
 }
