@@ -48,10 +48,10 @@
 .about-text-body {
     display: flex;
     flex-flow: row wrap;
-    position: relative;
-    top: -34em;
     width: 92%;
     margin: 0 auto;
+    margin-top: -34em;
+    margin-bottom: 4em;
     font-size: .8em;
     font-family: Slabo;
     padding: 2em;
@@ -108,12 +108,12 @@
 
 .p-3 {
     width: 55%;
+    margin-bottom: 4em;
 }
 
 .p-4, .sig {
     width: 100%;
-    text-align: right;
-    margin-right: 3em;
+    text-align: center;
 }
 
 /*////////////////////////////
