@@ -129,6 +129,18 @@
     }
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 * {
     -webkit-tap-highlight-color: transparent;
@@ -137,9 +149,11 @@
 
 body {
     width: 100%;
-    background: rgb(3,62,53);
-    background: linear-gradient(200deg, rgba(3,62,53,1) 0%, rgba(0,23,20,1) 90%);
+    background: linear-gradient(45deg, rgb(0,23,20)0%, rgb(8, 112, 97) 90%);
     background-attachment: fixed;
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: gradient 20s ease infinite;
     padding: 0;
     margin: 0;
 }
@@ -154,7 +168,9 @@ body {
     padding: 15px 25px;
     margin-bottom: 10px;
     height: 1.2em;
-    background: rgba(5, 93, 80, 0.3);
+    background: linear-gradient(45deg, rgb(0,23,20) rgb(8, 112, 97));
+    animation: gradient 20s ease infinite;
+    background-size: 400% 400%;
 }
 
 .buttons-box {
@@ -162,8 +178,9 @@ body {
 }
 
 .resume-btn {
-    cursor: pointer;
+    display: flex;
     justify-content: center;
+    cursor: pointer;
     background-color: #79620c;
     border: none;
     width: 6em;
@@ -173,8 +190,11 @@ body {
 }
 
 .resume-btn a {
+    align-self: center;
     text-decoration: none;
-    color: black;
+    color: rgb(17, 17, 17);
+    font-family: open-sans;
+    font-weight: bold;
     font-size: 15px;
 }
 
@@ -187,13 +207,24 @@ body {
     animation: resume-btn-fade-reverse .2s ease-in;
 }
 
+#email-instr {
+    background: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0 auto auto 20px;
+    color: white;
+    font-size: 16px;
+    font-family: open-sans;
+    opacity: 50%;
+}
+
 #email {
     background: none;
     border: none;
     text-decoration: none;
     padding: 0;
-    margin-left: 20px;
-    color: darkgoldenrod;
+    margin-left: 10px;
+    color: white;
     font-size: 16px;
     font-family: open-sans;
     opacity: 50%;
@@ -213,8 +244,6 @@ body {
 }
 
 #email-text {
-    border: 0;
-    padding: 0;
     display: inline;
     cursor: pointer;
     opacity: 50%;
@@ -299,7 +328,6 @@ body {
     font-family: Open-Sans;
     font-size: 35px;
     margin: 0 auto 1em .4em;
-    opacity: 75%;
     color: #79620c;
 }
 
