@@ -116,6 +116,12 @@
     text-align: center;
 }
 
+.sig-name {
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+}
+
 /*////////////////////////////
 /// Mobile Styling ///////*/
 
