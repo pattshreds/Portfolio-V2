@@ -181,7 +181,8 @@ body {
 }
 
 .resume-btn:hover {
-    background-color: #D1A60B;
+    /* background-color: #D1A60B; */
+    background-color: #e09f3e;
     animation: resume-btn-fade .2s ease-out;
 }
 
@@ -232,7 +233,8 @@ body {
 }
 
 #email-text:hover {
-    color: rgb(255, 149, 0);
+    color: #e09f3e;
+    font-weight: bold;
     opacity: 100%;
     animation: grow .2s ease-in 1 forwards;
 }
