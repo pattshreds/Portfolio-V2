@@ -181,7 +181,6 @@ body {
 }
 
 .resume-btn:hover {
-    /* background-color: #D1A60B; */
     background-color: #e09f3e;
     animation: resume-btn-fade .2s ease-out;
 }
@@ -191,8 +190,6 @@ body {
 }
 
 #email-instr {
-    background: none;
-    text-decoration: none;
     padding: 0;
     margin: 0 auto auto 20px;
     color: white;
@@ -210,19 +207,6 @@ body {
     color: white;
     font-size: 16px;
     font-family: open-sans;
-    opacity: 50%;
-}
-
-#email-mobile {
-    display: none;
-    background: none;
-    border: none;
-    text-decoration: none;
-    padding: 0;
-    margin: -6px 0 0 20px;
-    color: darkgoldenrod;
-    font-size: 16px;
-    font-family: Slabo;
     opacity: 50%;
 }
 
@@ -404,68 +388,60 @@ body {
     display: none;
 }
 
-/*////////////////////////////
-/// Mobile Styling ///////*/
-
 @media screen and (max-width: 500px) {
-
-    #email {
-        display: none;
-    }
-
-    #email-mobile {
+    .navbar {
         display: inline;
     }
-
-    #home-title {
-        font-size: 5em;
-    }
-
-    #home-sub {
-        margin-bottom: 2em;
-    }
-
-    .home-container {
-        height: 85vh;
-    }
-
-    .intro-body {
-        font-size: 25px;
-        width: 100%;
-    }
-
-    #featured-about {
-        width: 80%;
-    }
-
-    .carousel-nav {
-        margin-bottom: 10px;
-    }
-
-    .footer {
-    }
-
-    .to-top-link img {
-        width: 4em;
-        margin-top: 7em;
-    }
-
-    .to-top-text {
-        font-size: 25px;
-        display: block;
-        color: black;
-        text-decoration: none;
-        margin-top: -1.5em;
-    }
-
-    .close-menu-btn {
+    
+    .buttons-box {
+        margin-left: 10px;
         position: relative;
-        right: 0;
-        top: 0;
-        padding: 0;
-        margin: 0;
+        display: block;
     }
-}
+    
+    .resume-btn {
+        height: 2em;
+        border-radius: 15px;
+    }
+    
+    .resume-btn:hover {
+        animation-play-state: paused;
+    }
+    
+    .resume-btn:not(:hover) {
+        animation-play-state: paused;
+    }
+
+    #email-instr, #email {
+        position: relative;
+        left: 5.5em;
+        top: -2.2em;
+    }
+    
+    #email-text:hover {
+        animation-play-state: paused;
+    }
+    
+    .dropdown-btn {
+        position: relative;
+        left: 25.5em;
+        top: -5.5em;
+    }
+
+    .menu-img {
+        content: url(../images/menu-icon.png);
+    }
+    
+    .dropdown-btn:hover {
+        animation-play-state: paused;
+    }
+    
+    .dropdown-toggle-container {
+        width: 100vw;
+        height: 100vh;
+    }
+}    
+    
 
 @media screen and (max-width: 1200px) {
     .close-menu-btn {
@@ -475,8 +451,4 @@ body {
         padding: 0;
         margin: 0;
     }
-}
-
-@media screen and (max-width: 1500px) {
-
 }
