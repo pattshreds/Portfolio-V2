@@ -100,10 +100,10 @@ class Carousel extends HTMLElement {
             </ul>
 
             <button class="carousel-btn btn-prev">
-                <img src="../images/arrow-left.svg" alt="Previous">
+                <img src="./images/carousel-arrow.png" alt="Previous">
             </button>
             <button class="carousel-btn btn-next">
-                <img src="../images/arrow-right.svg" alt="Next">
+                <img src="./images/carousel-arrow.png" alt="Next" style="transform:rotate(180deg)">
             </button>
 
             <div class="carousel-nav">

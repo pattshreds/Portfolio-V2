@@ -3,7 +3,7 @@
 /// About Container ///////*/
 
 .about-container {
-    margin-top: 4em;
+    margin-top: 2.5em;
 }
 
 .about-img {
@@ -122,8 +122,27 @@
     margin-top: -10px;
 }
 
-/*////////////////////////////
-/// Mobile Styling ///////*/
+@media screen and (max-width:800px) {
+    .about-img {
+        margin-left: -4em;
+        width: 30em;
+        height: 20em;
+    }
+    #about-header-section {
+        top: -25em;
+        left: 22em;
+    }
+    .about-header {
+        font-size: 10em;
+    }
+    .about-text-body {
+        margin-top: -15em;
+    }
+    .stock-photo-1-container, .stock-photo-2-container, .stock-photo-3-container {
+        margin-top: 40%;
+    }
+    .stock-photo-2-container
+}
 
 @media screen and (max-width: 500px) {
 

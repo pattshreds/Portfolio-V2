@@ -1,0 +1,120 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 80%;
+    }
+}
+
+body {
+    background: linear-gradient(120deg, rgb(140, 148, 223), #be4a67, #335c67, rgb(29, 29, 43));
+    animation: gradient 5s 1 ease-in-out forwards;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+}
+
+.home-container {
+    padding: 0;
+    width: 80%;
+    height: 64vh;
+    margin: 0 auto;
+}
+
+#home-title {
+    font-family: Ranchers;
+    letter-spacing: 3px;
+    text-shadow: .3px .4px 1px black;
+    font-size: 120px;
+    margin: 2em auto 0 0;
+    color: #D1A60B;
+}
+
+#home-sub {
+    font-family: Open-Sans;
+    font-size: 30px;
+    margin: 0 auto 2em .4em;
+    color: #d7c171
+}
+
+.intro-body {
+    position: relative;
+    font-size: 1.5em;
+    width: 60%;
+    margin: 0 auto;
+    color: rgb(194, 213, 216);
+    font-family: Slabo;
+    letter-spacing: 1px;
+}
+
+/*///////////////////////////////
+/// Feature Container ///////*/
+
+.featured {
+    /* For some reason flexbox removes the 2 HR tags... */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    padding: 0;
+    margin-top: 4em;
+    overflow: hidden;
+}
+
+#featured-header {
+    font-size: 55px;
+    color: #D1A60B;
+    font-family: Ranchers;
+    text-shadow: .3px .4px 1px black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#hr-1, #hr-2 {
+    background: rgb(202, 202, 202);
+    height: 4px;
+    border: none;
+    box-shadow: .3px .4px 1px black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#hr-1 {
+    position: relative;
+    left: -8em;
+    margin-bottom: -1px;
+}
+
+#hr-2 {
+    position: relative;
+    right: -8em;
+}
+
+#featured-about {
+    padding: 30px 50px;
+    font-size: 1.4em;
+    letter-spacing: 1.5px;
+    line-height: 28px;
+    width: 60%;
+    margin: 0 auto;
+    font-family: Slabo;
+    color: rgb(194, 213, 216);
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .intro-body {
+        width: 100%;
+    }
+    .featured {
+        margin-top: 8em;
+    }
+    #featured-about {
+        width: 80%;
+}

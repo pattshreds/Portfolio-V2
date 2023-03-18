@@ -22,8 +22,8 @@
 }
 
 .individual-proj-box {
-    padding: 4em;
-    border-bottom: 2px dashed #D1A60B;
+    padding: 4em 0 4em 0;
+    border-bottom: 2px solid #D1A60B;
 }
 
 .proj-desc-container {
@@ -88,8 +88,15 @@
     font-family: Slabo;
 }
 
-/*////////////////////////////
-/// Mobile Styling ///////*/
+@media screen and (max-width: 800px) {
+    .proj-desc-container {
+        margin-left: 15em;
+    }
+    .proj-page-header{
+        font-size: 7em;
+    }
+}
+
 
 @media screen and (max-width: 500px) {
 

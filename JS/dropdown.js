@@ -3,6 +3,7 @@ const dropdownMenu = document.querySelector('.dropdown-toggle-container');
 const closeBtn = document.querySelector('.close-menu-btn');
 
 dropdownBtn.addEventListener('click', e => {
+    console.log("im working");
     dropdownMenu.style.display = 'flex';
     dropdownMenu.style.flexDirection = 'column';
     dropdownMenu.style.justifyContent = 'center';
