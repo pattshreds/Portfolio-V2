@@ -114,7 +114,7 @@
 @media screen and (max-width: 500px) {
     #header-section {
         position: relative;
-        width: 90vw;
+        width: 100vw;
         margin: 0;
         height: 20%;
     } 
