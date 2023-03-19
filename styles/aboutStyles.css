@@ -1,6 +1,4 @@
-
-/*/////////////////////////////
-/// About Container ///////*/
+/* main development viewport size 958x951 */
 
 .about-container {
     margin-top: 2.5em;
@@ -8,12 +6,13 @@
 
 .about-img {
     position: relative;
-    width: 40em;
-    height: 30em;
+    top: 8em;
+    left: -3em;
+    width: 35em;
+    height: 25em;
     transform: rotate(-90deg);
     object-fit: cover;
     overflow: hidden;
-    margin: 6em 0 0 4em;
     opacity: 75%;
     border-radius: 20px;
 }
@@ -21,27 +20,28 @@
 #about-header-section {
     position: relative;
     width: 40%;
-    top: -37em;
-    left: 40em;
+    top: -22em;
+    left: 28em;
 }
 
 .about-header {
     display: block;
     height: 1em;
-    margin: 0;
+    margin: 0;    
     font-family: Ranchers;
     color: #D1A60B;;
-    font-size: 14em;
+    font-size: 12em;
     letter-spacing: 2px;
 }
 
 .ah2 {
-    margin-bottom: .8em;
+    margin-bottom: .6em;
 }
 
 #hello-intro {
     width: 20%;
     font-size: 2em;
+    margin-bottom: 13em;
     color: darkorange;
 }
 
@@ -63,6 +63,7 @@
 .stock-photo-1-container {
     width: 35%;
     margin-right: 3em;
+    margin-top: 5em;
 }
 
 .stock-photo-1 {
@@ -73,6 +74,7 @@
 .stock-photo-2-container {
     width: 35%;
     margin-left: 3em;
+    margin-top: 6em;
 }
 
 .stock-photo-2 {
@@ -83,7 +85,7 @@
 .stock-photo-3-container {
     width: 35%;
     margin-right: 3em;
-    margin: 4em 3em 0 0;
+    margin: 10em 3em 0 0;
 }
 
 .stock-photo-3 {
@@ -139,38 +141,48 @@
         margin-top: -15em;
     }
     .stock-photo-1-container, .stock-photo-2-container, .stock-photo-3-container {
-        margin-top: 40%;
+        margin-top: 20%;        
     }
-    .stock-photo-2-container
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        width: 100vw;
+    }
 
     .about-img {
         width: 30em;
         height: 20em;
-        margin: 5em 0 15em -2em;
+        top: 0;
+        margin: 0 auto
+    }
+
+    #about-header-section {
+        width: 100vw;
+        left: 0;
+        top: 5em;
+        text-align: center;
+        left: 0;
     }
 
     .about-header {
-        position: relative;
-        top: -2em;
-        left: 14vw; 
         font-size: 5em;
     }
 
+    .ah2 {
+        margin-bottom: .8em;
+    }
+
     #hello-intro {
-        position: relative;
-        top: -3.2em;
-        left: 4em;
-        width: 20%;
+        width: 100vw;
         font-size: 2em;
         color: darkorange;
     }
 
     .about-text-body {
         text-align: center;
-        top: 0;
+        position: relative;
+        top: -19em;
         width: 90%;
         margin: 0 auto;
         margin-bottom: 2em;

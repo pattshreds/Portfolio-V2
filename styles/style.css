@@ -1,3 +1,6 @@
+/* main development viewport size 958x951 */
+
+
 @font-face {
     font-family: Ranchers;
     src: url(../fonts/Ranchers/Ranchers-Regular.ttf);
@@ -135,7 +138,7 @@
 
 
 body {
-    width: 100%;
+    width: 100vw;
     background: linear-gradient(120deg, #335c67, rgb(29, 29, 43));
     background-attachment: fixed;
     /* height: 100vh; */
@@ -360,6 +363,7 @@ body {
 /// Footer ///////*/
 
 .footer {
+    display: none;
     width: 100%;
     margin: 4em auto 2em auto;
     text-align: right;
@@ -439,6 +443,10 @@ body {
     .dropdown-toggle-container {
         width: 100vw;
         height: 100vh;
+    }
+
+    .footer {
+        display: none;
     }
 }    
     

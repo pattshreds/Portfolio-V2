@@ -1,3 +1,6 @@
+/* main development viewport size 958x951 */
+
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -108,7 +111,7 @@ body {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .intro-body {
         width: 100%;
     }
@@ -151,30 +154,5 @@ body {
 
     .carousel-nav {
         margin-bottom: 10px;
-    }
-
-    .footer {
-        display: none;
-    }
-
-    .to-top-link img {
-        width: 4em;
-        margin-top: 7em;
-    }
-
-    .to-top-text {
-        font-size: 25px;
-        display: block;
-        color: black;
-        text-decoration: none;
-        margin-top: -1.5em;
-    }
-
-    .close-menu-btn {
-        position: relative;
-        right: 0;
-        top: 0;
-        padding: 0;
-        margin: 0;
     }
 }
