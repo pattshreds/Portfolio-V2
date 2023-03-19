@@ -16,7 +16,7 @@ body {
     width: 100%;
     background-attachment: fixed;
     background-size: 400% 400%;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 0;
     margin: 0;
 
@@ -55,20 +55,17 @@ body {
     letter-spacing: 1px;
 }
 
-/*///////////////////////////////
-/// Feature Container ///////*/
-
-.featured {
+.tech-exp {
     /* For some reason flexbox removes the 2 HR tags... */
     /* display: flex; */
     /* flex-direction: column; */
     /* justify-content: center; */
     padding: 0;
-    margin-top: 4em;
-    overflow: hidden;
+    margin-top: 10em;
+    margin-bottom: 5em;
 }
 
-#featured-header {
+#tech-header {
     font-size: 55px;
     color: #D1A60B;
     font-family: Ranchers;
@@ -98,29 +95,84 @@ body {
     right: -8em;
 }
 
-#featured-about {
-    padding: 30px 50px;
-    font-size: 1.4em;
-    letter-spacing: 1.5px;
-    line-height: 28px;
-    width: 60%;
+#tech-about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 2em;
     margin: 0 auto;
-    font-family: Slabo;
-    color: rgb(194, 213, 216);
+    margin-top: 2em;
+    background: rgba(255, 255, 255, 0.197);
+    border-radius: 10px;
 }
-
+.tech-logo {
+    position: relative;
+    left: -10px;
+    max-width: 15%;
+    max-height: 15%;
+    object-fit: contain;
+    margin-bottom: .2em;
+}    
+.html {
+    /* width: 19%; */
+}
+.css {
+    width: 23%;
+}
+.node {
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+    width: 19%;
+}
+.psql {
+    width: 17%;
+}
+.react {
+    margin-bottom: 1em;
+}   
+.mongo {
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+}
+.git {
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
 
 
 @media screen and (max-width: 1000px) {
     .intro-body {
         width: 100%;
     }
-    .featured {
-        margin-top: 8em;
-    }
-    #featured-about {
+
+    #tech-about {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         width: 80%;
-}
+    }
+    .tech-logo {
+        position: relative;
+        max-width: 30%;
+        max-height: 30%;
+        object-fit: contain;
+    }    
+    .html {
+        width: 19%;
+    }
+    .css {
+        width: 23%;
+    }
+    .node {        
+        stroke: 2px;
+        border-radius: 10px;
+        width: 19%;
+    }
+    .psql {
+        width: 17%;
+    } 
+}    
 
 @media screen and (max-width: 500px) {
 
@@ -148,7 +200,7 @@ body {
         width: 100%;
     }
 
-    #featured-about {
+    #tech-about {
         width: 80%;
     }
 
