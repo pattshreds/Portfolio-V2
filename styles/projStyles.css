@@ -112,6 +112,37 @@
 
 
 @media screen and (max-width: 500px) {
+
+    @keyframes drop-in {
+        0% {
+            top: -7em;
+        }
+        70% {
+            top: .4em;
+        }
+        100% {
+            top: 0;
+        }
+    }
+
+    @keyframes slide-in {
+        0% {
+            right: -5em;
+        }
+        100% {
+            right: 0;
+        }
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
     #header-section {
         position: relative;
         width: 100vw;
@@ -120,13 +151,23 @@
     } 
     
     .proj-page-header {
+        position: relative;
         display: inline;
         padding: 0;
         margin: 0;
         font-size: 6em;
-        font-family: Ranchers;
         text-align: center;
     }
+
+    .my {
+        animation: drop-in 1s;
+    }
+
+    .work {
+        right: -5em;
+        animation: slide-in .5s 1s forwards;
+    }
+
 
     .individual-proj-box {
         width: 90vw;
@@ -136,9 +177,11 @@
     }
     
     .proj-desc-container {
+        opacity: 0;
         width: 100%;
         margin-left: 0;
         text-align: center;
+        animation: appear 1s 2s forwards;
     }
     
     .desc-home {
