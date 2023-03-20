@@ -36,7 +36,7 @@
         <hr id='hr-1' />
         <p id='tech-header'>Tech Experience</p>
         <hr id='hr-2' />
-        <section id='tech-about'>
+        <section class='tech-about'>
             <img src="./images/tech/1.png" alt="JS" class="tech-logo js">
             <img src="./images/tech/2.png" alt="HTML" class="tech-logo html">
             <img src="./images/tech/3.png" alt="CSS" class="tech-logo css">
@@ -70,5 +70,15 @@
 <script src="JS/carousel.js"></script>
 <script src="JS/dropdown.js"></script>
 <script src="JS/copyText.js"></script>
+<script>
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('tech-about-animation')
+            }
+        });
+    });
+    observer.observe(document.querySelector('.tech-about'));
+</script>
 </body>
 </html>

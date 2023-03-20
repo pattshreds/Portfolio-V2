@@ -10,6 +10,15 @@
     }
 }
 
+@keyframes expand {
+    0% {
+        transform: scale(0, .025);
+    }
+    50% {
+        transform: scale(1, .025);
+    }
+}
+
 body {
     background: linear-gradient(120deg, rgb(140, 148, 223), #be4a67, #335c67, rgb(29, 29, 43));
     animation: gradient 5s 1 ease-in-out forwards;
@@ -95,7 +104,7 @@ body {
     right: -8em;
 }
 
-#tech-about {
+.tech-about {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -106,6 +115,10 @@ body {
     background: rgba(255, 255, 255, 0.197);
     border-radius: 10px;
 }
+.tech-about-animation {
+    animation: expand 1s;
+}
+
 .tech-logo {
     position: relative;
     left: -10px;
