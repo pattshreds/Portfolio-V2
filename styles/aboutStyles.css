@@ -154,19 +154,19 @@
 }
 
 @media screen and (max-width: 500px) {
-    body {
-        width: 100vw;
+    /* Having a hard-to-find horizontal scroll bug */
+    * {
+        max-width: 100%;
     }
-
     .about-img {
+        position: relative;
         width: 30em;
         height: 20em;
         top: 0;
-        left: 50px;
+        left: 0.5px;
     }
 
     #about-header-section {
-        width: 100vw;
         left: 0;
         top: 5em;
         text-align: center;
@@ -182,7 +182,6 @@
     }
 
     #hello-intro {
-        width: 100vw;
         font-size: 2em;
         color: darkorange;
     }
@@ -214,23 +213,27 @@
     }
 
     .stock-photo-2-container {
+        border: 2px solid red;
         width: 70%;
         margin: 15px auto 10px auto;
         align-self: center;
     }
 
     .stock-photo-2 {
+        border: 2px solid green;
         width: 100%;
         border-radius: 2%;
     }
 
     .stock-photo-3-container {
+        border: 2px solid red;
         width: 70%;
         margin: 15px auto 10px auto;
         align-self: center;
     }
 
     .stock-photo-3 {
+        border: 2px solid green;
         width: 100%;
         border-radius: 2%;
     }
@@ -238,8 +241,6 @@
     .p-4,
     .sig {
         text-align: center;
+        border: 2px solid yellow;
     }
-}
-
-@media screen and (min-width: 1540px) {
 }

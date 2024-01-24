@@ -9,7 +9,7 @@ class Nav extends HTMLElement {
                 <button class="resume-btn">
                     <a href="images/Resume_PM.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 </button>
-                <p id='email-instr'> click email to copy </p>
+                <p id='email-instr'>click email to copy</p>
                 <button id='email' onclick='copyText()'>
                     <p id='email-text'>patrick.mcguigan5@gmail.com</p> 
                 </button> 
