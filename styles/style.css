@@ -1,16 +1,9 @@
 /* main development viewport size 958x951 */
 
-
-@font-face {
-    font-family: Ranchers;
-    src: url(../fonts/Ranchers/Ranchers-Regular.ttf);
-}
-
 @font-face {
     font-family: Open-Sans;
-    src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
 }
-
 
 @font-face {
     font-family: Slabo;
@@ -20,18 +13,18 @@
 /*///////////////////////
 /// Keyframes ///////*/
 
-@keyframes resume-btn-fade {
+@keyframes btn-fade {
     0% {
         background-color: #79620c;
     }
     100% {
-        background-color: #D1A60B;
+        background-color: #d1a60b;
     }
 }
 
-@keyframes resume-btn-fade-reverse {
+@keyframes btn-fade-reverse {
     0% {
-        background-color: #D1A60B;
+        background-color: #d1a60b;
     }
     100% {
         background-color: #79620c;
@@ -41,10 +34,11 @@
 @keyframes grow {
     0% {
         font-size: 16px;
-        color: darkgoldenrod;
     }
     100% {
         font-size: 16.6px;
+        color: #d7c171;
+        opacity: 100%;
     }
 }
 
@@ -96,27 +90,39 @@
     }
 }
 
-@keyframes loop {
+@keyframes dropdown-menu-img-1 {
     0% {
-        width: 5em;
+        right: 0;
     }
     50% {
-        width: 4em;
+        right: -20px;
     }
     100% {
-        width: 5em;
+        right: 0;
     }
 }
 
-@keyframes loop2 {
+@keyframes dropdown-menu-img-2 {
     0% {
-        width: 3.3em;
+        top: 0;
     }
     50% {
-        width: 2.3em;
+        top: 20px;
     }
     100% {
-        width: 3.3em;
+        top: 0;
+    }
+}
+
+@keyframes dropdown-menu-img-3 {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: -10px;
+    }
+    100% {
+        left: 0;
     }
 }
 
@@ -136,16 +142,15 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-
 body {
     width: 100vw;
-    background: linear-gradient(120deg, #335c67, rgb(29, 29, 43));
+    /* background: linear-gradient(120deg, #335c67, rgb(29, 29, 43)); */
+    background: linear-gradient(120deg, rgb(140, 148, 223), rgb(29, 29, 43));
     background-attachment: fixed;
     /* height: 100vh; */
     padding: 0;
     margin: 0;
 }
-
 
 /*////////////////////
 /// Navbar ///////*/
@@ -154,7 +159,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 15px 25px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     height: 1.2em;
 }
 
@@ -178,18 +183,19 @@ body {
     align-self: center;
     text-decoration: none;
     color: rgb(17, 17, 17);
-    font-family: open-sans;
+    font-family: tahoma;
+    letter-spacing: 1.5px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .resume-btn:hover {
-    background-color: #e09f3e;
-    animation: resume-btn-fade .2s ease-out;
+    background-color: #d7c171;
+    animation: btn-fade 0.2s ease-out;
 }
 
 .resume-btn:not(:hover) {
-    animation: resume-btn-fade-reverse .2s ease-in;
+    animation: btn-fade-reverse 0.2s ease-in;
 }
 
 #email-instr {
@@ -197,7 +203,7 @@ body {
     margin: 0 auto auto 20px;
     color: white;
     font-size: 16px;
-    font-family: open-sans;
+    font-family: Open-Sans;
     opacity: 50%;
 }
 
@@ -209,7 +215,7 @@ body {
     margin-left: 10px;
     color: white;
     font-size: 16px;
-    font-family: open-sans;
+    font-family: Open-Sans;
     opacity: 50%;
 }
 
@@ -220,10 +226,11 @@ body {
 }
 
 #email-text:hover {
-    color: #e09f3e;
-    font-weight: bold;
-    opacity: 100%;
-    animation: grow .2s ease-in 1 forwards;
+    animation: grow 0.2s ease-in 1 forwards;
+}
+
+#email:hover {
+    animation: grow 0.2s ease-in 1 forwards;
 }
 
 .dropdown-btn {
@@ -232,11 +239,25 @@ body {
     border: none;
     text-decoration: none;
     width: 5em;
-    filter: invert(95%) sepia(8%) saturate(409%) hue-rotate(144deg) brightness(92%) contrast(83%);
+    filter: invert(95%) sepia(8%) saturate(409%) hue-rotate(144deg)
+        brightness(92%) contrast(83%);
 }
 
-.dropdown-btn:hover {
-    animation: loop .8s infinite;
+.menu-img {
+    position: relative;
+    width: 30%;
+}
+
+.dropdown-btn:hover .menu-img-1 {
+    animation: dropdown-menu-img-1 1s infinite;
+}
+
+.dropdown-btn:hover .menu-img-2 {
+    animation: dropdown-menu-img-2 1s infinite;
+}
+
+.dropdown-btn:hover .menu-img-3 {
+    animation: dropdown-menu-img-3 1s infinite;
 }
 
 .dropdown-toggle-container {
@@ -246,36 +267,39 @@ body {
     height: 100%;
     background-color: rgb(206, 181, 255);
     z-index: 1;
-    font-family: Ranchers;
+    font-family: Open-Sans;
     font-size: 4em;
     opacity: 90%;
 }
 
 .close-menu-btn {
     position: relative;
+    font-family: 'Times New Roman';
     right: -9em;
-    top: -.5em;
+    top: -0.5em;
     padding: 0;
     cursor: pointer;
     margin: 0;
 }
 
 .close-menu-btn:hover {
-    animation: whoa .6s linear infinite;
+    animation: whoa 0.9s linear infinite;
 }
 
 .dropdown-item {
+    font-family: Open-Sans;
     cursor: pointer;
     text-decoration: none;
+    letter-spacing: -5px;
+    font-weight: bold;
     color: black;
     margin: 8px;
 }
 
 .dropdown-item:hover {
     position: relative;
-    animation: hop 200ms ease-in-out  1;
+    animation: hop 200ms ease-in-out 1;
 }
-
 
 /*//////////////////////
 /// Carousel ///////*/
@@ -295,7 +319,8 @@ body {
     margin: 0;
 }
 
-.slide, .current-slide {
+.slide,
+.current-slide {
     height: 100%;
     list-style: none;
 }
@@ -350,13 +375,13 @@ body {
     border-radius: 50%;
     width: 1em;
     height: 1em;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, 0.3);
     margin: 1em 5px;
     cursor: pointer;
 }
 
 .current-dot {
-    background: rgba(0, 0, 0, .75)
+    background: rgba(0, 0, 0, 0.75);
 }
 
 /*////////////////////
@@ -385,7 +410,7 @@ body {
 }
 
 .to-top-btn:hover {
-    animation: loop2 .8s infinite;
+    animation: loop2 0.8s infinite;
 }
 
 .to-top-text {
@@ -396,36 +421,37 @@ body {
     .navbar {
         display: inline;
     }
-    
+
     .buttons-box {
         margin-left: 10px;
         position: relative;
         display: block;
     }
-    
+
     .resume-btn {
         height: 2em;
         border-radius: 15px;
     }
-    
+
     .resume-btn:hover {
         animation-play-state: paused;
     }
-    
+
     .resume-btn:not(:hover) {
         animation-play-state: paused;
     }
 
-    #email-instr, #email {
+    #email-instr,
+    #email {
         position: relative;
         left: 5.5em;
         top: -2.2em;
     }
-    
+
     #email-text:hover {
         animation-play-state: paused;
     }
-    
+
     .dropdown-btn {
         position: relative;
         left: 25.5em;
@@ -435,11 +461,11 @@ body {
     .menu-img {
         content: url(../images/menu-icon.png);
     }
-    
+
     .dropdown-btn:hover {
         animation-play-state: paused;
     }
-    
+
     .dropdown-toggle-container {
         width: 100vw;
         height: 100vh;
@@ -448,8 +474,7 @@ body {
     .footer {
         display: none;
     }
-}    
-    
+}
 
 @media screen and (max-width: 1200px) {
     .close-menu-btn {

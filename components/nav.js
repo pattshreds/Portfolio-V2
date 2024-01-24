@@ -16,7 +16,9 @@ class Nav extends HTMLElement {
             </div>
             <div class="dropdown">
                 <button class="dropdown-btn">
-                    <img src="images/arrow-thin-bottom-icon.svg" alt="dropdown" class="menu-img">
+                    <img src="images/icons8-square-30.png" alt="dropdown" class="menu-img menu-img-1">
+                    <img src="images/icons8-square-30.png" alt="dropdown" class="menu-img menu-img-2">
+                    <img src="images/icons8-square-30.png" alt="dropdown" class="menu-img menu-img-3">
                 </button>
             </div>
         </nav>

@@ -1,34 +1,38 @@
 /* main development viewport size 958x951 */
 
-
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 40%;
     }
     100% {
-        background-position: 100% 80%;
+        background-position: 100% 100%;
     }
 }
 
 @keyframes expand {
     0% {
-        transform: scale(0, .025);
+        transform: scale(0, 0.025);
     }
     50% {
-        transform: scale(1, .025);
+        transform: scale(1, 0.025);
     }
 }
 
 body {
-    background: linear-gradient(120deg, rgb(140, 148, 223), #be4a67, #335c67, rgb(29, 29, 43));
-    animation: gradient 5s 1 ease-in-out forwards;
+    background: linear-gradient(
+        120deg,
+        #d7c171,
+        #848484,
+        rgb(140, 148, 223),
+        rgb(29, 29, 43)
+    );
+    animation: gradient 3s 1 ease-in-out forwards;
     width: 100%;
     background-attachment: fixed;
     background-size: 400% 400%;
     /* height: 100vh; */
     padding: 0;
     margin: 0;
-
 }
 
 .home-container {
@@ -39,19 +43,19 @@ body {
 }
 
 #home-title {
-    font-family: Ranchers;
-    letter-spacing: 3px;
-    text-shadow: .3px .4px 1px black;
+    font-family: Open-Sans;
+    letter-spacing: -5px;
+    text-shadow: 0.3px 0.4px 1px black;
     font-size: 120px;
-    margin: 1em auto 0 0;
-    color: #D1A60B;
+    margin: -2px auto -2px 0;
+    color: rgb(194, 213, 216);
 }
 
 #home-sub {
     font-family: Open-Sans;
     font-size: 30px;
-    margin: 0 auto 2em .4em;
-    color: #d7c171
+    margin: 0 auto 2em 0.4em;
+    color: #d7c171;
 }
 
 .intro-body {
@@ -76,32 +80,24 @@ body {
 
 #tech-header {
     font-size: 55px;
-    color: #D1A60B;
-    font-family: Ranchers;
-    text-shadow: .3px .4px 1px black;
+    color: #d7c171;
+    font-family: Open-Sans;
+    text-shadow: 0.3px 0.4px 1px black;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-#hr-1, #hr-2 {
+#hr-1 {
+    position: relative;
+    left: 0;
+    margin-bottom: -1px;
     background: rgb(202, 202, 202);
     height: 4px;
     border: none;
-    box-shadow: .3px .4px 1px black;
+    box-shadow: 0.3px 0.4px 1px black;
     border-radius: 50%;
     overflow: hidden;
-}
-
-#hr-1 {
-    position: relative;
-    left: -8em;
-    margin-bottom: -1px;
-}
-
-#hr-2 {
-    position: relative;
-    right: -8em;
 }
 
 .tech-about {
@@ -125,8 +121,8 @@ body {
     max-width: 15%;
     max-height: 15%;
     object-fit: contain;
-    margin-bottom: .2em;
-}    
+    margin-bottom: 0.2em;
+}
 .html {
     /* width: 19%; */
 }
@@ -143,7 +139,7 @@ body {
 }
 .react {
     margin-bottom: 1em;
-}   
+}
 .mongo {
     padding: 0 10px 0 10px;
     border-radius: 10px;
@@ -153,8 +149,12 @@ body {
     border-radius: 10px;
 }
 
-
 @media screen and (max-width: 1000px) {
+    #home-title {
+        line-height: 115px;
+        margin-bottom: 20px;
+    }
+
     .intro-body {
         width: 100%;
     }
@@ -170,37 +170,36 @@ body {
         max-width: 30%;
         max-height: 30%;
         object-fit: contain;
-    }    
+    }
     .html {
         width: 19%;
     }
     .css {
         width: 23%;
     }
-    .node {        
+    .node {
         stroke: 2px;
         border-radius: 10px;
         width: 19%;
     }
     .psql {
         width: 17%;
-    } 
-}    
+    }
+}
 
 @media screen and (max-width: 500px) {
-
     #email {
         display: block;
     }
 
     #home-title {
         font-size: 5.5em;
-        margin-left: -.2em;
+        margin-left: -0.2em;
     }
 
     #home-sub {
         font-size: 1.5em;
-        margin-left: -.2em;
+        margin-left: -0.2em;
         margin-bottom: 2em;
     }
 

@@ -27,22 +27,22 @@
 .about-header {
     display: block;
     height: 1em;
-    margin: 0;    
-    font-family: Ranchers;
-    color: #D1A60B;;
+    margin: 0;
+    font-family: Open-Sans;
+    color: rgb(194, 213, 216);
     font-size: 12em;
     letter-spacing: 2px;
 }
 
 .ah2 {
-    margin-bottom: .6em;
+    margin-bottom: 0.6em;
 }
 
 #hello-intro {
     width: 20%;
     font-size: 2em;
     margin-bottom: 13em;
-    color: darkorange;
+    color: #d7c171;
 }
 
 .about-text-body {
@@ -52,12 +52,12 @@
     margin: 0 auto;
     margin-top: -34em;
     margin-bottom: 4em;
-    font-size: .8em;
+    font-size: 0.8em;
     font-family: Slabo;
     padding: 2em;
     border-radius: 40px;
     color: black;
-    background-color: rgba(239, 245, 255, .2);
+    background-color: rgba(239, 245, 255, 0.2);
 }
 
 .stock-photo-1-container {
@@ -97,7 +97,7 @@
     padding: 0;
     font-size: 25px;
     line-height: 35px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
 }
 
 .p-1 {
@@ -113,7 +113,8 @@
     margin-bottom: 4em;
 }
 
-.p-4, .sig {
+.p-4,
+.sig {
     width: 100%;
     text-align: center;
 }
@@ -124,24 +125,31 @@
     margin-top: -10px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
     .about-img {
-        margin-left: -4em;
+        margin-left: 0em;
         width: 30em;
         height: 20em;
     }
     #about-header-section {
-        top: -25em;
-        left: 22em;
+        top: -10em;
+        left: 25em;
     }
     .about-header {
-        font-size: 10em;
+        font-size: 5em;
+        font-weight: bold;
+    }
+    #hello-intro {
+        margin-top: 5em;
+        margin-bottom: 10em;
     }
     .about-text-body {
-        margin-top: -15em;
+        margin-top: -20em;
     }
-    .stock-photo-1-container, .stock-photo-2-container, .stock-photo-3-container {
-        margin-top: 20%;        
+    .stock-photo-1-container,
+    .stock-photo-2-container,
+    .stock-photo-3-container {
+        margin-top: 20%;
     }
 }
 
@@ -154,7 +162,7 @@
         width: 30em;
         height: 20em;
         top: 0;
-        margin: 0 auto
+        left: 50px;
     }
 
     #about-header-section {
@@ -162,7 +170,7 @@
         left: 0;
         top: 5em;
         text-align: center;
-        left: 0;
+        left: 20px;
     }
 
     .about-header {
@@ -170,7 +178,7 @@
     }
 
     .ah2 {
-        margin-bottom: .8em;
+        margin-bottom: 0.8em;
     }
 
     #hello-intro {
@@ -199,7 +207,7 @@
         margin: 15px auto 10px auto;
         align-self: center;
     }
-    
+
     .stock-photo-1 {
         width: 100%;
         border-radius: 2%;
@@ -210,31 +218,28 @@
         margin: 15px auto 10px auto;
         align-self: center;
     }
-    
+
     .stock-photo-2 {
         width: 100%;
         border-radius: 2%;
     }
-    
+
     .stock-photo-3-container {
         width: 70%;
         margin: 15px auto 10px auto;
         align-self: center;
     }
-    
+
     .stock-photo-3 {
         width: 100%;
         border-radius: 2%;
     }
 
-    .p-4, .sig {
+    .p-4,
+    .sig {
         text-align: center;
     }
-
 }
 
 @media screen and (min-width: 1540px) {
-
-    
-
 }
