@@ -28,9 +28,10 @@
     display: block;
     height: 1em;
     margin: 0;
-    font-family: Open-Sans;
+    font-family: Slabo;
     color: rgb(194, 213, 216);
     font-size: 12em;
+    font-weight: bold;
     letter-spacing: 2px;
 }
 
@@ -167,10 +168,12 @@
     }
 
     #about-header-section {
-        left: 0;
+        position: relative;
+        left: 5em;
         top: 5em;
+        /* Needed to add this width to properly center the content */
+        width: 60vw;
         text-align: center;
-        left: 20px;
     }
 
     .about-header {
@@ -178,12 +181,13 @@
     }
 
     .ah2 {
-        margin-bottom: 0.8em;
+        left: 0;
+        margin-bottom: -1em;
     }
 
     #hello-intro {
         font-size: 2em;
-        color: darkorange;
+        padding-bottom: 20px;
     }
 
     .about-text-body {
@@ -199,6 +203,7 @@
     .about-p {
         width: 90%;
         margin: 0 auto;
+        margin: 2em auto 2em auto;
     }
 
     .stock-photo-1-container {

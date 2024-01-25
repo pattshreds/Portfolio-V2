@@ -20,7 +20,7 @@
     line-height: 160px;
     font-family: Open-Sans;
     text-align: right;
-    color: #d1a60b;
+    color: rgb(194, 213, 216);
 }
 
 .individual-proj-box {
@@ -53,7 +53,7 @@
     font-size: 4em;
     letter-spacing: 2px;
     margin: auto auto 0 1em;
-    color: rgb(255, 149, 0);
+    color: #d7c171;
 }
 
 .btn-home {
@@ -79,7 +79,7 @@
 }
 
 .proj-link-btn:hover {
-    background-color: #d1a60b;
+    background-color: #d7c171;
 }
 
 #more-info {
@@ -196,7 +196,6 @@
         font-size: 4em;
         letter-spacing: 3px;
         margin: auto auto 0.5em 0;
-        color: rgb(255, 149, 0);
     }
 
     .carousel-home {
