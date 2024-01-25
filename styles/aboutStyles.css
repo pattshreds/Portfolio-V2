@@ -218,27 +218,23 @@
     }
 
     .stock-photo-2-container {
-        border: 2px solid red;
         width: 70%;
         margin: 15px auto 10px auto;
         align-self: center;
     }
 
     .stock-photo-2 {
-        border: 2px solid green;
         width: 100%;
         border-radius: 2%;
     }
 
     .stock-photo-3-container {
-        border: 2px solid red;
         width: 70%;
         margin: 15px auto 10px auto;
         align-self: center;
     }
 
     .stock-photo-3 {
-        border: 2px solid green;
         width: 100%;
         border-radius: 2%;
     }
