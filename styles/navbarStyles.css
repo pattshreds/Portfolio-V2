@@ -1,0 +1,76 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    margin-bottom: 100px;
+    height: 1.2em;
+}
+
+.buttons-box {
+    display: flex;
+}
+
+.resume-btn {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #79620c;
+    border: none;
+    width: 6em;
+    height: 1.5em;
+    opacity: 100%;
+    border-radius: 3px;
+}
+
+.resume-btn a {
+    align-self: center;
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    font-family: tahoma;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.resume-btn:hover {
+    background-color: #d7c171;
+    animation: btn-fade 0.2s ease-out;
+}
+
+.resume-btn:not(:hover) {
+    animation: btn-fade-reverse 0.2s ease-in;
+}
+
+#email-instr {
+    margin: 0 0 auto 20px;
+    color: white;
+    font-size: 16px;
+    font-family: Open-Sans;
+    opacity: 50%;
+}
+
+#email {
+    background: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    font-family: Open-Sans;
+    opacity: 50%;
+}
+
+#email-text {
+    display: inline;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+#email-text:hover {
+    animation: grow 0.2s ease-in 1 forwards;
+}
+
+#email:hover {
+    animation: grow 0.2s ease-in 1 forwards;
+}

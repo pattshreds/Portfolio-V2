@@ -63,8 +63,7 @@
 
 .stock-photo-1-container {
     width: 35%;
-    margin-right: 3em;
-    margin-top: 5em;
+    margin-right: 15px;
 }
 
 .stock-photo-1 {
@@ -74,8 +73,7 @@
 
 .stock-photo-2-container {
     width: 35%;
-    margin-left: 3em;
-    margin-top: 6em;
+    margin-left: 15px;
 }
 
 .stock-photo-2 {
@@ -84,9 +82,10 @@
 }
 
 .stock-photo-3-container {
+    position: relative;
+    top: 5em;
     width: 35%;
-    margin-right: 3em;
-    margin: 10em 3em 0 0;
+    margin-right: 15px;
 }
 
 .stock-photo-3 {
@@ -111,19 +110,6 @@
 
 .p-3 {
     width: 55%;
-    margin-bottom: 4em;
-}
-
-.p-4,
-.sig {
-    width: 100%;
-    text-align: center;
-}
-
-.sig-name {
-    width: 100%;
-    text-align: center;
-    margin-top: -10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -237,11 +223,5 @@
     .stock-photo-3 {
         width: 100%;
         border-radius: 2%;
-    }
-
-    .p-4,
-    .sig {
-        text-align: center;
-        border: 2px solid yellow;
     }
 }

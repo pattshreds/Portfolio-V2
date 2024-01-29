@@ -1,0 +1,18 @@
+.contact-container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.contact-body {
+    text-align: center;
+    font-weight: bold;
+}
+
+.g-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.col-12 {
+    text-align: center;
+}

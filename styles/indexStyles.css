@@ -36,10 +36,12 @@ body {
 }
 
 .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
-    width: 80%;
+    width: 100%;
     height: 64vh;
-    margin: 0 auto;
 }
 
 #home-title {
@@ -47,22 +49,21 @@ body {
     letter-spacing: -5px;
     text-shadow: 0.3px 0.4px 1px black;
     font-size: 120px;
-    margin: -2px auto -2px 0;
     color: rgb(194, 213, 216);
 }
 
 #home-sub {
+    position: relative;
+    top: -3em;
     font-family: Open-Sans;
     font-size: 30px;
-    margin: 0 auto 2em 0.4em;
     color: #d7c171;
 }
 
 .intro-body {
-    position: relative;
+    text-align: center;
     font-size: 1.5em;
     width: 60%;
-    margin: 0 auto;
     color: rgb(194, 213, 216);
     font-family: Slabo;
     letter-spacing: 1px;
