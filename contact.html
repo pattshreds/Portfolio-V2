@@ -17,15 +17,30 @@
         <link rel="stylesheet" href="styles/menuStyles.css" />
     </head>
     <body>
+        <style>
+            @media screen and (max-width: 500px) {
+                .dropdown {
+                    margin-left: -5em;
+                }
+
+                .buttons-box {
+                    top: -0.4em;
+                }
+
+                .resume-btn {
+                    width: 80px;
+                    height: 25px;
+                }
+                #email-instr {
+                    top: -11px;
+                }
+            }
+        </style>
         <menu-component></menu-component>
 
         <a name="top"></a>
 
         <nav-component></nav-component>
-
-        <!-------------------------------------
-    // Main Body /////////////////////////
-    -------------------------------------->
 
         <div class="contact-container">
             <section class="contact-body">
@@ -121,10 +136,6 @@
                 </form>
             </div>
         </div>
-
-        <!-------------------------------------
-    // Footer ////////////////////////////
-    -------------------------------------->
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

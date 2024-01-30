@@ -16,3 +16,11 @@
 .col-12 {
     text-align: center;
 }
+
+.form-control {
+    margin-top: -1em;
+}
+
+.textarea {
+    margin-top: 1em;
+}

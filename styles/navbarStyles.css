@@ -74,3 +74,54 @@
 #email:hover {
     animation: grow 0.2s ease-in 1 forwards;
 }
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        display: inline;
+    }
+
+    .buttons-box {
+        margin-left: 10px;
+        position: relative;
+        display: block;
+    }
+
+    .resume-btn {
+        height: 2em;
+        border-radius: 15px;
+    }
+
+    .resume-btn:hover {
+        animation-play-state: paused;
+    }
+
+    .resume-btn:not(:hover) {
+        animation-play-state: paused;
+    }
+
+    #email-instr,
+    #email {
+        position: relative;
+        left: 5.5em;
+        top: -10px;
+        overflow-x: hidden;
+    }
+
+    #email-instr {
+        position: absolute;
+    }
+
+    #email-text:hover {
+        animation-play-state: paused;
+    }
+
+    .dropdown-btn {
+        position: relative;
+        left: 27em;
+        top: -4.2em;
+    }
+
+    .dropdown-btn:hover {
+        animation-play-state: paused;
+    }
+}

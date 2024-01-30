@@ -65,3 +65,20 @@
     position: relative;
     animation: hop 200ms ease-in-out 1;
 }
+
+@media screen and (max-width: 500px) {
+    .dropdown-toggle-container {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .close-menu-btn {
+        position: relative;
+        right: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+    }
+}
