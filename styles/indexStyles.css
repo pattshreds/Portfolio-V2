@@ -35,11 +35,8 @@ body {
 }
 
 .home-container {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
-    /* padding: 0; */
-    /* height: 64vh; */
 }
 
 #home-title {
