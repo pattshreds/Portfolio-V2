@@ -141,7 +141,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    /* Having a hard-to-find horizontal scroll bug */
     * {
         max-width: 100%;
     }
@@ -157,8 +156,6 @@
         position: relative;
         left: 5em;
         top: 5em;
-        /* Needed to add this width to properly center the content */
-        width: 60vw;
         text-align: center;
     }
 
@@ -179,7 +176,7 @@
     .about-text-body {
         text-align: center;
         position: relative;
-        top: -19em;
+        top: 20em;
         width: 90%;
         margin: 0 auto;
         margin-bottom: 2em;
