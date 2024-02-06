@@ -102,7 +102,7 @@
     #email-instr,
     #email {
         position: relative;
-        left: 75px;
+        left: 85px;
         top: -10px;
         overflow-x: hidden;
     }
@@ -117,7 +117,7 @@
 
     .dropdown-btn {
         position: relative;
-        left: 24em;
+        left: 25em;
         top: -4.2em;
     }
 
