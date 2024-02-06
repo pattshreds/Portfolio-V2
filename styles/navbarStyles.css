@@ -33,7 +33,7 @@
 }
 
 .resume-btn:hover {
-    background-color: #d7c171;
+    background-color: var(--primary-yellow);
     animation: btn-fade 0.2s ease-out;
 }
 
@@ -43,7 +43,7 @@
 
 #email-instr {
     margin: 0 0 auto 20px;
-    color: white;
+    color: var(--primary-white);
     font-size: 16px;
     font-family: Open-Sans;
     opacity: 50%;
@@ -55,7 +55,7 @@
     text-decoration: none;
     padding: 0;
     margin-left: 10px;
-    color: white;
+    color: var(--primary-white);
     font-size: 16px;
     font-family: Open-Sans;
     opacity: 50%;

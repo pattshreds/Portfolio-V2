@@ -51,7 +51,7 @@
     animation: whoa 0.9s linear infinite;
 }
 
-.dropdown-item {
+.dropdown-menu-item {
     font-family: Open-Sans;
     cursor: pointer;
     text-decoration: none;
@@ -61,7 +61,7 @@
     margin: 8px;
 }
 
-.dropdown-item:hover {
+.dropdown-menu-item:hover {
     position: relative;
     animation: hop 200ms ease-in-out 1;
 }

@@ -137,6 +137,8 @@
 
 :root {
     --primary-yellow: #d7c171;
+    --primary-white: rgb(194, 213, 216);
+    --primary-grey: rgba(239, 245, 255, 0.2);
 }
 
 body {

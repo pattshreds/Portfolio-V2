@@ -30,7 +30,7 @@
     letter-spacing: -3px;
     text-shadow: 0.3px 0.4px 1px black;
     font-size: 120px;
-    color: rgb(194, 213, 216);
+    color: var(--primary-white);
 }
 
 #home-sub {
@@ -45,7 +45,7 @@
     text-align: center;
     font-size: 1.5em;
     width: 60%;
-    color: rgb(194, 213, 216);
+    color: var(--primary-white);
     font-family: Slabo;
     letter-spacing: 1px;
 }
@@ -70,7 +70,7 @@
     position: relative;
     left: 0;
     margin-bottom: 1em;
-    background: rgb(202, 202, 202);
+    background: var(--primary-white);
     height: 4px;
     border: none;
     box-shadow: 0.3px 0.4px 1px black;
@@ -83,7 +83,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 1em;
-    background: rgba(255, 255, 255, 0.197);
+    background: var(--primary-grey);
     border-radius: 10px;
 }
 .tech-about-animation {
@@ -91,7 +91,7 @@
 }
 
 .tech-logo {
-    background-color: rgb(194, 213, 216);
+    background-color: var(--primary-white);
     width: 6em;
     max-width: 96px;
     height: 96px;
