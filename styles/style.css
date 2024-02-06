@@ -10,9 +10,6 @@
     src: url(../fonts/Slabo_27px/Slabo27px-Regular.ttf);
 }
 
-/*/////////////////////// border
-/// Keyframes ///////*/
-
 @keyframes btn-fade {
     0% {
         background-color: #79620c;
@@ -138,16 +135,14 @@
     }
 }
 
-* {
-    -webkit-tap-highlight-color: transparent;
+:root {
+    --primary-yellow: #d7c171;
 }
 
 body {
-    width: 100vw;
-    /* background: linear-gradient(120deg, #335c67, rgb(29, 29, 43)); */
-    background: linear-gradient(120deg, rgb(140, 148, 223), rgb(29, 29, 43));
+    background: linear-gradient(rgb(140, 148, 223), rgb(29, 29, 43));
+    background-size: cover;
     background-attachment: fixed;
-    /* height: 100vh; */
-    padding: 0;
     margin: 0;
+    padding: 0;
 }

@@ -1,6 +1,7 @@
 .contact-container {
     width: 80vw;
     margin: 0 auto;
+    border: 2px solid red;
 }
 
 .contact-body {

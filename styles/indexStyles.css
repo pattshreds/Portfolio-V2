@@ -18,28 +18,14 @@
     }
 }
 
-body {
-    background: linear-gradient(
-        120deg,
-        #d7c171,
-        #848484,
-        rgb(140, 148, 223),
-        rgb(29, 29, 43)
-    );
-    animation: gradient 3s 1 ease-in-out forwards;
-    width: 100vw;
-    background-attachment: fixed;
-    background-size: 400% 400%;
-    padding: 0;
-    margin: 0;
-}
-
 .home-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #home-title {
+    margin: 20px auto 0.5em auto;
     font-family: Open-Sans;
     letter-spacing: -3px;
     text-shadow: 0.3px 0.4px 1px black;
@@ -52,7 +38,7 @@ body {
     top: -3em;
     font-family: Open-Sans;
     font-size: 30px;
-    color: #d7c171;
+    color: var(--primary-yellow);
 }
 
 .intro-body {
@@ -65,10 +51,6 @@ body {
 }
 
 .tech-exp {
-    /* For some reason flexbox removes the 2 HR tags... */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
     padding: 0;
     margin-top: 10em;
     margin-bottom: 5em;
@@ -76,18 +58,18 @@ body {
 
 #tech-header {
     font-size: 55px;
-    color: #d7c171;
+    color: var(--primary-yellow);
     font-family: Open-Sans;
     text-shadow: 0.3px 0.4px 1px black;
     text-align: center;
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
 }
 
 #hr-1 {
     position: relative;
     left: 0;
-    margin-bottom: -1px;
+    margin-bottom: 1em;
     background: rgb(202, 202, 202);
     height: 4px;
     border: none;
@@ -100,10 +82,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
-    padding: 2em;
-    margin: 0 auto;
-    margin-top: 2em;
+    padding: 1em;
     background: rgba(255, 255, 255, 0.197);
     border-radius: 10px;
 }
@@ -112,74 +91,31 @@ body {
 }
 
 .tech-logo {
-    position: relative;
-    left: -10px;
-    max-width: 15%;
-    max-height: 15%;
-    object-fit: contain;
-    margin-bottom: 0.2em;
+    background-color: rgb(194, 213, 216);
+    width: 6em;
+    max-width: 96px;
+    height: 96px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20%;
+    object-fit: cover;
 }
-.html {
-    /* width: 19%; */
-}
-.css {
-    width: 23%;
-}
-.node {
-    border-radius: 10px;
-    padding: 0 10px 0 10px;
-    width: 19%;
-}
-.psql {
-    width: 17%;
-}
-.react {
-    margin-bottom: 1em;
-}
-.mongo {
-    padding: 0 10px 0 10px;
-    border-radius: 10px;
-}
+
+.node,
+.mongo,
 .git {
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px;
+    object-fit: contain;
 }
 
 @media screen and (max-width: 800px) {
     #home-title {
+        text-align: center;
         line-height: 115px;
         margin-bottom: 90px;
     }
 
     .intro-body {
-        width: 100%;
-    }
-
-    #tech-about {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 80%;
-    }
-    .tech-logo {
-        position: relative;
-        max-width: 30%;
-        max-height: 30%;
-        object-fit: contain;
-    }
-    .html {
-        width: 19%;
-    }
-    .css {
-        width: 23%;
-    }
-    .node {
-        stroke: 2px;
-        border-radius: 10px;
-        width: 19%;
-    }
-    .psql {
-        width: 17%;
+        width: 90%;
     }
 }
 
