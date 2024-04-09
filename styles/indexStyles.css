@@ -103,7 +103,8 @@
 
 .node,
 .mongo,
-.git {
+.git,
+.next {
     object-fit: contain;
 }
 
