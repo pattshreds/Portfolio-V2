@@ -142,9 +142,7 @@
 }
 
 body {
-    background: linear-gradient(rgb(140, 148, 223), rgb(29, 29, 43));
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: black;
     margin: 0;
     padding: 0;
 }

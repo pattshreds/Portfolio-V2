@@ -4,26 +4,23 @@ class Nav extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML = `
-        <nav class="navbar">
-            <div class='buttons-box'>
-                <button class="resume-btn">
-                    <a href="images/Resume_PM.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                </button>
-                <p id='email-instr'>click email to copy</p>
-                <button id='email' onclick='copyText()'>
-                    <p id='email-text'>patrick.mcguigan5@gmail.com</p> 
-                </button> 
-            </div>
-            <div class="dropdown">
-                <button class="dropdown-btn">
-                    <img src="images/icons8-square-30.png" alt="dropdown" class="menu-img menu-img-1">
-                    <img src="images/icons8-square-30.png" alt="dropdown" class="menu-img menu-img-2">
-                    <img src="images/icons8-square-30.png" alt="dropdown" class="menu-img menu-img-3">
-                </button>
-            </div>
+        <nav id="navbar">
+            <p id="logo"> Placeholder </p>
+            <button id="resume-button">
+                <a href="images/PM_SE_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </button>
+            <button id="dropdown-button">
+                <p id="dropdown-button-text"> menu </p>
+            </button>
         </nav>
         `;
     }
 }
 
 customElements.define('nav-component', Nav);
+
+{
+    /* <button id='email' onclick='copyText()'>
+                    <p id='email-text'>patrick.mcguigan5@gmail.com</p> 
+                </button>  */
+}

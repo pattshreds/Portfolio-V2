@@ -1,4 +1,4 @@
-const dropdownBtn = document.querySelector('.dropdown-btn');
+const dropdownBtn = document.getElementById('dropdown-button');
 const dropdownMenu = document.querySelector('.dropdown-toggle-container');
 const closeBtn = document.querySelector('.close-menu-btn');
 
