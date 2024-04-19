@@ -1,224 +1,58 @@
-/* main development viewport size 958x951 */
-
-.about-container {
-    margin-top: 2.5em;
-}
-
-.about-img {
-    position: relative;
-    top: 8em;
-    left: -3em;
-    width: 35em;
-    height: 25em;
-    transform: rotate(-90deg);
-    object-fit: cover;
-    overflow: hidden;
-    opacity: 75%;
-    border-radius: 20px;
-}
-
-#about-header-section {
-    position: relative;
-    width: 40%;
-    top: -22em;
-    left: 28em;
-}
-
-.about-header {
-    display: block;
-    font-size: 12em;
-    height: 1em;
-    font-weight: bold;
-    margin: 0;
-    font-family: Slabo;
-    color: var(--primary-white);
-    letter-spacing: 2px;
-}
-
-.ah2 {
-    margin-bottom: 0.6em;
-}
-
-#hello-intro {
-    width: 20%;
-    font-size: 2em;
-    margin-bottom: 5em;
-    color: #d7c171;
-}
-
-.about-text-body {
+#about-container {
     display: flex;
-    flex-flow: row wrap;
-    margin: 0 auto;
-    margin-top: -34em;
-    margin-bottom: 4em;
-    font-size: 0.8em;
-    border-radius: 10px;
-    width: 96%;
-    font-family: Slabo;
-    padding: 2em;
-    color: black;
-    background-color: var(--primary-grey);
+    flex-direction: column;
+    align-items: center;
 }
 
-.stock-photo-1-container {
-    width: 35%;
-    margin-right: 15px;
+#about-img {
+    width: 50%;
+    margin: 4em auto 0 auto;
 }
 
-.stock-photo-1 {
+hr {
+    color: white;
     width: 100%;
-    border-radius: 2%;
+    margin: 0;
 }
 
-.stock-photo-2-container {
-    width: 35%;
-    margin-left: 15px;
+#about-header {
+    font-family: Open-Sans;
+    font-size: 70px;
+    color: white;
+    margin: 0 auto 10px auto;
 }
 
-.stock-photo-2 {
-    width: 100%;
-    border-radius: 2%;
-}
-
-.stock-photo-3-container {
-    position: relative;
-    top: 5em;
-    width: 35%;
-    margin-right: 15px;
-}
-
-.stock-photo-3 {
-    width: 100%;
-    border-radius: 2%;
-}
-
-.about-p {
-    padding: 0;
+#about-subhead {
+    font-family: Open-Sans;
     font-size: 25px;
-    line-height: 35px;
-    letter-spacing: 0.5px;
-    width: 55%;
+    color: white;
+    margin: 0 auto 20px auto;
 }
 
-@media screen and (max-width: 800px) {
-    .about-img {
-        margin-left: 0em;
-        width: 30em;
-        height: 20em;
-    }
-    #about-header-section {
-        top: -10em;
-        left: 23em;
-    }
-    .about-header {
-        font-size: 8em;
-        font-weight: bold;
-    }
-    #hello-intro {
-        display: none;
-    }
-    .about-text-body {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-top: 8em;
-        width: 92%;
-    }
+#about-body-container {
+    color: white;
+    width: 90%;
+    text-align: center;
+    font-family: Slabo;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+}
 
-    .stock-photo-3-container {
-        margin: -50px auto 50px auto;
-    }
-
-    .stock-photo-2-container {
-        display: none;
-    }
-
-    .about-p {
-        width: 90%;
+@media (min-width: 500px) {
+    #about-img {
+        width: 40%;
     }
 }
 
-@media screen and (max-width: 500px) {
-    * {
-        max-width: 100%;
+@media (min-width: 745px) {
+    #about-img {
+        width: 30%;
     }
-    .about-img {
-        position: relative;
-        width: 30em;
-        height: 20em;
-        top: 0;
-        left: 0.5px;
-    }
+}
 
-    #about-header-section {
-        position: relative;
-        left: 5em;
-        top: 5em;
-        text-align: center;
-    }
-
-    .about-header {
-        font-size: 5em;
-    }
-
-    .ah2 {
-        left: 0;
-        margin-bottom: -1em;
-    }
-
-    #hello-intro {
-        font-size: 2em;
-        padding-bottom: 20px;
-    }
-
-    .about-text-body {
-        text-align: center;
-        position: relative;
-        top: 20em;
-        width: 90%;
-        margin: 0 auto;
-        margin-bottom: 2em;
-        padding: 0;
-    }
-
-    .about-p {
-        width: 90%;
-        margin: 0 auto;
-        margin: 2em auto 2em auto;
-    }
-
-    .stock-photo-1-container {
-        width: 70%;
-        margin: 15px auto 10px auto;
-        align-self: center;
-    }
-
-    .stock-photo-1 {
-        width: 100%;
-        border-radius: 2%;
-    }
-
-    .stock-photo-2-container {
-        width: 70%;
-        margin: 15px auto 10px auto;
-        align-self: center;
-    }
-
-    .stock-photo-2 {
-        width: 100%;
-        border-radius: 2%;
-    }
-
-    .stock-photo-3-container {
-        width: 70%;
-        margin: 15px auto 10px auto;
-        align-self: center;
-    }
-
-    .stock-photo-3 {
-        width: 100%;
-        border-radius: 2%;
+@media (min-width: 900px) {
+    #about-img {
+        width: 15%;
     }
 }

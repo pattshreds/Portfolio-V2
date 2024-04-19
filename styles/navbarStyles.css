@@ -12,19 +12,18 @@
 }
 
 #resume-button,
-#dropdown-button {
+.nav-button {
     font-family: Open-Sans;
     border: none;
     height: 80%;
     font-size: 12px;
     font-weight: 100;
-    background-color: rgb(206, 206, 206);
+    background-color: white;
 }
 
-#dropdown-button {
-    display: flex;
-    align-items: center;
-    margin: 0 1em 0 2em;
+.nav-button a {
+    text-decoration: none;
+    color: black;
 }
 
 #resume-button a {
@@ -33,5 +32,12 @@
     color: black;
 }
 
-#dropdown-button-text {
+@media (min-width: 600px) {
+    .contact-button {
+        margin-right: 2em;
+    }
+
+    #navbar {
+        gap: 1em;
+    }
 }

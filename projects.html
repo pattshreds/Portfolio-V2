@@ -5,71 +5,58 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PM</title>
-        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/globalStyles.css" />
         <link rel="stylesheet" href="styles/projStyles.css" />
         <link rel="stylesheet" href="styles/navbarStyles.css" />
-        <link rel="stylesheet" href="styles/menuStyles.css" />
         <link rel="stylesheet" href="styles/carouselStyles.css" />
         <script src="components/carousel.js" defer></script>
-        <script src="components/menu.js" defer></script>
         <script src="components/nav.js" defer></script>
         <script src="JS/carousel.js" defer></script>
-        <script src="JS/dropdown.js" defer></script>
         <script src="JS/copyText.js" defer></script>
     </head>
     <body>
-        <menu-component></menu-component>
-
         <nav-component></nav-component>
-
-        <!-------------------------------------
-    // Main Body /////////////////////////
-    -------------------------------------->
 
         <!-- I've been trying to figure out a way to recycle the carousel to use for each project, but HTML custom elements don't seem to be able to be reused multiple times over one page. I'm going to hard code each carousel in for now but I want to figure out a way to reuse that element and be able to change the images it recieves with each use without using React components. -->
 
-        <div class="proj-page-container">
-            <section id="header-section">
-                <p class="proj-page-header my">My</p>
-                <p class="proj-page-header work">Work</p>
-            </section>
-            <div class="proj-desc-container">
-                <section class="individual-proj-box pb-1">
-                    <h1 class="project-title">PokéSearch</h1>
-                    <div class="desc-home">
-                        <ul>
-                            <li>
-                                PokéSearch was created using technologies such
-                                as HTML, CSS, Javascript and jQuery and a third
-                                party Pokémon API.
-                            </li>
-                            <li>
-                                This project allows users to search the API for
-                                information on any specific Pokemon as well as
-                                Berries from any Pokemon Title.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="carousel-home">
-                        <!-- Below is the custom element I created in attempt to reuse in each 'carousel home' div. I'm going to use it in the first project div as it works for one use. -->
-                        <carousel-component> </carousel-component>
-                    </div>
-                    <section class="btn-home">
-                        <button class="proj-link-btn">
-                            <a href="https://github.com/pattshreds/pokedex_app"
-                                >GitHub</a
-                            >
-                        </button>
-                        <button class="proj-link-btn">
-                            <a href="https://pattshreds.github.io/pokedex_app/"
-                                >View</a
-                            >
-                        </button>
-                    </section>
+        <div id="projects-page-container">
+            <p id="projects-page-header">Projects</p>
+            <div class="project">
+                <h1 class="project-title">PokéSearch</h1>
+                <div class="description">
+                    <ul>
+                        <li>
+                            PokéSearch was created using technologies such as
+                            HTML, CSS, Javascript and jQuery and a third party
+                            Pokémon API.
+                        </li>
+                        <li>
+                            This project allows users to search the API for
+                            information on any specific Pokemon as well as
+                            Berries from any Pokemon Title.
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel-home">
+                    <!-- Below is a custom element I created in attempt to reuse in each 'carousel home' div. I'm going to use it in the first project div as it works for one use. -->
+                    <carousel-component> </carousel-component>
+                </div>
+                <section class="project-links">
+                    <button class="project-link-button">
+                        <a href="https://github.com/pattshreds/pokedex_app"
+                            >GitHub</a
+                        >
+                    </button>
+                    <button class="project-link-button">
+                        <a href="https://pattshreds.github.io/pokedex_app/"
+                            >View</a
+                        >
+                    </button>
                 </section>
-                <section class="individual-proj-box pb-2">
+            </div>
+                <div class="project">
                     <h1 class="project-title">Moodset</h1>
-                    <div class="desc-home">
+                    <div class="description">
                         <ul>
                             <li>
                                 This application was developed because of my
@@ -122,7 +109,7 @@
                                     style="transform: rotate(180deg)"
                                 />
                             </button>
-                            <div class="carousel-nav">
+                            <div class="carousel-nav moodset">
                                 <button
                                     class="position-indicator current-dot"
                                 ></button>
@@ -131,20 +118,20 @@
                             </div>
                         </div>
                     </div>
-                    <section class="btn-home">
-                        <button class="proj-link-btn">
+                    <section class="project-links">
+                        <button class="project-link-button">
                             <a href="https://github.com/pattshreds/music-app"
                                 >GitHub</a
                             >
                         </button>
-                        <button class="proj-link-btn">
+                        <button class="project-link-button">
                             <a href="moodset.up.railway.app">View</a>
                         </button>
                     </section>
-                </section>
-                <section class="individual-proj-box pb-3">
+                </div>
+                <div class="project">
                     <h1 class="project-title">Infinite Savannah</h1>
-                    <div class="desc-home">
+                    <div class="description">
                         <ul>
                             <li>
                                 Cultivated in a pair-programming environment,
@@ -197,7 +184,7 @@
                                     style="transform: rotate(180deg)"
                                 />
                             </button>
-                            <div class="carousel-nav">
+                            <div class="carousel-nav if">
                                 <button
                                     class="position-indicator current-dot"
                                 ></button>
@@ -206,94 +193,21 @@
                             </div>
                         </div>
                     </div>
-                    <section class="btn-home">
-                        <button class="proj-link-btn">
+                    <section class="project-links">
+                        <button class="project-link-button">
                             <a
                                 href="https://github.com/ryanklintworth/infinite-savannah"
                                 >GitHub</a
                             >
                         </button>
-                        <button class="proj-link-btn">
+                        <button class="project-link-button">
                             <a
                                 href="https://infinite-savannah-23628.herokuapp.com/"
                                 >View</a
                             >
                         </button>
                     </section>
-                </section>
-                <section class="individual-proj-box pb-4">
-                    <h1 class="project-title">Rezu</h1>
-                    <div class="desc-home">
-                        <ul>
-                            <li>
-                                With AI and bots being so easy to use today,
-                                online reviews can be very misleading. The idea
-                                for Rezu hatched to address this common
-                                frustration felt by consumers of e-commerce.
-                            </li>
-                            <li>
-                                This initiative employed React, Node.JS,
-                                Express.js, and SQL to query a Postgres
-                                database. User authentication will be provided
-                                by Auth0.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="carousel-home">
-                        <div class="carousel carousel-4">
-                            <ul class="images-list">
-                                <li class="slide current-slide">
-                                    <img
-                                        src="images/Rezu/1.png"
-                                        alt="rezu"
-                                        class="image"
-                                    />
-                                </li>
-                                <li class="slide">
-                                    <img
-                                        src="images/Rezu/2.png"
-                                        alt="rezu"
-                                        class="image"
-                                    />
-                                </li>
-                                <li class="slide">
-                                    <img
-                                        src="images/Rezu/3.png"
-                                        alt="rezu"
-                                        class="image"
-                                    />
-                                </li>
-                            </ul>
-                            <button class="carousel-btn btn-prev">
-                                <img
-                                    src="images/carousel-arrow.png"
-                                    alt="Previous"
-                                />
-                            </button>
-                            <button class="carousel-btn btn-next">
-                                <img
-                                    src="images/carousel-arrow.png"
-                                    alt="Next"
-                                    style="transform: rotate(180deg)"
-                                />
-                            </button>
-                            <div class="carousel-nav">
-                                <button
-                                    class="position-indicator current-dot"
-                                ></button>
-                                <button class="position-indicator"></button>
-                                <button class="position-indicator"></button>
-                            </div>
-                        </div>
-                    </div>
-                    <section class="btn-home">
-                        <button class="proj-link-btn">
-                            <a href="https://github.com/pattshreds/rezu"
-                                >GitHub</a
-                            >
-                        </button>
-                    </section>
-                </section>
+                </div>
             </div>
         </div>
     </body>

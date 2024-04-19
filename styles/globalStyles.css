@@ -1,5 +1,4 @@
-/* main development viewport size 958x951 */
-
+/* Fonts */
 @font-face {
     font-family: Open-Sans;
     src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
@@ -10,21 +9,13 @@
     src: url(../fonts/Slabo_27px/Slabo27px-Regular.ttf);
 }
 
+/* Animations */
 @keyframes btn-fade {
     0% {
         background-color: #79620c;
     }
     100% {
         background-color: #d7c171;
-    }
-}
-
-@keyframes btn-fade-reverse {
-    0% {
-        background-color: #d7c171;
-    }
-    100% {
-        background-color: #79620c;
     }
 }
 
@@ -54,36 +45,6 @@
     }
     100% {
         top: -40em;
-    }
-}
-
-@keyframes whoa {
-    0% {
-        color: violet;
-    }
-    14% {
-        color: indigo;
-    }
-    28% {
-        color: blue;
-    }
-    42% {
-        color: teal;
-    }
-    54% {
-        color: green;
-    }
-    68% {
-        color: yellow;
-    }
-    82% {
-        color: orange;
-    }
-    96% {
-        color: red;
-    }
-    100% {
-        color: hotpink;
     }
 }
 
@@ -132,6 +93,45 @@
     }
     100% {
         top: 0;
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(0, 0.025);
+    }
+    50% {
+        transform: scale(1, 0.025);
+    }
+}
+
+@keyframes drop-in {
+    0% {
+        top: -7em;
+    }
+    70% {
+        top: 0.4em;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        right: -5em;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
     }
 }
 

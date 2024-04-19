@@ -1,26 +1,23 @@
 .contact-container {
-    width: 80vw;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
 .contact-body {
-    text-align: center;
-    font-weight: bold;
+    margin-top: 2em;
 }
 
-.g-3 {
+form {
     display: flex;
     justify-content: center;
-}
-
-.col-12 {
     text-align: center;
+    min-width: 60%;
+    max-width: 90%;
 }
 
-.form-control {
-    margin-top: -1em;
-}
-
-.textarea {
-    margin-top: 1em;
+.form-control.email,
+.form-control.subject {
+    margin-bottom: 1em;
 }

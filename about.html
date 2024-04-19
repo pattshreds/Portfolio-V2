@@ -5,99 +5,52 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PM</title>
-        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/globalStyles.css" />
         <link rel="stylesheet" href="styles/aboutStyles.css" />
         <link rel="stylesheet" href="styles/navbarStyles.css" />
-        <link rel="stylesheet" href="styles/menuStyles.css" />
     </head>
     <body>
-        <menu-component></menu-component>
-
         <nav-component></nav-component>
 
-        <!-------------------------------------
-    // Main Body /////////////////////////
-    -------------------------------------->
-
-        <div class="about-container">
-            <img src="images/me.jpeg" alt="Me" class="about-img" />
-            <section id="about-header-section">
-                <p class="about-header ah1">About</p>
-                <p class="about-header ah2">Me</p>
-                <p id="hello-intro">Hello,</p>
-            </section>
-            <div class="about-text-body">
-                <section class="stock-photo-1-container">
-                    <img
-                        src="images/stock-photo-1.jpg"
-                        alt="Stock photo"
-                        class="stock-photo-1"
-                    />
-                </section>
-                <p class="about-p p-1">
-                    My name is Patrick, and I've harbored a passion for
-                    technology since a young age. Alongside this, I possess a
-                    strong interest for organization, functionality, and design.
-                    Having gone through many relocations during my upbringing, I
-                    thrive on adapting to new environments. My enthusiasm for
-                    perpetual learning, coupled with my desire to share
-                    knowledge, fuels my personal and professional growth as an
-                    engineer and as an individual.
-                </p>
-                <p class="about-p p-2">
+        <div id="about-container">
+            <img src="images/metaAvatar.png" alt="Me" id="about-img" />
+            <hr />
+            <p id="about-header">Hi,</p>
+            <p id="about-subhead">Thanks for being here 👋</p>
+            <div id="about-body-container">
+                <p id="about-body-text">
                     My professional journey began with my pursuit of a college
-                    degree. Like many, I initially lacked confidence in my
-                    choice of major. Faced with numerous interests and
-                    pressures, I ultimately opted for a degree in Graphic
-                    Design. Throughout my college years, I honed my skills not
-                    only as an artist but also as a logical and efficient
-                    thinker and communicator, delving into the intricacies and
-                    psychological aspects of design.
+                    degree. Like many, I lacked confidence in my choice of
+                    major. Faced with numerous interests I ultimately committed
+                    to studying graphic design. Throughout college, I honed my
+                    skills as a logical and efficient thinker, learning the
+                    concepts and psychological aspects of communication through
+                    design, specifically focusing on the layout of information.
+                    <br /><br />
+
+                    Years later I came to realize that my passion for tech was
+                    stronger than it was for design so I made the decision to
+                    shift from graphic design to software development. Drawn to
+                    the combination of logical problem-solving and creative
+                    architechture involved in software engineering, I enrolled
+                    in a software engineering bootcamp at General Assembly.
+                    Through this immersive experience, I found satisfaction in
+                    the critical thinking and problem solving that software
+                    development demands, while still being able to exercise my
+                    design experience by crafting responsive layouts and
+                    interactive features.
+                    <br /><br />
+
+                    I'm currently pursuing my professional evolution as a
+                    Software Engineer. Leveraging my background in Graphic
+                    Design, I aim to infuse intuitive UI into my work,
+                    differentiating myself from the average engineer in this
+                    competitive field.
                 </p>
-                <section class="stock-photo-2-container">
-                    <img
-                        src="images/stock-photo-2.jpg"
-                        alt="Stock photo"
-                        class="stock-photo-2"
-                    />
-                </section>
-                <section class="stock-photo-3-container">
-                    <img
-                        src="images/stock-photo-3.jpg"
-                        alt="Stock photo"
-                        class="stock-photo-3"
-                    />
-                </section>
-                <p class="about-p p-3">
-                    After realizing my true passion lay more in technology than
-                    art, I transitioned from graphic design to software
-                    development. Drawn to the blend of logical problem-solving
-                    and creative architechture involved in software engineering,
-                    I enrolled in a full-time Software Engineering bootcamp at
-                    General Assembly. Through this immersive experience, I found
-                    satisfaction in the logical and critical thinking that
-                    software development demands, while still being able to
-                    exercise my creativity through crafting responsive layouts,
-                    interactive features, and animations. I'm currently pursuing
-                    my professional growth as a Software Engineer. Leveraging my
-                    background in Graphic Design, I aim to infuse creativity
-                    into my work, differentiating myself from the average
-                    engineer in this competitive field.
-                </p>
-                <!-- <p class='about-p p-4'>I hope you enjoy what you see, and interact with on this website!</p> -->
-                <!-- <p class="about-p sig">Thank you for reading,</p>
-                <p class="about-p sig-name">Patrick McGuigan</p> -->
             </div>
         </div>
-
-        <!-------------------------------------
-    // Footer ////////////////////////////
-    -------------------------------------->
-
-        <script src="components/menu.js"></script>
         <script src="components/nav.js"></script>
         <script src="JS/carousel.js"></script>
-        <script src="JS/dropdown.js"></script>
         <script src="JS/copyText.js"></script>
     </body>
 </html>
