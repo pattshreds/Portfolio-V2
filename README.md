@@ -1,27 +1,21 @@
 # Welcome to V2!
 
-This time around I'm using HTML, CSS, and Javascript. My new portfolio will serve as my portfolio, my contact page, and in the future potentially a blog, and other fun features.
+<p>
+  This time around I'm using HTML, CSS, and Javascript. My new portfolio will serve as a portfolio, contact page, and in the future a blog.
+</p>
 
 <hr>
 
-## Mock-ups
-
-#### Home Page
-
-![Screen Shot 2022-08-07 at 12 23 57 PM](https://user-images.githubusercontent.com/74014488/183305515-96c5f911-3ff0-4e74-a764-e520b5493992.png)
-
-<hr>
+<p>
+  No installation necessary to run locally. Clone and open any html file in your browser if you wish!
+</p>
 
 ## To-do List
 
 <ul>
-  <li> Resize (maybe change?) dropdown menu icon. </li>
-  <li> Dropdown menu item animation issue. </li>
-  <li> Build Experience and Contact page. </li>
-  <li> Find fonts for everything. </li>
+  <li><s> Eliminate dropdown menu icon. </s></li>
+  <li><s> Build Experience and Contact page. </s></li>
   <li> Tune mobile responsiveness. </li>
-  <li> Figure out how to make resume button animation fade out on hover off. </li>
-  <li> Build mobile swipe to scroll for carousels. </li>
-
+  <li> Figure out reusability of my projects modal. </li>
+  <li> Completely restyle for all screen sizes. </li>
 </ul>
-
