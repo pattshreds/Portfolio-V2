@@ -10,7 +10,7 @@
 }
 
 hr {
-    color: white;
+    color: var(--primary-grey);
     width: 100%;
     margin: 0;
 }
@@ -18,25 +18,26 @@ hr {
 #about-header {
     font-family: Open-Sans;
     font-size: 70px;
-    color: white;
+    color: var(--primary-text);
     margin: 0 auto 10px auto;
 }
 
 #about-subhead {
     font-family: Open-Sans;
     font-size: 25px;
-    color: white;
+    color: var(--primary-text);
     margin: 0 auto 20px auto;
 }
 
 #about-body-container {
-    color: white;
+    color: var(--primary-grey);
     width: 90%;
     text-align: center;
     font-family: Slabo;
     font-size: 22px;
     letter-spacing: 2px;
     line-height: 1.5em;
+    margin-bottom: 5em;
 }
 
 @media (min-width: 500px) {

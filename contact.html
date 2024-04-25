@@ -16,12 +16,6 @@
         <link rel="stylesheet" href="styles/navbarStyles.css" />
     </head>
     <body>
-        <style>
-            .form-container {
-                display: flex;
-                justify-content: center;
-            }
-        </style>
         <nav-component></nav-component>
 
         <div class="contact-container">
@@ -37,7 +31,7 @@
                     action="https://formsubmit.co/a3e1ae4349f6f166b0137467fb9e12b5"
                     method="POST"
                 >
-                    <div class="col-5">
+                    <div class="col-5 form-input-non-message">
                         <label
                             for="validationDefault01"
                             class="form-label"
@@ -51,7 +45,7 @@
                             required
                         />
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 form-input-non-message">
                         <label
                             for="validationDefault02"
                             class="form-label"
@@ -65,7 +59,7 @@
                             required
                         />
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 form-input-non-message">
                         <label
                             for="validationDefault03"
                             class="form-label"
@@ -74,7 +68,7 @@
                             type="email"
                             name="Email"
                             placeholder="Email Address"
-                            class="form-control email"
+                            class="form-control"
                             id="validationDefault03"
                             required
                         />
@@ -84,7 +78,7 @@
                         name="_autoresponse"
                         value="Thank you for reaching out! I'll return the favor as soon as I'm able to."
                     />
-                    <div class="col-5">
+                    <div class="col-5 form-input-non-message">
                         <label
                             for="validationDefault04"
                             class="form-label"
@@ -92,12 +86,12 @@
                         <input
                             type="text"
                             name="_subject"
-                            class="form-control subject"
+                            class="form-control"
                             id="validationDefault04"
                             placeholder="Subject"
                         />
                     </div>
-                    <div class="row">
+                    <div class="row form-input-message">
                         <label
                             for="validationDefault06"
                             class="form-label"
@@ -105,7 +99,7 @@
                         <textarea
                             class="form-control textarea"
                             id="validationDefault06"
-                            rows="5"
+                            rows="4"
                             name="Message"
                             placeholder="Message"
                         ></textarea>

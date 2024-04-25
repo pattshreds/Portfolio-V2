@@ -1,23 +1,50 @@
+/* Overriding Bootstrap root value for links */
+:root {
+    --bs-link-hover-color: none;
+}
+
 .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    text-align: center;
 }
 
 .contact-body {
     margin-top: 2em;
+    color: var(--primary-text);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    width: 70%;
 }
 
 form {
     display: flex;
     justify-content: center;
-    text-align: center;
-    min-width: 60%;
-    max-width: 90%;
 }
 
-.form-control.email,
-.form-control.subject {
-    margin-bottom: 1em;
+.form-input-non-message {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+.form-input-message {
+    width: 83%;
+    margin-top: 15px;
+}
+
+/* Replacing Bootstrap root values */
+.btn-primary {
+    background-color: var(--primary-button);
+    color: var(--primary-grey);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-button-hover);
+    color: white;
 }

@@ -2,8 +2,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: white;
+    gap: 1em;
+    background-color: var(--navbar-blue);
     height: 2.5em;
+    padding-right: 2em;
 }
 
 #logo {
@@ -11,33 +13,19 @@
     margin: 0 auto 0 1em;
 }
 
-#resume-button,
-.nav-button {
+.nav-button,
+a {
+    text-decoration: none;
+    color: var(--primary-text);
     font-family: Open-Sans;
     border: none;
     height: 80%;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 100;
-    background-color: white;
+    background-color: transparent;
 }
 
-.nav-button a {
-    text-decoration: none;
-    color: black;
-}
-
-#resume-button a {
-    text-decoration: none;
-    padding: 5px;
-    color: black;
-}
-
-@media (min-width: 600px) {
-    .contact-button {
-        margin-right: 2em;
-    }
-
-    #navbar {
-        gap: 1em;
-    }
+.resume a,
+.github a {
+    color: var(--outside-link);
 }

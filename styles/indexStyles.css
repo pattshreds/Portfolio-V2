@@ -10,14 +10,14 @@
     line-height: 1em;
     text-align: center;
     font-size: 70px;
-    color: white;
+    color: var(--primary-text);
 }
 
 #home-sub {
     font-family: Open-Sans;
     text-align: center;
     font-size: 30px;
-    color: white;
+    color: var(--primary-text);
 }
 
 .intro-body {
@@ -26,19 +26,19 @@
     font-family: Slabo;
     text-align: center;
     font-size: 1.5em;
-    color: white;
+    color: var(--primary-grey);
     letter-spacing: 1px;
 }
 
 #tech-exp {
-    background-color: blueviolet;
     padding: 0;
     margin-top: 10em;
+    margin-bottom: 5em;
 }
 
 #tech-title {
     font-size: 50px;
-    color: white;
+    color: var(--primary-text);
     font-family: Open-Sans;
     text-align: center;
     margin: 0 0 20px 0;

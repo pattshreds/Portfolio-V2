@@ -34,8 +34,6 @@
     object-fit: scale-down;
 }
 
-/* Carousel Arrow buttons */
-
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -56,12 +54,22 @@
     right: 2.2em;
 }
 
-/* Carousel Nav Buttons */
-
 .carousel-nav {
     display: flex;
     justify-content: center;
     padding: 5px;
+    position: relative;
+    bottom: 5em;
+}
+
+.carousel-nav.moodset {
+    position: relative;
+    bottom: 6em;
+}
+
+.carousel-nav.if {
+    position: relative;
+    bottom: 7em;
 }
 
 .position-indicator {

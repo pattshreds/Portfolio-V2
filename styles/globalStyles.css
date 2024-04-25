@@ -1,4 +1,3 @@
-/* Fonts */
 @font-face {
     font-family: Open-Sans;
     src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
@@ -7,93 +6,6 @@
 @font-face {
     font-family: Slabo;
     src: url(../fonts/Slabo_27px/Slabo27px-Regular.ttf);
-}
-
-/* Animations */
-@keyframes btn-fade {
-    0% {
-        background-color: #79620c;
-    }
-    100% {
-        background-color: #d7c171;
-    }
-}
-
-@keyframes grow {
-    0% {
-        font-size: 16px;
-    }
-    100% {
-        font-size: 16.6px;
-        color: #d7c171;
-        opacity: 100%;
-    }
-}
-
-@keyframes dropdown {
-    0% {
-        top: -40em;
-    }
-    100% {
-        top: 0;
-    }
-}
-
-@keyframes dropdown-up {
-    0% {
-        top: 0;
-    }
-    100% {
-        top: -40em;
-    }
-}
-
-@keyframes dropdown-menu-img-1 {
-    0% {
-        right: 0;
-    }
-    50% {
-        right: -20px;
-    }
-    100% {
-        right: 0;
-    }
-}
-
-@keyframes dropdown-menu-img-2 {
-    0% {
-        top: 0;
-    }
-    50% {
-        top: 20px;
-    }
-    100% {
-        top: 0;
-    }
-}
-
-@keyframes dropdown-menu-img-3 {
-    0% {
-        left: 0;
-    }
-    50% {
-        left: -10px;
-    }
-    100% {
-        left: 0;
-    }
-}
-
-@keyframes hop {
-    0% {
-        top: 0;
-    }
-    70% {
-        top: -5px;
-    }
-    100% {
-        top: 0;
-    }
 }
 
 @keyframes expand {
@@ -105,44 +17,18 @@
     }
 }
 
-@keyframes drop-in {
-    0% {
-        top: -7em;
-    }
-    70% {
-        top: 0.4em;
-    }
-    100% {
-        top: 0;
-    }
-}
-
-@keyframes slide-in {
-    0% {
-        right: -5em;
-    }
-    100% {
-        right: 0;
-    }
-}
-
-@keyframes appear {
-    0% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
 :root {
-    --primary-yellow: #d7c171;
-    --primary-white: rgb(194, 213, 216);
-    --primary-grey: rgba(239, 245, 255, 0.2);
+    --primary-blue: rgb(34, 40, 52);
+    --navbar-blue: rgb(60, 72, 94);
+    --primary-text: bisque;
+    --primary-grey: rgb(199, 199, 199);
+    --primary-button: rgb(138, 75, 143);
+    --primary-button-hover: rgb(91, 46, 95);
+    --outside-link: rgb(76, 150, 115);
 }
 
 body {
-    background-color: black;
+    background-color: var(--primary-blue);
     margin: 0;
     padding: 0;
 }
