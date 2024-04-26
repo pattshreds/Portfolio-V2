@@ -39,23 +39,3 @@
     margin-bottom: 1em;
     list-style-type: none;
 }
-
-.project-link-button {
-    cursor: pointer;
-    border: none;
-    background-color: var(--primary-button);
-    padding: 3px 10px;
-    width: 5em;
-    border-radius: 5px;
-}
-
-.project-link-button:hover {
-    background: rgb(91, 46, 95);
-    a {
-        color: white;
-    }
-}
-
-.project-link-button a {
-    color: var(--primary-grey);
-}

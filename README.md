@@ -12,9 +12,12 @@ This website is hosted through Netlify. View <a href="https://pmsoftware.netlify
 <hr />
 ## To-do List
 <ul>
-  <li><s> Eliminate dropdown menu icon. </s></li>
+  <li><s> Eliminate dropdown menu. </s></li>
   <li><s> Build Experience and Contact page. </s></li>
-  <li><s> Completely restyle</s> Still need to work on styling for mobile screens. </li>
-  <li>  Style carousel position indicators and navigation buttons more efficiently. </li>
-  <li> Figure out reusability of my projects modal. </li>
+  <li><s> Completely restyle entire project. </s></li>
+  <li><s>  Style carousel navigation buttons more efficiently. </s></li>
+  <li><s> Build a custom HTMLElement carousel component that's reusable for all project carousels. </s></li>
+  <li> Write logic to handle rendering the correct project photos for each instance of the carousel component. </li>
+  <li> Write logic to handle rendering the correct GitHub and live site links for the carousel component. </li>
+  <li> Write CSS for as many screen sizes as I can  </li>
 </ul>
