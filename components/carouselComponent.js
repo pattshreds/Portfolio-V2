@@ -16,10 +16,10 @@ class Carousel extends HTMLElement {
                 </ul>
                 <div class="button-container">
                     <button class="carousel-btn btn-prev">
-                        <img src="./images/carousel-arrow.png" alt="Previous">
+                        <img src="./images/arrow-left.png" alt="Previous">
                     </button>
                     <button class="carousel-btn btn-next">
-                        <img src="./images/carousel-arrow.png" alt="Next" style="transform:rotate(180deg)">
+                        <img src="./images/arrow-right.png" alt="Next"">
                     </button>
                 </div>
                 <div class="carousel-nav pokesearch">
@@ -33,6 +33,8 @@ class Carousel extends HTMLElement {
 }
 
 // Below is the logic I've used to append each image to the carousel. Right now it only works one time in the HTML doc, using it a second time results in the slides being empty, no images are being appended. I intend to figure that out eventually so I can reuse this component multiple times in one page and cycle through each project images folder.
+
+// style="transform:rotate(180deg) Might reuse this style for the next nav button
 
 let imagesArr = ['1.png', '2.png', '3.png'];
 let slideCollection = document.getElementsByClassName('slide');
