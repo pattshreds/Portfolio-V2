@@ -1,26 +1,37 @@
-.carousel {
-    position: relative;
-    height: 300px;
-    width: 80%;
-    max-width: 30em;
-    margin: 0 auto;
-}
-
-.images-list {
-    position: relative;
-    height: 100%;
+.carousel-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid hotpink;
+    width: 30vw;
+    height: 60vh;
     padding: 0;
     margin: 0;
 }
 
-.slide,
-.current-slide {
+.carousel {
+    border: 2px solid orange;
     height: 100%;
-    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+carousel-component {
+    height: 100%;
+}
+
+.images-list {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 .slide {
     display: none;
+    padding: 0;
+    list-style-type: none;
 }
 
 .current-slide {
@@ -28,60 +39,18 @@
 }
 
 .image {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    object-fit: scale-down;
-}
-
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
     margin: 0;
-    background: transparent;
-    width: 3em;
-    cursor: pointer;
-    opacity: 75%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.btn-prev {
-    left: 2.2em;
-}
-
-.btn-next {
-    right: 2.2em;
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
 .carousel-nav {
     display: flex;
     justify-content: center;
-    padding: 5px;
-    position: relative;
-    bottom: 5em;
-}
-
-.carousel-nav.moodset {
-    position: relative;
-    bottom: 6em;
-}
-
-.carousel-nav.if {
-    position: relative;
-    bottom: 7em;
-}
-
-.position-indicator {
-    border: 0;
-    border-radius: 50%;
-    width: 1em;
-    height: 1em;
-    background: rgba(0, 0, 0, 0.3);
-    margin: 1em 5px;
-    cursor: pointer;
-}
-
-.current-dot {
-    background: rgba(0, 0, 0, 0.75);
 }

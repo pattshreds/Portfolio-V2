@@ -50,11 +50,6 @@
 }
 
 .project-link-button:hover {
-    /* background: linear-gradient(
-        90deg,
-        var(--primary-button) 0%,
-        var(--primary-text) 100%
-    ); */
     background: rgb(91, 46, 95);
     a {
         color: white;
