@@ -10,6 +10,7 @@
     line-height: 1em;
     text-align: center;
     font-size: 70px;
+    margin-bottom: 0;
     color: var(--primary-text);
 }
 
@@ -52,7 +53,7 @@
 }
 
 .tech-about-animation {
-    animation: expand 1s;
+    animation: expand 1500ms;
 }
 
 .tech-logo {
