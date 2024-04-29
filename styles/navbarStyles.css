@@ -25,7 +25,19 @@ a {
     background-color: transparent;
 }
 
+.home a:hover,
+.about a:hover,
+.projects a:hover,
+.contact a:hover {
+    color: var(--nav-hover);
+}
+
 .resume a,
 .github a {
     color: var(--outside-link);
+}
+
+.resume a:hover,
+.github a:hover {
+    color: var(--glow-green);
 }

@@ -3,6 +3,12 @@ const nav = document.querySelectorAll('.position-indicator');
 const nextBtns = document.querySelectorAll('.btn-next');
 const prevBtns = document.querySelectorAll('.btn-prev');
 const buttonContainers = document.querySelectorAll('.button-container');
+let slideCollection = document.getElementsByClassName('slide');
+let slideIterator = 0;
+let projectNamesIterator = 0;
+let imagesSourceIterator = 0;
+let carouselClass = 1;
+const projectNamesArray = ['Pokesearch', 'Moodset', 'Infinite Savannah'];
 const projectLinkButtons = Array.from(
     document.querySelectorAll('.project-link-button')
 );
@@ -26,12 +32,6 @@ const projectExternalLinksArray = [
         'https://infinite-savannah-23628.herokuapp.com/',
     ],
 ];
-const projectNamesArray = ['Pokesearch', 'Moodset', 'Infinite Savannah'];
-let slideCollection = document.getElementsByClassName('slide');
-let slideIterator = 0;
-let projectNamesIterator = 0;
-let imagesSourceIterator = 0;
-let carouselClass = 1;
 
 // ----------------------------------------------------------------- //
 
@@ -40,8 +40,8 @@ let carouselClass = 1;
 (function positionNavButtons() {
     for (carousel in carouselBodies) {
         let carouselWidth = carouselBodies[carousel].offsetWidth;
-        buttonContainers.forEach((button) => {
-            button.style.gap = `${carouselWidth}px`;
+        buttonContainers.forEach((buttonContainer) => {
+            buttonContainer.style.gap = `${carouselWidth}px`;
         });
     }
     window.addEventListener('resize', positionNavButtons);
@@ -75,54 +75,27 @@ for (carousel in carouselBodies) {
 
 // Populate project-links divs with the hrefs
 
-window.addEventListener('load', function () {
-    for (let i = 0; i < projectLinkButtons.length; i++) {
-        const newLink = this.document.createElement('a');
-        const linkHTML = ['GitHub', 'View'];
-        let n = 0;
-        let x = 0;
-        while (i <= 1) {
-            newLink.href = projectExternalLinksArray[n][x];
-            newLink.innerHTML = linkHTML[x];
-            projectLinkButtons[i].appendChild(newLink);
-            // console.log(projectLinkButtons[i]);
-            x++;
-            i++;
-        }
-        // n++;
-        // console.log(`n: ${n} \n\ x: ${x} \n\ i: ${i}`);
-        // while (i > 1 && i <= 3) {
-        //     const newLink = this.document.createElement('a');
-        //     newLink.href = projectExternalLinksArray[n][x];
-        //     newLink.innerHTML = linkHTML[x];
-        //     projectLinkButtons[i].appendChild(newLink);
-        //     x++;
-        //     i++;
-        // }
+let n = 0;
+let x = 0;
+let linkTextIndex = 0;
+for (button in projectLinkButtons) {
+    const linkTextArray = ['GitHub', 'View'];
+    let newLink = document.createElement('a');
+    newLink.href = `${projectExternalLinksArray[n][x]}`;
+    newLink.innerHTML = `${linkTextArray[linkTextIndex]}`;
+    projectLinkButtons[button].appendChild(newLink);
+    x++;
+    linkTextIndex++;
+    if (x > 1) {
+        n++;
+        x = 0;
+        linkTextIndex = 0;
     }
-});
-
-// for (const button in projectLinkButtons) {
-//     let i = 1;
-//     console.log(projectLinkButtons[button] + i);
-//     i++;
-// }
-
-// for (const button of projectLinkButtons) {
-//     const linkHTML = ['GitHub', 'View'];
-//     let newLink = document.createElement('a');
-//     let i = 0;
-//     let n = 0;
-//     let x = 0;
-//     newLink.href = projectExternalLinksArray[i][n];
-//     newLink.innerHTML = linkHTML[x];
-//     button.appendChild(newLink);
-//     i++;
-//     n++;
-//     x++;
-// }
+}
 
 // ----------------------------------------------------------------- //
+
+// When I click prev, move slides to the previous slide.
 
 for (const btn of prevBtns) {
     btn.addEventListener('click', (e) => {
@@ -149,6 +122,8 @@ for (const btn of prevBtns) {
         }
     });
 }
+
+// ----------------------------------------------------------------- //
 
 // When I click next, move slides to the next slide.
 
@@ -178,6 +153,8 @@ for (const btn of nextBtns) {
         }
     });
 }
+
+// ----------------------------------------------------------------- //
 
 // When I click position indicators, move to that slide.
 
@@ -211,5 +188,3 @@ for (const dot of nav) {
         }
     });
 }
-
-window.onresize = positionNavButtons;

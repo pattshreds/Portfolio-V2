@@ -5,10 +5,10 @@
 }
 
 #projects-page-header {
-    font-family: Slabo;
+    font-family: Open-Sans;
     color: var(--primary-text);
     font-size: 70px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 .project {
@@ -21,7 +21,7 @@
 
 .project-title {
     color: var(--primary-text);
-    font-family: Open-Sans;
+    font-family: Slabo;
     font-size: 30px;
     margin: 0;
 }
