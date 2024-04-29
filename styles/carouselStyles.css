@@ -120,3 +120,16 @@ carousel-component {
 .project-link-button a {
     color: var(--primary-grey);
 }
+
+/* Galaxy S21 dimensions 360px x 800px */
+/* Actual CSS 412px x 828px */
+/* This query covers a range of other similar devices */
+@media (max-height: 840px) {
+    .carousel-home {
+        width: 80vw;
+        height: 30vh;
+    }
+    .carousel {
+        max-width: 100%;
+    }
+}

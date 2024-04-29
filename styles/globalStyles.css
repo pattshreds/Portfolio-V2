@@ -17,31 +17,6 @@
     }
 }
 
-/* @keyframes floatin {
-    0% {
-        margin-left: -100em;
-        rotate: 88deg;
-    }
-    10% {
-        margin-left: -88em;
-        rotate: 88deg;
-    }
-    30% {
-        margin-left: -87em;
-        rotate: 85deg;
-    }
-    40% {
-        margin-left: -89em;
-    }
-    60% {
-        rotate: 0deg;
-    }
-
-    80% {
-        margin-left: 0;
-    }
-} */
-
 :root {
     --primary-blue: rgb(34, 40, 52);
     --navbar-blue: rgb(60, 72, 94);

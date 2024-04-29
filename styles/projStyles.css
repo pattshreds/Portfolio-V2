@@ -8,12 +8,12 @@
     font-family: Open-Sans;
     color: var(--primary-text);
     font-size: 70px;
-    letter-spacing: 3px;
 }
 
 .project {
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
     margin-bottom: 8em;
     width: 60svw;
@@ -29,13 +29,30 @@
 .description {
     text-align: center;
     min-width: 50%;
-    max-width: 90%;
     color: var(--primary-grey);
     font-family: Open-Sans;
     font-size: 16px;
 }
 
+/* Not sure where this property is coming from but I found it in the DOM and it was preventing the UL from being centered*/
+.description ul {
+    padding-inline-start: 0;
+}
+
 .description li {
     margin-bottom: 1em;
     list-style-type: none;
+}
+
+/* Galaxy S21 dimensions 360px x 800px */
+/* Actual CSS 412px x 828px */
+/* This query covers a range of other similar devices */
+@media (max-height: 840px) {
+    .project {
+        width: 90%;
+    }
+    .description {
+        display: flex;
+        align-items: center;
+    }
 }
