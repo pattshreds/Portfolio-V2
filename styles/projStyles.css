@@ -13,7 +13,6 @@
 .project {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     margin-bottom: 8em;
     width: 60svw;
@@ -28,7 +27,7 @@
 
 .description {
     text-align: center;
-    min-width: 50%;
+    width: 70%;
     color: var(--primary-grey);
     font-family: Open-Sans;
     font-size: 16px;
@@ -44,10 +43,17 @@
     list-style-type: none;
 }
 
+/* Split screen for 13" laptop 640px x 688px */
+@media (min-width: 630px) and (max-width: 650px) {
+    .description {
+        width: 100%;
+    }
+}
+
 /* Galaxy S21 dimensions 360px x 800px */
 /* Actual CSS 412px x 828px */
 /* This query covers a range of other similar devices */
-@media (max-height: 840px) {
+@media (max-height: 840px) and (width < 500px) {
     .project {
         width: 90%;
     }

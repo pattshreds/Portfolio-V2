@@ -37,6 +37,11 @@ setTimeout(() => {
     const aboutButton = document.querySelector('.about');
     const projectsButton = document.querySelector('.projects');
     const contactButton = document.querySelector('.contact');
+    const viewportWidth = window.innerWidth;
+    const logo = document.getElementById('logo');
+    if (viewportWidth < 500) {
+        logo.style.display = 'none';
+    }
     if (pathname === '/index.html') {
         homeButton.style.display = 'none';
     } else if (pathname === '/about.html') {

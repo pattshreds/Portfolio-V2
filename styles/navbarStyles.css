@@ -2,6 +2,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    justify-content: center;
     gap: 1em;
     background-color: var(--navbar-blue);
     height: 2.5em;
@@ -40,4 +41,25 @@ a {
 .resume a:hover,
 .github a:hover {
     color: var(--glow-green);
+}
+
+/* Split screen for 13" laptop 640px x 688px */
+@media (min-width: 630px) and (max-width: 650px) {
+}
+
+/* Galaxy S21 dimensions 360px x 800px */
+/* Actual CSS 412px x 828px */
+/* This query covers a range of other similar devices */
+@media (max-height: 840px) and (width < 500px) {
+    #navbar {
+        height: 3em;
+        gap: 7px;
+        padding-right: 5px;
+        padding-top: 10px;
+    }
+
+    .nav-button,
+    a {
+        font-size: 18px;
+    }
 }

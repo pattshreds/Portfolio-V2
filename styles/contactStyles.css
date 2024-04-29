@@ -48,3 +48,16 @@ form {
     background-color: var(--primary-button-hover);
     color: white;
 }
+
+/* Split screen for 13" laptop 640px x 688px */
+@media (min-width: 630px) and (max-width: 650px) {
+}
+
+/* Galaxy S21 dimensions 360px x 800px */
+/* Actual CSS 412px x 828px */
+/* This query covers a range of other similar devices */
+@media (max-height: 840px) and (width < 500px) {
+    .form-container {
+        width: 100%;
+    }
+}

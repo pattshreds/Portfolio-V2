@@ -13,7 +13,6 @@
     position: relative;
     height: 100%;
     width: 100%;
-    max-width: 30vw;
     padding: 0;
 }
 
@@ -62,7 +61,7 @@ carousel-component {
     width: 100%;
     display: flex;
     justify-content: center;
-    top: 4em;
+    top: 30%;
 }
 
 .carousel-btn {
@@ -121,15 +120,29 @@ carousel-component {
     color: var(--primary-grey);
 }
 
+/* Split screen for 13" laptop 640px x 688px */
+@media (min-width: 630px) and (max-width: 650px) {
+    .button-container {
+        top: 13%;
+    }
+    .carousel-home {
+        width: 50vw;
+        height: 40vh;
+    }
+}
+
 /* Galaxy S21 dimensions 360px x 800px */
 /* Actual CSS 412px x 828px */
 /* This query covers a range of other similar devices */
-@media (max-height: 840px) {
+@media (max-height: 840px) and (width < 500px) {
     .carousel-home {
         width: 80vw;
         height: 30vh;
     }
     .carousel {
         max-width: 100%;
+    }
+    .button-container {
+        top: 30%;
     }
 }

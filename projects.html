@@ -5,19 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PM</title>
+        <link rel="stylesheet" href="styles/navbarStyles.css" />
         <link rel="stylesheet" href="styles/globalStyles.css" />
         <link rel="stylesheet" href="styles/projStyles.css" />
-        <link rel="stylesheet" href="styles/navbarStyles.css" />
         <link rel="stylesheet" href="styles/carouselStyles.css" />
-        <script src="components/carouselComponent.js" defer></script>
-        <script src="components/nav.js" defer></script>
-        <script src="JS/carousel.js" defer></script>
     </head>
     <body>
         <nav-component></nav-component>
-
-        <!-- I've been trying to figure out a way to recycle the carousel to use for each project, but HTML custom elements don't seem to be able to be reused multiple times over one page. I'm going to hard code each carousel in for now but I want to figure out a way to reuse that element and be able to change the images it recieves with each use without using React components. -->
-
         <div id="projects-page-container">
             <h1 id="projects-page-header">Projects</h1>
             <div class="project">
@@ -75,5 +69,8 @@
                 <carousel-component> </carousel-component>
             </div>
         </div>
+        <script src="components/nav.js"></script>
+        <script src="components/carouselComponent.js"></script>
+        <script src="JS/carousel.js"></script>
     </body>
 </html>
