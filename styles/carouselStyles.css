@@ -104,9 +104,9 @@ carousel-component {
     cursor: pointer;
     border: none;
     background-color: var(--primary-button);
-    padding: 3px 10px;
+    padding: 3px 40px;
     width: 5em;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .project-link-button:hover {
@@ -117,6 +117,7 @@ carousel-component {
 }
 
 .project-link-button a {
+    margin: 0 auto;
     color: var(--primary-grey);
 }
 
@@ -144,5 +145,12 @@ carousel-component {
     }
     .button-container {
         top: 30%;
+    }
+    .project-link-button {
+        display: flex;
+        justify-content: center;
+    }
+    .project-link-button a {
+        margin: 0 auto;
     }
 }
