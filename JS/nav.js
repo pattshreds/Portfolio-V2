@@ -1,12 +1,3 @@
-window.onload = function () {
-    console.log(localStorage);
-
-    // if (localStorage.getItem('hasCodeRunBefore') === null) {
-    //     homeButton.style.display = 'none';
-    //     localStorage.setItem('hasCodeRunBefore', true);
-    // }
-};
-
 setTimeout(() => {
     const pathname = window.location.pathname;
     const homeButton = document.querySelector('.home');
