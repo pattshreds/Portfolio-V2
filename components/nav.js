@@ -39,10 +39,11 @@ setTimeout(() => {
     const contactButton = document.querySelector('.contact');
     const viewportWidth = window.innerWidth;
     const logo = document.getElementById('logo');
+    console.log(pathname);
     if (viewportWidth < 500) {
         logo.style.display = 'none';
     }
-    if (pathname === '/index.html') {
+    if (pathname === '/index.html' || '/') {
         homeButton.style.display = 'none';
     } else if (pathname === '/about.html') {
         aboutButton.style.display = 'none';
