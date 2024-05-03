@@ -1,0 +1,33 @@
+window.onload = function () {
+    console.log(localStorage);
+
+    // if (localStorage.getItem('hasCodeRunBefore') === null) {
+    //     homeButton.style.display = 'none';
+    //     localStorage.setItem('hasCodeRunBefore', true);
+    // }
+};
+
+setTimeout(() => {
+    const pathname = window.location.pathname;
+    const homeButton = document.querySelector('.home');
+    const aboutButton = document.querySelector('.about');
+    const projectsButton = document.querySelector('.projects');
+    const contactButton = document.querySelector('.contact');
+    const viewportWidth = window.innerWidth;
+    const logo = document.getElementById('logo');
+    console.log(pathname);
+    if (viewportWidth < 500) {
+        logo.style.display = 'none';
+    }
+    if (pathname === '/') {
+        homeButton.style.display = 'none';
+    } else if (pathname === '/index.html') {
+        homeButton.style.display = 'none';
+    } else if (pathname === '/about.html') {
+        aboutButton.style.display = 'none';
+    } else if (pathname === '/projects.html') {
+        projectsButton.style.display = 'none';
+    } else if (pathname === '/contact.html') {
+        contactButton.style.display = 'none';
+    }
+});

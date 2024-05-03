@@ -30,33 +30,3 @@ class Nav extends HTMLElement {
 }
 
 customElements.define('nav-component', Nav);
-
-setTimeout(() => {
-    const pathname = window.location.pathname;
-    const homeButton = document.querySelector('.home');
-    const aboutButton = document.querySelector('.about');
-    const projectsButton = document.querySelector('.projects');
-    const contactButton = document.querySelector('.contact');
-    const viewportWidth = window.innerWidth;
-    const logo = document.getElementById('logo');
-    console.log(pathname);
-    if (viewportWidth < 500) {
-        logo.style.display = 'none';
-    }
-    if (pathname === '/index.html' || '/') {
-        homeButton.style.display = 'none';
-    } else if (pathname === '/about.html') {
-        aboutButton.style.display = 'none';
-    } else if (pathname === '/projects.html') {
-        projectsButton.style.display = 'none';
-    } else if (pathname === '/contact.html') {
-        contactButton.style.display = 'none';
-    }
-});
-
-// May use this again, may not
-{
-    /* <button id='email' onclick='copyText()'>
-                    <p id='email-text'>patrick.mcguigan5@gmail.com</p> 
-                </button>  */
-}
