@@ -121,6 +121,14 @@ carousel-component {
     color: var(--primary-grey);
 }
 
+/* Full screen 13" laptop 1280px x 688px */
+@media (min-width: 800px) and (max-width: 1300px) {
+    .project-link-button {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 /* Split screen for 13" laptop 640px x 688px */
 @media (min-width: 630px) and (max-width: 650px) {
     .button-container {
@@ -129,6 +137,10 @@ carousel-component {
     .carousel-home {
         width: 50vw;
         height: 40vh;
+    }
+    .project-link-button {
+        display: flex;
+        justify-content: center;
     }
 }
 
