@@ -12,6 +12,9 @@
 #logo {
     padding: 0;
     margin: 0 auto 0 1em;
+    color: var(--primary-grey);
+    font-family: Slabo;
+    font-size: 2em;
 }
 
 .nav-button,

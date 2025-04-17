@@ -1,34 +1,56 @@
 .home-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 200%;
+    margin-left: 5%;
+    margin-top: 5em;
 }
 
-#home-title {
+.home-title {
     font-family: Open-Sans;
-    letter-spacing: -3px;
-    line-height: 1em;
-    text-align: center;
-    font-size: 70px;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: -10px;
+}
+
+.home-sub {
+    font-family: Open-Sans;
+    font-size: 20px;
+    margin-left: 2em;
     margin-bottom: 0;
-    color: var(--primary-text);
+    margin-top: 5px;
+    letter-spacing: 2px;
 }
 
-#home-sub {
-    font-family: Open-Sans;
-    text-align: center;
-    font-size: 30px;
-    color: var(--primary-text);
+#const {
+    color: var(--const);
+}
+
+#varName {
+    color: var(--variable-name);
+}
+
+#equalAndComma {
+    color: white;
+}
+
+#curlyBraces {
+    color: var(--curly-braces);
+}
+
+#key {
+    color: var(--key);
+    margin-right: -1.5em;
+}
+
+#value {
+    color: var(--value);
+    margin-right: -2em;
 }
 
 .intro-body {
-    position: relative;
-    top: 2em;
-    font-family: Slabo;
-    text-align: center;
-    font-size: 1.5em;
-    color: var(--primary-grey);
-    letter-spacing: 1px;
+    margin-bottom: -4em;
 }
 
 #tech-exp {
@@ -86,12 +108,8 @@
 }
 
 @media (min-width: 750px) {
-    #home-title {
+    .home-title {
         margin-top: 1.7em;
-    }
-
-    .intro-body {
-        max-width: 75%;
     }
 }
 
@@ -103,13 +121,14 @@
 /* Actual CSS 412px x 828px */
 /* This query covers a range of other similar devices */
 @media (max-height: 840px) and (width < 500px) {
-    #home-sub {
-        font-size: 25px;
+    .home-container {
+        max-width: 100%;
     }
-    #home-title {
+    .home-title {
+        font-size: 30px;
         margin-bottom: 1em;
     }
-    .intro-body {
-        width: 80%;
+    .home-sub {
+        font-size: 15px;
     }
 }

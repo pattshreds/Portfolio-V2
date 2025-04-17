@@ -18,6 +18,12 @@
 }
 
 :root {
+    --const: #569cd6;
+    --variable-name: #76c1ff;
+    --equal-sign-and-comma: ;
+    --curly-braces: rgb(255, 221, 0);
+    --key: #9cdcfe;
+    --value: #ce9178;
     --primary-blue: rgb(34, 40, 52);
     --navbar-blue: rgb(60, 72, 94);
     --primary-text: bisque;
