@@ -125,10 +125,14 @@
         max-width: 100%;
     }
     .home-title {
-        font-size: 30px;
-        margin-bottom: 1em;
+        font-size: 25px;
+        margin-bottom: 0;
     }
     .home-sub {
         font-size: 15px;
+        max-width: 90%;
+    }
+    .endCurlyBrace {
+        margin-top: 2.5em;
     }
 }
