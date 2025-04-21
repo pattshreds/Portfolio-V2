@@ -97,10 +97,44 @@
         <script src="components/nav.js"></script>
         <script src="JS/nav.js"></script>
         <script>
+        // Commenting this out for now to try a new block that will animate each tech-logo indidually with a .25s delay for each card.
+            // const observer = new IntersectionObserver((entries) => {
+            //     entries.forEach((entry) => {
+            //         if (entry.isIntersecting) {
+            //             entry.target.classList.add('tech-about-animation');
+            //         }
+            //     });
+            // });
+            // observer.observe(document.querySelector('.tech-cards'));
+
+        // Leaving this block in because it doesn't reset the animation when the target is off-screen but it looks like it should
+            // const observer = new IntersectionObserver((entries) => {
+            //     entries.forEach((entry) => {
+            //         const logos = entry.target.querySelectorAll('.tech-logo');
+            //         if (entry.isIntersecting) {
+            //             logos.forEach((logo, index) => {
+            //                 logo.style.setProperty('--delay', `${index * 0.15}s`);
+            //                 logo.classList.add('tech-about-animation');
+            //             });
+            //         } else {
+            //             logo.classList.remove('tech-about-animation')
+            //         }
+            //     });
+            // });
+            // observer.observe(document.querySelector('.tech-cards'));
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
+                    const logos = entry.target.querySelectorAll('.tech-logo');
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('tech-about-animation');
+                        logos.forEach((logo, index) => {
+                            logo.style.setProperty('--delay', `${index * 0.15}s`);
+                            logo.classList.add('tech-about-animation');
+                        });
+                    } else {
+                        logos.forEach((logo) => {
+                        logo.classList.remove('tech-about-animation');
+                        });
                     }
                 });
             });

@@ -4,15 +4,15 @@
     align-items: flex-start;
     width: 80%;
     max-height: 100%;
-    margin-left: 5%;
-    margin-top: 5em;
+    margin-left: 10%;
+    margin-top: 8em;
 }
 
 .home-title {
     font-family: Open-Sans;
     font-size: 40px;
     margin-bottom: 0px;
-    margin-top: -10px;
+    margin-top: -15px;
 }
 
 .home-sub {
@@ -56,6 +56,7 @@
 
 .intro-body {
     margin-bottom: -4em;
+    width: 70%;
 }
 
 #tech-exp {
@@ -65,8 +66,10 @@
 }
 
 #tech-title {
-    font-size: 50px;
-    color: var(--primary-text);
+    font-size: 40px;
+    padding: 10px;
+    color: var(--curly-braces);
+    background-color: var(--navbar-blue);
     font-family: Open-Sans;
     text-align: center;
     margin: 0 0 20px 0;
@@ -79,8 +82,23 @@
     padding: 1em;
 }
 
-.tech-about-animation {
+/* Commenting this out for now to try a new block that will animate each tech-logo indidually with a .25s delay for each card. */
+/* .tech-about-animation {
     animation: expand 1500ms;
+} */
+
+.tech-about-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: var(--delay);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .tech-logo {

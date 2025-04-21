@@ -5,7 +5,7 @@ class Nav extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <nav id="navbar">
-            <p id="logo"> PM </p>
+            <p id="logo"> &lt;/&gt; </p>
             <button class="nav-button resume">
                 <a href="images/PM_SE_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </button>
