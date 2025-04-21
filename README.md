@@ -19,5 +19,7 @@ This website is hosted through Netlify. View <a href="https://pmsoftware.netlify
   <li><s> Build a custom HTMLElement carousel component that's reusable for all project carousels. </s></li>
   <li><s> Write logic to handle rendering the correct project photos for each instance of the carousel component. </s></li>
   <li><s> Write logic to handle rendering the correct GitHub and live site links for the carousel component. </s></li>
+  <li><s> Make each tech-logo animate individually with a delay. </s></li>
+  <li><s> Write a line that removes the animation class when seciton is off page. </s></li>
   <li> Write CSS for as many screen sizes as I can  </li>
 </ul>
