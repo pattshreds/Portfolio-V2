@@ -57,14 +57,14 @@ a {
 /* This query covers a range of other similar devices */
 @media (max-height: 840px) and (width < 500px) {
     #navbar {
-        height: 3em;
-        gap: 7px;
+        height: 2em;
+        gap: 5px;
         padding-right: 5px;
-        padding-top: 10px;
+        padding-top: 0.1em;
     }
 
     .nav-button,
     a {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
