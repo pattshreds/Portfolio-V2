@@ -146,8 +146,10 @@
 /* This query covers a range of other similar devices */
 @media (max-height: 840px) and (width < 500px) {
     .home-container {
+        width: 90%;
         max-width: 100%;
         margin-top: 4em;
+        margin-left: 5%;
     }
     .home-title {
         font-size: 20px;
@@ -159,5 +161,8 @@
     }
     .closeCurlyBrace {
         margin-top: 2.5em;
+    }
+    #equalAndComma:last-of-type {
+        color: red;
     }
 }

@@ -7,7 +7,7 @@ class Nav extends HTMLElement {
         <nav id="navbar">
             <p id="logo"> &lt;/&gt; </p>
             <button class="nav-button resume">
-                <a href="images/PM_SE_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="images/patrick_mcguigan_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </button>
             <button class="nav-button github">
                 <a href="https://github.com/pattshreds" target="_blank" rel="noopener noreferrer">GitHub</a>
