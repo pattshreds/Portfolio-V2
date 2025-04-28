@@ -5,7 +5,7 @@
 </p>
 <br />
 <p>
-This website is hosted through Netlify. View <a href="https://pmworks.dev" alt="pmworks.dev">here</a> <i>https://pmworks.dev</i>
+This website is hosted through Netlify. View <a href="https://pmworks.dev" alt="pmworks.dev">here</a> <p><i>https://pmworks.dev</i></p>
 </p>
 <hr />
 <p>
