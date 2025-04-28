@@ -49,13 +49,14 @@ a {
 }
 
 /* Split screen for 13" laptop 640px x 688px */
-@media (min-width: 630px) and (max-width: 650px) {
-}
+/* @media (min-width: 630px) and (max-width: 650px) {
+} */
 
 /* Galaxy S21 dimensions 360px x 800px */
 /* Actual CSS 412px x 828px */
 /* This query covers a range of other similar devices */
-@media (max-height: 840px) and (width < 500px) {
+
+@media (max-height: 840px) and (max-width: 500px) {
     #navbar {
         height: 2em;
         gap: 5px;

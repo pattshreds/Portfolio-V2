@@ -23,4 +23,5 @@ This website is hosted through Netlify. View <a href="https://pmsoftware.netlify
   <li><s> Write a line that removes the animation class when seciton is off page. </s></li>
   <li> Start building blog page. </li>
   <li> Write CSS for as many screen sizes as I can. </li>
+  <li> In the index.html file I want to dynamically make the home-container take up the whole page so the tech-exp container must be scrolled to see. Right now I'm using a margin-bottom on the home-container to push it down but I want a more elegant solution. </li>
 </ul>
