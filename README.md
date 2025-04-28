@@ -4,7 +4,9 @@
   This time around I'm using HTML, CSS, and Javascript. My new portfolio will serve as a portfolio, contact page, and in the future a blog.
 </p>
 <br />
-This website is hosted through Netlify. View <a href="https://pmsoftware.netlify.app/" alt="My Portfolio">here</a>
+<p>
+This website is hosted through Netlify. View <a href="https://pmworks.dev" alt="pmworks.dev">here</a><i>https://pmworks.dev</i>
+</p>
 <hr />
 <p>
   No installation necessary to run locally. Clone and open any html file in your browser if you wish!
