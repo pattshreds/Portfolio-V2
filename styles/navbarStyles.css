@@ -2,21 +2,33 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    justify-content: center;
     gap: 1em;
     background-color: var(--navbar-blue);
     height: 2.5em;
     padding-right: 2em;
 }
 
+@media (max-height: 840px) and (max-width: 500px) {
+    #navbar {
+        justify-content: center;
+        padding-right: 0;
+        gap: 0;
+    }
+}
+
 #logo {
-    padding: 0;
     margin: 0 auto 0 1em;
     color: var(--value);
-    letter-spacing: 3px;
-    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-family: Open-Sans;
     font-weight: bold;
     font-size: 20px;
+}
+
+@media (max-height: 840px) and (max-width: 500px) {
+    #logo {
+        display: none;
+    }
 }
 
 .nav-button,
@@ -46,26 +58,4 @@ a {
 .resume a:hover,
 .github a:hover {
     color: var(--glow-green);
-}
-
-/* Split screen for 13" laptop 640px x 688px */
-/* @media (min-width: 630px) and (max-width: 650px) {
-} */
-
-/* Galaxy S21 dimensions 360px x 800px */
-/* Actual CSS 412px x 828px */
-/* This query covers a range of other similar devices */
-
-@media (max-height: 840px) and (max-width: 500px) {
-    #navbar {
-        height: 2em;
-        gap: 5px;
-        padding-right: 5px;
-        padding-top: 0.1em;
-    }
-
-    .nav-button,
-    a {
-        font-size: 14px;
-    }
 }

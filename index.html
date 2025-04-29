@@ -12,48 +12,49 @@
     <body>
         <nav-component></nav-component>
 
-        <!-- <div class="home-container">
-            <h1 id="home-title">Hi,</h1>
+        <div class="intro-container">
+            <h1 class="home-title">
+                <span id="const">const</span>
+                <span id="varName">helloMyNameIs</span>
+                <span class="equalAndComma">=</span>
+                <span class="openCurlyBrace">&#123;</span>
+            </h1>
             <h2 class="home-sub">
-                I'm Patrick McGuigan
-                <br />
-                Frontend focused, Fullstack Engineer and Designer
+                <span class="key">firstName:</span>
+                <span class="value">Patrick</span>
+                <span class="equalAndComma">,</span>
             </h2>
-            <p class="intro-body">
-                I'm a software engineer & and a user interface artist.<br />
-                I create beautifully functional websites and applications with
-                an evergrowing list of technologies and tools.
-            </p>
-        </div> -->
-
-        <!-- Just realized I have the same ID set over and over again.
-         Maybe that's why mobile styling is off? Start by removing IDs
-         and adding the id to the classlist. -->
-
-        <div class="home-container">
-                <h1 id="const" class="home-title">const</h1> &nbsp;&nbsp;
-                <h1 id="varName" class="home-title">helloMyNameIs</h1> &nbsp;&nbsp;
-                <h1 class="home-title equalAndComma">=</h1> &nbsp;&nbsp;
-                <h1 class="home-title openCurlyBrace">&#123;</h1>
-                <div style="flex-basis: 100%; height: 0;"></div>
-                    <h2 class="home-sub key">firstName:</h2> <h2 class="home-sub value">"Patrick"<span class="home-sub equalAndComma">,</span></h2>
-                        <div style="flex-basis: 100%; height: 0;"></div>
-                    <h2 class="home-sub key">lastName:</h2><h2 class="home-sub value">"Mcguigan"<span class="home-sub equalAndComma">,</span></h2>
-                        <div style="flex-basis: 100%; height: 0;"></div>
-                    <h2 class="home-sub key">title:</h2><h2 class="home-sub value">"Software Engineer"<span class="home-sub equalAndComma">,</span></h2>
-                        <div style="flex-basis: 100%; height: 0;"></div>
-                    <h2 class="home-sub key">subTitle:</h2><h2 class="home-sub value">"Frontend focused full stack developer and designer"<span class="home-sub equalAndComma">,</span></h2>
-                        <div style="flex-basis: 100%; height: 0;"></div>
-                    <h2 class="home-sub key">introBody:</h2><h2 class="home-sub intro-body value">"I'm a software engineer & and a user interface artist. I create beautifully functional websites and applications with an evergrowing list of technologies and tools."</h2>
-                    <div style="flex-basis: 100%; height: 0;"></div>
-                <h1 class="home-title closeCurlyBrace">    
-                    &#125;
-                </h1>    
-            </p>
+            <h2 class="home-sub">
+                <span class="key">lastName:</span>
+                <span class="value">Mcguigan</span>
+                <span class="equalAndComma">,</span>
+            </h2>
+            <h2 class="home-sub">
+                <span class="key">title:</span>
+                <span class="value">softwareEngineer</span>
+                <span class="equalAndComma">,</span>
+            </h2>
+            <h2 class="home-sub">
+                <span class="key">subTitle:</span>
+                <span class="value">Frontend-Focused Full-Stack Engineer</span>
+                <span class="equalAndComma">,</span>
+            </h2>
+            <h2 class="home-sub">
+                <span class="key">introBody:</span>
+                <span class="value"
+                    >I'm a software engineer & and a user interface artist. I
+                    create beautifully functional websites and applications with
+                    an evergrowing list of technologies and tools.</span
+                >
+                <span class="equalAndComma">,</span>
+            </h2>
+            <h1 class="home-title">
+                <span class="closeCurlyBrace">&#125;</span>
+            </h1>
         </div>
 
         <div id="tech-exp">
-            <p id="tech-title">Languages & Technologies</p>
+            <h1 id="tech-title">Current Tech Stack</h1>
             <section class="tech-cards">
                 <img src="./images/tech/1.png" alt="JS" class="tech-logo js" />
                 <img
@@ -96,48 +97,25 @@
                     alt="git"
                     class="tech-logo git"
                 />
-            </section>
+            </div>
         </div>
         <script src="components/nav.js"></script>
         <script src="JS/nav.js"></script>
         <script>
-        // Commenting this out for now to try a new block that will animate each tech-logo indidually with a .25s delay for each card.
-            // const observer = new IntersectionObserver((entries) => {
-            //     entries.forEach((entry) => {
-            //         if (entry.isIntersecting) {
-            //             entry.target.classList.add('tech-about-animation');
-            //         }
-            //     });
-            // });
-            // observer.observe(document.querySelector('.tech-cards'));
-
-        // Leaving this block in because it doesn't reset the animation when the target is off-screen but it looks like it should
-            // const observer = new IntersectionObserver((entries) => {
-            //     entries.forEach((entry) => {
-            //         const logos = entry.target.querySelectorAll('.tech-logo');
-            //         if (entry.isIntersecting) {
-            //             logos.forEach((logo, index) => {
-            //                 logo.style.setProperty('--delay', `${index * 0.15}s`);
-            //                 logo.classList.add('tech-about-animation');
-            //             });
-            //         } else {
-            //             logo.classList.remove('tech-about-animation')
-            //         }
-            //     });
-            // });
-            // observer.observe(document.querySelector('.tech-cards'));
-
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     const logos = entry.target.querySelectorAll('.tech-logo');
                     if (entry.isIntersecting) {
                         logos.forEach((logo, index) => {
-                            logo.style.setProperty('--delay', `${index * 0.15}s`);
+                            logo.style.setProperty(
+                                '--delay',
+                                `${index * 0.15}s`
+                            );
                             logo.classList.add('tech-about-animation');
                         });
                     } else {
                         logos.forEach((logo) => {
-                        logo.classList.remove('tech-about-animation');
+                            logo.classList.remove('tech-about-animation');
                         });
                     }
                 });

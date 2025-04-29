@@ -1,27 +1,24 @@
-.home-container {
+.intro-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+    padding-top: 5em;
     width: 80%;
-    max-height: 100%;
+    min-height: 100vh;
     margin-left: 10%;
-    margin-top: 8em;
 }
 
 .home-title {
     font-family: Open-Sans;
     font-size: 40px;
-    margin-bottom: 0px;
-    margin-top: -15px;
+    margin: 0;
 }
 
 .home-sub {
     font-family: Open-Sans;
     font-size: 20px;
-    margin-left: 2em;
-    margin-bottom: 0;
-    margin-top: 5px;
-    letter-spacing: 2px;
+    margin: 5px 30px;
 }
 
 #const {
@@ -34,7 +31,6 @@
 
 .equalAndComma {
     color: white;
-    margin-left: 0em;
 }
 
 .openCurlyBrace {
@@ -42,52 +38,40 @@
 }
 
 .closeCurlyBrace {
-    margin-top: 1.5em;
     color: var(--curly-braces);
 }
 
 .key {
     color: var(--key);
-    margin-right: -1.5em;
 }
 
 .value {
     color: var(--value);
-    margin-right: -2em;
 }
 
-.intro-body {
-    margin-bottom: -4em;
-    width: 70%;
-}
+/* /////////////////////////// */
 
 #tech-exp {
-    padding: 0;
-    margin-top: 10em;
-    margin-bottom: 5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--navbar-blue);
+    height: 70vh;
 }
 
 #tech-title {
-    font-size: 40px;
-    padding: 10px;
+    font-size: 30px;
     color: var(--curly-braces);
-    background-color: var(--navbar-blue);
     font-family: Open-Sans;
     text-align: center;
-    margin: 0 0 20px 0;
 }
 
 .tech-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 1em;
+    max-width: 70%;
 }
-
-/* Commenting this out for now to try a new block that will animate each tech-logo indidually with a .25s delay for each card. */
-/* .tech-about-animation {
-    animation: expand 1500ms;
-} */
 
 .tech-about-animation {
     opacity: 0;
@@ -118,29 +102,6 @@
 .git,
 .next {
     object-fit: contain;
-}
-
-@media (min-width: 600px) {
-    #tech-exp {
-        margin-top: 12em;
-    }
-}
-
-@media (min-width: 688px) {
-    #tech-exp {
-        margin-top: 16.2em;
-    }
-}
-
-/* This needs to be bumped down when the screen hits 1184px wide to accommodate the text spreading to more lines. */
-@media (max-width: 1184px) {
-    .closeCurlyBrace {
-        margin-top: 1.8em;
-    }
-}
-
-/* Split screen for 13" laptop 640px x 688px */
-@media (min-width: 630px) and (max-width: 650px) {
 }
 
 /* Galaxy S21 dimensions 360px x 800px */
