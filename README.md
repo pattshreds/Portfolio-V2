@@ -28,6 +28,6 @@ This website is hosted through Netlify. View <a href="https://pmworks.dev" alt="
   <li> Write CSS for as many screen sizes as I can. </li>
   <li><s> In the index.html file I want to dynamically make the home-container take up the whole page so the tech-exp container must be scrolled to see. Right now I'm using a margin-bottom on the home-container to push it down but I want a more elegant solution. </s></li>
   <li> On the projects page make the currentDot class active on page load rather than only when the slides is interacted with. </li>
-  <li> Add media queries for these mobile dimensions (Galaxy S21+) 411 x 781. </li>
+  <li><s> Add media queries for these mobile dimensions (Galaxy S21+) 411 x 781. </s></li>
   
 </ul>

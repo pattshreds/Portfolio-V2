@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 8em;
-    min-height: 80vh;
+    min-height: 65vh;
     padding-left: 10%;
 }
 
@@ -64,6 +64,18 @@
 
 /* /////////////////////////// */
 
+#tech-title {
+    font-size: 30px;
+    color: var(--curly-braces);
+    font-family: Open-Sans;
+    text-align: center;
+    /* I don't love this margin-bottom solution but this works for now.
+    The issue was with the #tech-title completely off the page
+    it wasn't obvious that the page could be scrolled to see more. */
+    margin-bottom: 20%;
+    letter-spacing: 1px;
+}
+
 #tech-exp {
     display: flex;
     align-items: center;
@@ -78,13 +90,6 @@
         /* Don't like this but using it for now */
         padding-bottom: 2em;
     }
-}
-
-#tech-title {
-    font-size: 30px;
-    color: var(--curly-braces);
-    font-family: Open-Sans;
-    text-align: center;
 }
 
 .tech-cards {
