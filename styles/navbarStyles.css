@@ -18,11 +18,12 @@
 
 #logo {
     margin: 0 auto 0 1em;
-    color: var(--value);
+    color: var(--primary-text);
     letter-spacing: 2px;
     font-family: Open-Sans;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
+    margin-bottom: 2px;
 }
 
 @media (max-height: 840px) and (max-width: 500px) {
