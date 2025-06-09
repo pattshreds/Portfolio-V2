@@ -23,10 +23,7 @@ const projectExternalLinksArray = [
         'https://github.com/pattshreds/pokedex_app',
         'https://main.darm3e1jlwi31.amplifyapp.com/',
     ],
-    [
-        'https://github.com/pattshreds/music-app',
-        'https://moodset.up.railway.app/landing/landing',
-    ],
+    ['https://github.com/pattshreds/music-app', 'https://moodsetapp.com'],
     [
         'https://github.com/ryanklintworth/infinite-savannah',
         'https://infinite-savannah-23628.herokuapp.com/',
