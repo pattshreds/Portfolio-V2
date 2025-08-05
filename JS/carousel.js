@@ -8,7 +8,7 @@ let slideIterator = 0;
 let projectNamesIterator = 0;
 let imagesSourceIterator = 0;
 let carouselClass = 1;
-const projectNamesArray = ['Pokesearch', 'Moodset', 'Infinite Savannah'];
+const projectNamesArray = ['Pokesearch', 'Moodset', 'PERN To-Do'];
 const projectLinkButtons = Array.from(
     document.querySelectorAll('.project-link-button')
 );
@@ -16,7 +16,7 @@ const carouselBodies = Array.from(document.querySelectorAll('.carousel'));
 const imagesSourceArray = [
     'images/Pokesearch/',
     'images/Moodset/',
-    'images/IF/',
+    'images/pernToDo/',
 ];
 const projectExternalLinksArray = [
     [
@@ -24,10 +24,7 @@ const projectExternalLinksArray = [
         'https://main.darm3e1jlwi31.amplifyapp.com/',
     ],
     ['https://github.com/pattshreds/music-app', 'https://moodsetapp.com'],
-    [
-        'https://github.com/ryanklintworth/infinite-savannah',
-        'https://infinite-savannah-23628.herokuapp.com/',
-    ],
+    ['https://github.com/pattshreds/PERN-todo'],
 ];
 
 // ----------------------------------------------------------------- //
