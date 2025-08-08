@@ -29,6 +29,8 @@ const projectExternalLinksArray = [
 
 // ----------------------------------------------------------------- //
 
+// ----------------------------------------------------------------- //
+
 // Set positioning for the prev and next buttons.
 
 (function positionNavButtons() {
