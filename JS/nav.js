@@ -6,7 +6,6 @@ setTimeout(() => {
     const contactButton = document.querySelector('.contact');
     const viewportWidth = window.innerWidth;
     const logo = document.getElementById('logo');
-    console.log(pathname);
     if (viewportWidth < 500) {
         logo.style.display = 'none';
     }

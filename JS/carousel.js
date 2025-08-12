@@ -29,8 +29,6 @@ const projectExternalLinksArray = [
 
 // ----------------------------------------------------------------- //
 
-// ----------------------------------------------------------------- //
-
 // Set positioning for the prev and next buttons.
 
 (function positionNavButtons() {
@@ -76,10 +74,16 @@ let x = 0;
 let linkTextIndex = 0;
 for (button in projectLinkButtons) {
     const linkTextArray = ['GitHub', 'View'];
-    let newLink = document.createElement('a');
-    newLink.href = `${projectExternalLinksArray[n][x]}`;
-    newLink.innerHTML = `${linkTextArray[linkTextIndex]}`;
-    projectLinkButtons[button].appendChild(newLink);
+    // The condition below will render a button if a link exists in the array
+    if (projectExternalLinksArray[n][x]) {
+        let newLink = document.createElement('a');
+        newLink.href = `${projectExternalLinksArray[n][x]}`;
+        newLink.innerHTML = `${linkTextArray[linkTextIndex]}`;
+        projectLinkButtons[button].appendChild(newLink);
+    } else {
+        // if link [x][n] does not exist, remove the corresponding button
+        projectLinkButtons[button].remove();
+    }
     x++;
     linkTextIndex++;
     if (x > 1) {
