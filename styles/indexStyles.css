@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 8em;
-    min-height: 65vh;
+    min-height: 75vh;
     padding-left: 10%;
 }
 
@@ -64,24 +64,21 @@
 
 /* /////////////////////////// */
 
+#tech-exp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: var(--navbar-blue); */
+    background: linear-gradient(transparent, var(--navbar-blue));
+    height: 70vh;
+}
+
 #tech-title {
     font-size: 30px;
     color: var(--curly-braces);
     font-family: Open-Sans;
     text-align: center;
-    /* I don't love this margin-bottom solution but this works for now.
-    The issue was with the #tech-title completely off the page
-    it wasn't obvious that the page could be scrolled to see more. */
-    margin-bottom: 20%;
     letter-spacing: 1px;
-}
-
-#tech-exp {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--navbar-blue);
-    height: 70vh;
 }
 
 @media (max-height: 840px) and (max-width: 500px) {
