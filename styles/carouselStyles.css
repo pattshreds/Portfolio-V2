@@ -89,6 +89,10 @@ carousel-component {
     cursor: pointer;
 }
 
+.current-dot {
+    box-shadow: 1px 0 10px 4px #0ff;
+}
+
 .position-indicator:hover {
     box-shadow: 1px 0 10px 4px #0ff;
 }

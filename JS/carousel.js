@@ -17,6 +17,7 @@ const imagesSourceArray = [
     'images/Pokesearch/',
     'images/Moodset/',
     'images/pernToDo/',
+    'images/hangman/',
 ];
 const projectExternalLinksArray = [
     [
@@ -25,6 +26,10 @@ const projectExternalLinksArray = [
     ],
     ['https://github.com/pattshreds/music-app', 'https://moodsetapp.com'],
     ['https://github.com/pattshreds/PERN-todo'],
+    [
+        'https://github.com/pattshreds/hangman-game',
+        'https://hangman-project-2be2d.web.app/',
+    ],
 ];
 
 // ----------------------------------------------------------------- //
