@@ -73,8 +73,15 @@
 }
 
 #tech-title {
-    font-size: 30px;
-    color: var(--curly-braces);
+    font-size: 60px;
+    color: var(--primary-grey);
+    width: 100vw;
+    background: linear-gradient(
+        to bottom,
+        var(--primary-blue),
+        var(--primary-button),
+        var(--primary-blue)
+    );
     font-family: Open-Sans;
     text-align: center;
     letter-spacing: 1px;
