@@ -14,9 +14,9 @@
     letter-spacing: 4px;
     background: linear-gradient(
         to bottom,
-        var(--primary-blue),
-        var(--primary-button),
-        var(--primary-blue)
+        var(--primary-blue) 30%,
+        var(--primary-button) 55%,
+        var(--primary-blue) 75%
     );
 }
 
