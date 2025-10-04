@@ -39,7 +39,7 @@
 }
 
 #varName {
-    color: var(--variable-name);
+    color: var(--blue-text);
 }
 
 .equalAndComma {
@@ -59,7 +59,7 @@
 }
 
 .value {
-    color: var(--value);
+    color: var(--orange-text);
 }
 
 /* /////////////////////////// */
