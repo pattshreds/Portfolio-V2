@@ -19,12 +19,16 @@
 
 #logo {
     margin: 0 auto 0 1em;
-    color: var(--primary-text);
+    color: var(--orange-text);
     letter-spacing: 2px;
     font-family: Open-Sans;
     font-weight: bold;
     font-size: 22px;
     margin-bottom: 2px;
+}
+
+#logo a:hover {
+    color: var(--yellow-text);
 }
 
 @media (max-height: 840px) and (max-width: 500px) {
@@ -36,7 +40,8 @@
 .nav-button,
 a {
     text-decoration: none;
-    color: var(--primary-text);
+    /* color: var(--primary-text); */
+    color: var(--orange-text);
     font-family: Open-Sans;
     border: none;
     height: 80%;
@@ -56,15 +61,16 @@ a {
 .about a:hover,
 .projects a:hover,
 .contact a:hover {
-    color: var(--nav-hover);
+    /* color: var(--nav-hover); */
+    color: var(--yellow-text);
 }
 
 .resume a,
 .github a {
-    color: var(--outside-link);
+    color: var(--blue-text);
 }
 
 .resume a:hover,
 .github a:hover {
-    color: var(--glow-green);
+    color: var(--yellow-text);
 }

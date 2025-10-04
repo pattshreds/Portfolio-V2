@@ -29,7 +29,7 @@
 }
 
 .project-title {
-    color: var(--outside-link);
+    color: var(--yellow-text);
     font-family: Slabo;
     font-size: 30px;
     margin: 0;

@@ -39,7 +39,7 @@
 }
 
 #varName {
-    color: var(--variable-name);
+    color: var(--blue-text);
 }
 
 .equalAndComma {
@@ -59,7 +59,7 @@
 }
 
 .value {
-    color: var(--value);
+    color: var(--orange-text);
 }
 
 /* /////////////////////////// */
@@ -68,19 +68,25 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom, transparent, var(--navbar-blue));
-    /* height: 50vh; */
+    /* background: linear-gradient(to bottom, transparent, var(--navbar-blue)); */
+    padding-bottom: 4rem;
 }
 
 #tech-title {
     font-size: 60px;
     color: var(--primary-grey);
     width: 100vw;
-    background: linear-gradient(
+    /* background: linear-gradient(
         to bottom,
         var(--primary-blue) 30%,
         var(--primary-button) 55%,
         var(--primary-blue) 75%
+    ); */
+    background: linear-gradient(
+        to bottom,
+        transparent 30%,
+        var(--primary-button) 55%,
+        transparent 75%
     );
     font-family: Open-Sans;
     text-align: center;

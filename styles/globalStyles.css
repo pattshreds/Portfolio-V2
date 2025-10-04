@@ -19,24 +19,30 @@
 
 :root {
     --const: #569cd6;
-    --variable-name: #76c1ff;
+    --blue-text: #76c1ff;
     --equal-sign-and-comma: ;
     --curly-braces: rgb(255, 221, 0);
     --key: #9cdcfe;
-    --value: #ce9178;
+    --orange-text: #ce9178;
     --primary-blue: rgb(34, 40, 52);
     --navbar-blue: rgb(60, 72, 94);
     --primary-text: bisque;
     --primary-grey: rgb(199, 199, 199);
     --primary-button: rgb(138, 75, 143);
     --primary-button-hover: rgb(91, 46, 95);
-    --outside-link: rgb(255, 221, 0);
+    /* --outside-link: rgb(255, 221, 0); */
+    --yellow-text: rgb(255, 221, 0);
     --glow-green: rgb(140, 240, 166);
     --nav-hover: rgb(255, 174, 0);
 }
 
 body {
-    background-color: var(--primary-blue);
+    /* background-color: var(--primary-blue); */
+    background: linear-gradient(
+        to bottom,
+        var(--primary-blue),
+        var(--navbar-blue) 85%
+    );
     margin: 0;
     padding: 0;
 }
