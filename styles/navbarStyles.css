@@ -17,7 +17,7 @@
     }
 }
 
-#logo {
+/* #logo {
     margin: 0 auto 0 1em;
     color: var(--orange-text);
     letter-spacing: 2px;
@@ -25,11 +25,11 @@
     font-weight: bold;
     font-size: 22px;
     margin-bottom: 2px;
-}
+} */
 
-#logo a:hover {
+/* #logo a:hover {
     color: var(--yellow-text);
-}
+} */
 
 @media (max-height: 840px) and (max-width: 500px) {
     #logo {
@@ -73,4 +73,31 @@ a {
 .resume a:hover,
 .github a:hover {
     color: var(--yellow-text);
+}
+
+/*  Logo testing area */
+
+#logo,
+a {
+    --s: 0.1em; /* the thickness of the line */
+    --c: var(--yellow-text); /* the color */
+
+    color: #0000;
+    /* padding-bottom: var(--s); */
+    background: linear-gradient(90deg, var(--c) 50%, #ffffff 0)
+            calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+#logo:hover {
+    --_p: 100%;
+}
+
+#logo {
+    font-family: system-ui, sans-serif;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 auto 0 1em;
 }

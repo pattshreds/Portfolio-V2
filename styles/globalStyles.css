@@ -17,6 +17,7 @@
     }
 }
 
+/* Create new color pallette */
 :root {
     --const: #569cd6;
     --blue-text: #76c1ff;
@@ -30,7 +31,6 @@
     --primary-grey: rgb(199, 199, 199);
     --primary-button: rgb(138, 75, 143);
     --primary-button-hover: rgb(91, 46, 95);
-    /* --outside-link: rgb(255, 221, 0); */
     --yellow-text: rgb(255, 221, 0);
     --glow-green: rgb(140, 240, 166);
     --nav-hover: rgb(255, 174, 0);
