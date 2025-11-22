@@ -3,14 +3,16 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding-top: 8em;
+    padding-top: 4em;
     min-height: 75vh;
-    padding-left: 10%;
+    letter-spacing: 1px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .home-title {
     font-family: Open-Sans;
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
 }
 
@@ -73,21 +75,16 @@
 }
 
 #tech-title {
-    font-size: 60px;
-    color: var(--primary-grey);
+    font-size: 50px;
+    font-family: system-ui, sans-serif;
+    color: white;
     width: 100vw;
     /* background: linear-gradient(
-        to bottom,
-        var(--primary-blue) 30%,
-        var(--primary-button) 55%,
-        var(--primary-blue) 75%
-    ); */
-    background: linear-gradient(
         to bottom,
         transparent 30%,
         var(--primary-button) 55%,
         transparent 75%
-    );
+    ); */
     font-family: Open-Sans;
     text-align: center;
     letter-spacing: 1px;

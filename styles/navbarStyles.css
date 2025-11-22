@@ -3,9 +3,58 @@
     justify-content: flex-end;
     align-items: center;
     gap: 1em;
-    background-color: var(--navbar-blue);
+    /* background-color: var(--navbar-blue); */
     height: 2.5em;
-    padding-right: 2em;
+    /* padding-right: 2em; */
+    padding: 0.5em 5em 1em 3em;
+}
+
+.nav-button,
+a {
+    text-decoration: none;
+    font-family: Open-Sans;
+    border: none;
+    height: 80%;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: transparent;
+}
+
+#logo,
+a {
+    --s: 0.1em;
+    --c: var(--yellow-text);
+
+    color: #0000;
+    background: linear-gradient(90deg, var(--c) 50%, #ffffff 0)
+            calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+#logo {
+    font-family: system-ui, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 auto 0 1em;
+}
+
+#logo:hover {
+    --_p: 100%;
+}
+
+.home a:hover,
+.about a:hover,
+.projects a:hover,
+.contact a:hover {
+    --_p: 100%;
+}
+
+.resume a:hover,
+.github a:hover {
+    --_p: 100%;
 }
 
 @media (max-height: 840px) and (max-width: 500px) {
@@ -15,89 +64,26 @@
         gap: 0;
         height: 3em;
     }
-}
 
-/* #logo {
-    margin: 0 auto 0 1em;
-    color: var(--orange-text);
-    letter-spacing: 2px;
-    font-family: Open-Sans;
-    font-weight: bold;
-    font-size: 22px;
-    margin-bottom: 2px;
-} */
-
-/* #logo a:hover {
-    color: var(--yellow-text);
-} */
-
-@media (max-height: 840px) and (max-width: 500px) {
     #logo {
         display: none;
     }
-}
 
-.nav-button,
-a {
-    text-decoration: none;
-    /* color: var(--primary-text); */
-    color: var(--orange-text);
-    font-family: Open-Sans;
-    border: none;
-    height: 80%;
-    font-size: 15px;
-    font-weight: 100;
-    background-color: transparent;
-}
-
-@media (max-height: 840px) and (max-width: 500px) {
     .nav-button,
     a {
         font-size: 18px;
     }
 }
 
-.home a:hover,
-.about a:hover,
-.projects a:hover,
-.contact a:hover {
-    /* color: var(--nav-hover); */
-    color: var(--yellow-text);
-}
+/* @media (max-height: 840px) and (max-width: 500px) {
+    #logo {
+        display: none;
+    }
+} */
 
-.resume a,
-.github a {
-    color: var(--blue-text);
-}
-
-.resume a:hover,
-.github a:hover {
-    color: var(--yellow-text);
-}
-
-/*  Logo testing area */
-
-#logo,
-a {
-    --s: 0.1em; /* the thickness of the line */
-    --c: var(--yellow-text); /* the color */
-
-    color: #0000;
-    /* padding-bottom: var(--s); */
-    background: linear-gradient(90deg, var(--c) 50%, #ffffff 0)
-            calc(100% - var(--_p, 0%)) / 200% 100%,
-        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
-    -webkit-background-clip: text, padding-box;
-    background-clip: text, padding-box;
-    transition: 0.5s;
-}
-#logo:hover {
-    --_p: 100%;
-}
-
-#logo {
-    font-family: system-ui, sans-serif;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 auto 0 1em;
-}
+/* @media (max-height: 840px) and (max-width: 500px) {
+    .nav-button,
+    a {
+        font-size: 18px;
+    }
+} */
