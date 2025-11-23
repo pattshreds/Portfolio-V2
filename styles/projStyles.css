@@ -54,9 +54,6 @@
     }
 }
 
-/* Galaxy S21 dimensions 360px x 800px */
-/* Actual CSS 412px x 828px */
-/* This query covers a range of other similar devices */
 @media (max-height: 840px) and (width < 500px) {
     .project {
         width: 90%;
