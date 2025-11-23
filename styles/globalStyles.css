@@ -8,14 +8,14 @@
     src: url(../fonts/Slabo_27px/Slabo27px-Regular.ttf);
 }
 
-@keyframes expand {
+/* @keyframes expand {
     0% {
         transform: scale(0, 0.025);
     }
     50% {
         transform: scale(1, 0.025);
     }
-}
+} */
 
 /* Create new color pallette */
 :root {
