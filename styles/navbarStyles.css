@@ -28,7 +28,7 @@ a {
     background-color: transparent;
 }
 
-#logo,
+/* #logo, */
 a {
     color: #0000;
     background: linear-gradient(90deg, var(--c) 50%, #ffffff 0)
@@ -47,12 +47,22 @@ a {
     background-clip: text, padding-box;
 }
 
+#logo a {
+    font-family: Covered;
+    font-size: 25px;
+    color: #0000;
+    background: linear-gradient(90deg, var(--c) 50%, #cf7278 0)
+            calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
 #logo {
-    font-family: system-ui, sans-serif;
-    font-size: 15px;
     cursor: pointer;
     margin: 0 auto 0 1em;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 #logo:hover {

@@ -8,6 +8,11 @@
     src: url(../fonts/Slabo_27px/Slabo27px-Regular.ttf);
 }
 
+@font-face {
+    font-family: Covered;
+    src: url(../fonts/Covered_By_Your_Grace/CoveredByYourGrace-Regular.ttf);
+}
+
 :root {
     --primary-yellow: rgb(255, 221, 0);
     --primary-orange: #ce9178;
