@@ -52,6 +52,7 @@ a {
     font-size: 15px;
     cursor: pointer;
     margin: 0 auto 0 1em;
+    letter-spacing: 1px;
 }
 
 #logo:hover {
