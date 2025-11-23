@@ -76,14 +76,16 @@ a {
         gap: 0;
         height: 3em;
     }
-
     #logo {
         display: none;
     }
-
     .nav-button,
     a {
         font-size: 18px;
+    }
+    .github a,
+    .resume a {
+        color: rgb(111, 111, 111);
     }
 }
 
