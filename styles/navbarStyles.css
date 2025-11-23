@@ -3,9 +3,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 1em;
-    /* background-color: var(--navbar-blue); */
     height: 2.5em;
-    /* padding-right: 2em; */
     padding: 0.5em 5em 1em 3em;
 }
 
@@ -36,7 +34,7 @@ a {
 
 #logo {
     font-family: system-ui, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     margin: 0 auto 0 1em;
 }
@@ -59,8 +57,10 @@ a {
 
 @media (max-height: 840px) and (max-width: 500px) {
     #navbar {
+        /* border: 2px solid red; */
         justify-content: center;
-        padding-right: 0;
+        padding: 0;
+        padding-top: 10px;
         gap: 0;
         height: 3em;
     }

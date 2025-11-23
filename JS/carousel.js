@@ -193,3 +193,124 @@ for (const dot of nav) {
         }
     });
 }
+
+// ----------------------------------------------------------------- //
+
+// When I use the keyboard arrows, the most visible carousel will scroll
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+        // Find the carousel that's most visible in the viewport
+        let mostVisibleCarousel = null;
+        let maxVisibility = 0;
+
+        carouselBodies.forEach((carousel) => {
+            const rect = carousel.getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
+
+            // Calculate how much of the carousel is visible
+            const visibleTop = Math.max(0, rect.top);
+            const visibleBottom = Math.min(viewportHeight, rect.bottom);
+            const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+            const visibilityRatio = visibleHeight / rect.height;
+
+            if (visibilityRatio > maxVisibility) {
+                maxVisibility = visibilityRatio;
+                mostVisibleCarousel = carousel;
+            }
+        });
+
+        if (mostVisibleCarousel && maxVisibility > 0.3) {
+            // At least 30% visible
+            const imageList = mostVisibleCarousel.querySelector('.images-list');
+            const currentSlide = imageList.querySelector('.current-slide');
+            const carouselNav =
+                mostVisibleCarousel.querySelector('.carousel-nav');
+            const currentDot = carouselNav.querySelector('.current-dot');
+
+            if (e.key === 'ArrowLeft') {
+                // Previous slide
+                const prevSlide = currentSlide.previousElementSibling;
+                const prevDot = currentDot.previousElementSibling;
+
+                if (prevSlide) {
+                    currentSlide.classList.remove('current-slide');
+                    prevSlide.classList.add('current-slide');
+                    currentDot.classList.remove('current-dot');
+                    prevDot.classList.add('current-dot');
+                }
+            } else if (e.key === 'ArrowRight') {
+                // Next slide
+                const nextSlide = currentSlide.nextElementSibling;
+                const nextDot = currentDot.nextElementSibling;
+
+                if (nextSlide) {
+                    currentSlide.classList.remove('current-slide');
+                    nextSlide.classList.add('current-slide');
+                    currentDot.classList.remove('current-dot');
+                    nextDot.classList.add('current-dot');
+                }
+            }
+        }
+    }
+});
+
+// ----------------------------------------------------------------- //
+
+// Swipe navigation for mobile and touchscreen
+
+carouselBodies.forEach((carousel) => {
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const swipeThreshold = 50; // Minimum distance in pixels for a swipe
+
+    carousel.addEventListener(
+        'touchstart',
+        (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        },
+        { passive: true }
+    );
+
+    carousel.addEventListener(
+        'touchend',
+        (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe(carousel);
+        },
+        { passive: true }
+    );
+
+    function handleSwipe(carouselElement) {
+        const imageList = carouselElement.querySelector('.images-list');
+        const currentSlide = imageList.querySelector('.current-slide');
+        const carouselNav = carouselElement.querySelector('.carousel-nav');
+        const currentDot = carouselNav.querySelector('.current-dot');
+
+        // Swiped left (next slide)
+        if (touchEndX < touchStartX - swipeThreshold) {
+            const nextSlide = currentSlide.nextElementSibling;
+            const nextDot = currentDot.nextElementSibling;
+
+            if (nextSlide) {
+                currentSlide.classList.remove('current-slide');
+                nextSlide.classList.add('current-slide');
+                currentDot.classList.remove('current-dot');
+                nextDot.classList.add('current-dot');
+            }
+        }
+
+        // Swiped right (previous slide)
+        if (touchEndX > touchStartX + swipeThreshold) {
+            const prevSlide = currentSlide.previousElementSibling;
+            const prevDot = currentDot.previousElementSibling;
+
+            if (prevSlide) {
+                currentSlide.classList.remove('current-slide');
+                prevSlide.classList.add('current-slide');
+                currentDot.classList.remove('current-dot');
+                prevDot.classList.add('current-dot');
+            }
+        }
+    }
+});
