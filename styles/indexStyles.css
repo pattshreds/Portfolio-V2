@@ -119,6 +119,9 @@
 }
 
 @media (max-height: 840px) and (max-width: 500px) {
+    .intro-container {
+        min-height: 67vh;
+    }
     .home-title {
         font-family: Open-Sans;
         font-size: 25px;
