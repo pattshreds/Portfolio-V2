@@ -5,6 +5,18 @@
     gap: 1em;
     height: 2.5em;
     padding: 0.5em 5em 1em 3em;
+    /* border-bottom: 2px solid var(--navbar-blue); */
+}
+
+#navbar::after {
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 1px;
+    background-color: var(--navbar-blue);
 }
 
 .nav-button,
