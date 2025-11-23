@@ -56,18 +56,6 @@ carousel-component {
     object-fit: cover;
 }
 
-.button-next-container {
-    position: absolute;
-    top: 30%;
-    right: 0;
-}
-
-.button-prev-container {
-    position: absolute;
-    top: 30%;
-    left: 0;
-}
-
 .carousel-btn {
     cursor: pointer;
     background-color: transparent;
@@ -76,6 +64,36 @@ carousel-component {
 
 .carousel-btn img {
     width: 2em;
+}
+
+.button-next-container {
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+
+.btn-next img {
+    transition: all 0.3s ease;
+}
+
+.btn-next img:hover {
+    width: 4em;
+    opacity: 50%;
+}
+
+.button-prev-container {
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+
+.btn-prev img {
+    transition: all 0.3s ease;
+}
+
+.btn-prev img:hover {
+    width: 4em;
+    opacity: 50%;
 }
 
 .carousel-nav {
