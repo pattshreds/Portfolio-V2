@@ -55,6 +55,7 @@
     position: relative;
     align-items: center;
     flex-direction: column;
+    min-height: 45vh;
     background-color: var(--navbar-blue);
     padding-bottom: 4em;
     margin-bottom: 5em;
@@ -63,7 +64,7 @@
 #tech-exp::before {
     content: '';
     position: absolute;
-    bottom: 21.5em;
+    bottom: 25em;
     left: 15.5em;
     width: 60%;
     height: 2px;
