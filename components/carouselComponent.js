@@ -15,12 +15,14 @@ class Carousel extends HTMLElement {
                     <li class="slide">
                     </li>
                 </ul>
-                <div class="button-container">
-                    <button class="carousel-btn btn-prev">
-                        <img src="./images/arrow-left.png" alt="Previous" />
-                    </button>
+                <div class="button-next-container">
                     <button class="carousel-btn btn-next">
                         <img src="./images/arrow-right.png" alt="Next" />
+                    </button>
+                </div>
+                <div class="button-prev-container">
+                    <button class="carousel-btn btn-prev">
+                        <img src="./images/arrow-left.png" alt="Previous" />
                     </button>
                 </div>
                 <div class="carousel-nav pokesearch">

@@ -13,7 +13,7 @@
     position: relative;
     height: 100%;
     width: 100%;
-    padding: 0;
+    padding: 0 40px 0 40px;
 }
 
 carousel-component {
@@ -56,12 +56,16 @@ carousel-component {
     object-fit: cover;
 }
 
-.button-container {
+.button-next-container {
     position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
     top: 30%;
+    right: 0;
+}
+
+.button-prev-container {
+    position: absolute;
+    top: 30%;
+    left: 0;
 }
 
 .carousel-btn {
@@ -111,18 +115,21 @@ carousel-component {
     padding: 3px 40px;
     width: 5em;
     border-radius: 4px;
-}
-
-.project-link-button:hover {
-    background: rgb(91, 46, 95);
-    a {
-        color: white;
-    }
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-link-button a {
     margin: 0 auto;
     color: var(--primary-grey);
+    transition: color 0.3s ease;
+}
+
+.project-link-button:hover {
+    background: rgb(91, 46, 95);
+    box-shadow: 1px 0 20px 4px var(--yellow-text);
+    a {
+        color: white;
+    }
 }
 
 /* Full screen 13" laptop 1280px x 688px */
@@ -148,19 +155,14 @@ carousel-component {
     }
 }
 
-/* Galaxy S21 dimensions 360px x 800px */
-/* Actual CSS 412px x 828px */
-/* This query covers a range of other similar devices */
-@media (max-height: 840px) and (width < 500px) {
+@media (max-height: 840px) and (max-width: 500px) {
     .carousel-home {
         width: 80vw;
         height: 30vh;
     }
     .carousel {
-        max-width: 100%;
-    }
-    .button-container {
-        top: 30%;
+        max-width: 99%;
+        padding: 0 35px 0 35px;
     }
     .project-link-button {
         display: flex;
