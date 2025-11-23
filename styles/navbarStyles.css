@@ -5,7 +5,6 @@
     gap: 1em;
     height: 2.5em;
     padding: 0.5em 5em 1em 3em;
-    /* border-bottom: 2px solid var(--navbar-blue); */
 }
 
 #navbar::after {
@@ -26,15 +25,11 @@ a {
     border: none;
     height: 80%;
     font-size: 15px;
-    font-weight: 100;
     background-color: transparent;
 }
 
 #logo,
 a {
-    --s: 0.1em;
-    --c: var(--yellow-text);
-
     color: #0000;
     background: linear-gradient(90deg, var(--c) 50%, #ffffff 0)
             calc(100% - var(--_p, 0%)) / 200% 100%,
@@ -42,6 +37,14 @@ a {
     -webkit-background-clip: text, padding-box;
     background-clip: text, padding-box;
     transition: 0.5s;
+}
+
+.github a,
+.resume a {
+    background: linear-gradient(90deg, var(--c) 50%, #9b9b9b 0)
+            calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    background-clip: text, padding-box;
 }
 
 #logo {
@@ -83,21 +86,4 @@ a {
     a {
         font-size: 18px;
     }
-    .github a,
-    .resume a {
-        color: rgb(111, 111, 111);
-    }
 }
-
-/* @media (max-height: 840px) and (max-width: 500px) {
-    #logo {
-        display: none;
-    }
-} */
-
-/* @media (max-height: 840px) and (max-width: 500px) {
-    .nav-button,
-    a {
-        font-size: 18px;
-    }
-} */

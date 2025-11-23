@@ -11,7 +11,6 @@
     margin-top: 11rem;
     width: 100%;
 }
-
 #about-img-1 {
     position: absolute;
     width: 300px;
@@ -22,18 +21,11 @@
 
 #about-img-2 {
     position: absolute;
-    border: 1px outset bisque;
+    border: 1px outset var(--header-text-1);
     width: 250px;
     height: 250px;
     border-radius: 100%;
 }
-
-/* hr {
-    color: var(--primary-grey);
-    width: 100%;
-    margin: 0;
-    margin-top: 11em;
-} */
 
 #body-container {
     display: flex;
@@ -49,14 +41,14 @@
 #about-header {
     font-family: Open-Sans;
     font-size: 70px;
-    color: var(--primary-text);
+    color: var(--header-text-1);
     margin: 0 auto 10px auto;
 }
 
 #about-subhead {
     font-family: Open-Sans;
     font-size: 25px;
-    color: var(--primary-text);
+    color: var(--header-text-1);
     margin: 0 auto 20px auto;
 }
 

@@ -27,7 +27,7 @@
 }
 
 #varName {
-    color: var(--blue-text);
+    color: var(--variable);
 }
 
 .equalAndComma {
@@ -35,11 +35,11 @@
 }
 
 .openCurlyBrace {
-    color: var(--curly-braces);
+    color: var(--primary-yellow);
 }
 
 .closeCurlyBrace {
-    color: var(--curly-braces);
+    color: var(--primary-yellow);
 }
 
 .key {
@@ -47,7 +47,7 @@
 }
 
 .value {
-    color: var(--orange-text);
+    color: var(--primary-orange);
 }
 
 #tech-exp {

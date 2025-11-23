@@ -8,41 +8,26 @@
     src: url(../fonts/Slabo_27px/Slabo27px-Regular.ttf);
 }
 
-/* @keyframes expand {
-    0% {
-        transform: scale(0, 0.025);
-    }
-    50% {
-        transform: scale(1, 0.025);
-    }
-} */
-
-/* Create new color pallette */
 :root {
-    --const: #569cd6;
-    --blue-text: #76c1ff;
-    --equal-sign-and-comma: ;
-    --curly-braces: rgb(255, 221, 0);
-    --key: #9cdcfe;
-    --orange-text: #ce9178;
+    --primary-yellow: rgb(255, 221, 0);
+    --primary-orange: #ce9178;
     --primary-blue: rgb(34, 40, 52);
-    --navbar-blue: rgb(60, 72, 94);
-    --primary-text: bisque;
     --primary-grey: rgb(199, 199, 199);
     --primary-button: rgb(138, 75, 143);
     --primary-button-hover: rgb(91, 46, 95);
-    --yellow-text: rgb(255, 221, 0);
+    --const: #569cd6;
+    --variable: #76c1ff;
+    --key: #9cdcfe;
+    --navbar-blue: rgb(60, 72, 94);
+    --header-text-1: bisque;
     --glow-green: rgb(140, 240, 166);
     --nav-hover: rgb(255, 174, 0);
+    --s: 0.1em; /* thickness of line for nav button animation */
+    --c: var(--primary-yellow); /* color for nav button animation */
 }
 
 body {
     background-color: var(--primary-blue);
-    /* background: linear-gradient(
-        to bottom,
-        var(--primary-blue),
-        var(--navbar-blue)
-    ); */
     margin: 0;
     padding: 0;
 }
