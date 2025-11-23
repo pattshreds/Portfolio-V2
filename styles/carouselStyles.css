@@ -73,11 +73,12 @@ carousel-component {
 }
 
 .btn-next img {
-    transition: width 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-next img:hover {
     width: 4em;
+    opacity: 50%;
 }
 
 .button-prev-container {
@@ -87,11 +88,12 @@ carousel-component {
 }
 
 .btn-prev img {
-    transition: width 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-prev img:hover {
     width: 4em;
+    opacity: 50%;
 }
 
 .carousel-nav {
