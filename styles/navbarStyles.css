@@ -78,6 +78,15 @@ a {
     --_p: 100%;
 }
 
+@media (min-width: 630px) and (max-width: 650px) {
+    #navbar {
+        padding: 0.5em 2em 1em 1em;
+    }
+    #logo a {
+        font-size: 25px;
+    }
+}
+
 @media (max-height: 840px) and (max-width: 500px) {
     #navbar {
         justify-content: center;

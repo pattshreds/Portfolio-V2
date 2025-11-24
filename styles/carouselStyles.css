@@ -144,7 +144,7 @@ carousel-component {
 
 .project-link-button:hover {
     background: rgb(91, 46, 95);
-    box-shadow: 0 2px 1px 3px var(--primary-yellow);
+    box-shadow: 1px 2px 0 4px var(--primary-yellow);
     a {
         color: white;
     }
