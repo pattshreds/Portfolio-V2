@@ -58,7 +58,7 @@
     min-height: 45vh;
     background-color: var(--navbar-blue);
     padding-top: 8em;
-    padding-bottom: 4em;
+    padding-bottom: 5em;
     margin-bottom: 5em;
 }
 
@@ -138,15 +138,21 @@
         width: 100%;
         margin-top: 0;
     }
-
-    #tech-exp::before {
-        top: -2em;
-        left: 20%;
-        width: 80%;
+    #tech-exp {
+        padding-top: 5em;
     }
-
     #tech-title {
-        padding: 15px 0 35px 3.1em;
+        padding-bottom: 35px;
         font-size: 30px;
+        left: 1em;
+    }
+    #tech-title::after {
+        content: '';
+        position: absolute;
+        bottom: 1em;
+        right: -0.5em;
+        width: 180%;
+        height: 2px;
+        background-color: var(--primary-blue);
     }
 }

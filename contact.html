@@ -17,11 +17,26 @@
         <link rel="stylesheet" href="styles/footerStyles.css" />
     </head>
     <body>
-        <!-- For some reason the contact page is not recieving the #navbar mobile height prop -->
+        <!-- For some reason the contact page is not stoked on the navbar styling -->
         <style>
+            #navbar {
+                padding-top: 1em;
+            }
+            #logo {
+                margin-top: 0.1em;
+                margin-left: 0.8em;
+            }
             @media (max-height: 840px) and (width < 500px) {
                 #navbar {
                     height: 3.5em;
+                }
+                #logo a {
+                    margin-left: -0.6em;
+                    margin-top: -1em;
+                    font-size: 32px;
+                }
+                .nav-button {
+                    margin-top: 7.5em;
                 }
             }
         </style>
