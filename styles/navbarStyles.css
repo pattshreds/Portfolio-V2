@@ -28,7 +28,6 @@ a {
     background-color: transparent;
 }
 
-/* #logo, */
 a {
     color: #0000;
     background: linear-gradient(90deg, var(--c) 50%, #ffffff 0)
@@ -48,21 +47,19 @@ a {
 }
 
 #logo a {
-    font-family: Covered;
     font-size: 25px;
+    font-family: Covered;
     color: #0000;
     background: linear-gradient(90deg, var(--c) 50%, var(--primary-red) 0)
             calc(100% - var(--_p, 0%)) / 200% 100%,
         linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
     -webkit-background-clip: text, padding-box;
     background-clip: text, padding-box;
-    transition: 0.5s;
 }
 
 #logo {
     cursor: pointer;
     margin: 0 auto 0 1em;
-    /* letter-spacing: 1px; */
 }
 
 #logo:hover {
@@ -83,18 +80,26 @@ a {
 
 @media (max-height: 840px) and (max-width: 500px) {
     #navbar {
-        /* border: 2px solid red; */
         justify-content: center;
         padding: 0;
         padding-top: 10px;
         gap: 0;
-        height: 3em;
+        height: 10em;
     }
     #logo {
-        display: none;
+        position: absolute;
+        top: 1em;
+        left: 4.3em;
+        margin-bottom: 1em;
+    }
+    #logo a {
+        font-size: 30px;
     }
     .nav-button,
     a {
-        font-size: 18px;
+        font-size: 15px;
+    }
+    #navbar::after {
+        top: 16%;
     }
 }
