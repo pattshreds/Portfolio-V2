@@ -74,7 +74,7 @@
 #tech-title {
     font-family: Open-Sans;
     font-size: 40px;
-    color: white;
+    color: var(--primary-grey);
     background: var(--navbar-blue);
     margin-bottom: 0;
     padding: 15px 0 33px 18em;
