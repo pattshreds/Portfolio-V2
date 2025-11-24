@@ -35,11 +35,12 @@
 .icon {
     width: 2em;
     cursor: pointer;
+    opacity: 50%;
     transition: opacity 0.3s ease;
 }
 
 .icon:hover {
-    opacity: 50%;
+    opacity: 100%;
 }
 
 @media (max-height: 840px) and (max-width: 500px) {
