@@ -19,7 +19,7 @@ class Nav extends HTMLElement {
                 <a href="./about.html"> About </a>
             </button>
             <button class="nav-button projects">
-                <a href="./projects.html"> Projects </a>
+                <a href="./projects.html"> Work </a>
             </button>
             <button class="nav-button contact">
                 <a href="./contact.html"> Contact </a>

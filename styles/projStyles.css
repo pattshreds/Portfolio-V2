@@ -15,14 +15,22 @@
 
 /* Testing new projects page header /////////////////////// */
 
+/* #projects-page-header-top {
+    font-size: 6em;
+    font-family: Open-Sans;
+    margin: 1em auto auto auto;
+    border: 1px solid red;
+} */
+
 #projects-page-header {
+    /* border: 1px solid blue; */
     position: relative;
     margin-bottom: -20px;
     margin-top: 1em;
     margin-left: 3.5em;
     transform: translate(-50%, -50%);
     font-size: 6em;
-    font-family: Open-Sans;
+    font-family: Slabo;
     color: transparent;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -122,7 +130,7 @@
         align-items: center;
     }
     #projects-page-header {
-        left: 5%;
+        /* left: 0%; */
         margin-top: 15px;
         font-size: 5em;
     }
