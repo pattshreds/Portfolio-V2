@@ -148,6 +148,7 @@ carousel-component {
     a {
         color: white;
     }
+    font-weight: bold;
 }
 
 /* Full screen 13" laptop 1280px x 688px */

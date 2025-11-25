@@ -66,7 +66,7 @@
     content: '';
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -0.5em;
     width: 250%;
     height: 2px;
     background-color: var(--primary-blue);
@@ -121,6 +121,12 @@
 .git,
 .next {
     object-fit: contain;
+}
+
+@media (min-width: 630px) and (max-width: 650px) {
+    #tech-title {
+        left: 1.5em;
+    }
 }
 
 @media (max-height: 840px) and (max-width: 500px) {
