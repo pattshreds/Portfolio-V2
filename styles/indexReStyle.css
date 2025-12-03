@@ -1,0 +1,128 @@
+/* Home page intro section ////////////////////////////// */
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    min-height: 75vh;
+    letter-spacing: 1px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.home-title,
+.home-closing {
+    font-family: Open-Sans;
+    font-size: 30px;
+    margin: 0;
+}
+
+.home-title span:nth-child(1) {
+    color: var(--const);
+}
+
+.home-title span:nth-child(2) {
+    color: var(--variable);
+}
+
+.home-title span:nth-child(3) {
+    color: white;
+}
+
+.home-title span:nth-child(4) {
+    color: var(--primary-yellow);
+}
+
+.closeCurlyBrace {
+    color: var(--primary-yellow);
+}
+
+.home-sub {
+    font-family: Open-Sans;
+    font-size: 15px;
+    margin: 5px 20px;
+}
+
+.home-sub span:nth-child(1) {
+    color: var(--key);
+}
+
+.home-sub span:nth-child(2) {
+    color: var(--primary-orange);
+}
+
+.home-sub span:nth-child(3) {
+    color: white;
+}
+
+/* Tech-Experience section ////////////////////////////// */
+
+#tech-exp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 45vh;
+    background-color: var(--navbar-blue);
+    padding-top: 1em;
+    padding-bottom: 5em;
+    margin-bottom: 4em;
+}
+
+#tech-title {
+    position: relative;
+    font-size: 3.5em;
+    color: var(--primary-yellow);
+    font-family: Slabo;
+    letter-spacing: 1px;
+}
+
+#tech-title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.2em;
+    right: -0.4em;
+    width: 180%;
+    height: 2px;
+    background-color: var(--primary-blue);
+}
+
+.tech-logo {
+    background-color: white;
+    max-width: 96px;
+    height: 96px;
+    padding: 10px;
+    margin: 5px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.tech-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 70%;
+}
+
+.node,
+.mongo,
+.git,
+.next {
+    object-fit: contain;
+}
+
+.tech-about-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: var(--delay);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Larger Viewport adjustments */

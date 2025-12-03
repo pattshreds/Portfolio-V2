@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 11rem;
+    margin-top: 8rem;
     width: 100%;
 }
 #about-img-1 {
@@ -39,12 +39,9 @@
 }
 
 #about-header {
-    /* font-family: Open-Sans; */
     font-family: Slabo;
-    /* font-size: 70px; */
     font-size: 7em;
     color: var(--primary-red);
-    /* margin: 0 auto 10px auto; */
     margin: 0.3em 0 0 0;
 }
 
@@ -52,53 +49,35 @@
     font-family: Open-Sans;
     font-size: 25px;
     color: var(--primary-yellow);
-    /* margin: 0 auto 20px auto; */
-    margin: 0 auto 20px 38%;
+    margin: 0 auto 20px auto;
 }
 
 #about-body-container {
     color: var(--primary-grey);
-    width: 65%;
-    text-align: left;
+    width: 90%;
+    text-align: center;
     font-family: Open-Sans;
     font-size: 22px;
     letter-spacing: 2px;
     line-height: 1.5em;
 }
 
-@media (min-width: 630px) and (max-width: 650px) {
+/* Larger Viewport adjustments */
+
+@media (min-width: 640px) {
+    #body-container {
+        padding-bottom: 4em;
+    }
+
     #about-body-container {
-        text-align: center;
-    }
-    #about-subhead {
-        margin: 0 auto 20px auto;
-    }
-}
-
-@media (max-height: 840px) and (max-width: 500px) {
-    #about-body-container {
-        text-align: center;
-        width: 90%;
-    }
-    #about-subhead {
-        margin: 0 auto 20px auto;
-    }
-}
-
-@media (min-width: 500px) {
-    #about-img {
-        width: 40%;
-    }
-}
-
-@media (min-width: 745px) {
-    #about-img {
-        width: 30%;
+        text-align: left;
+        width: 80%;
+        font-size: 1em;
     }
 }
 
 @media (min-width: 900px) {
-    #about-img {
-        width: 15%;
+    #about-body-container {
+        width: 70%;
     }
 }

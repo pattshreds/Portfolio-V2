@@ -35,6 +35,8 @@ carousel-component {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    outline: 3px inset var(--primary-red);
+    border-radius: 5px;
 }
 
 .current-slide {
@@ -77,7 +79,7 @@ carousel-component {
 }
 
 .btn-next img:hover {
-    width: 4em;
+    transform: scale(2);
     opacity: 50%;
 }
 
@@ -92,7 +94,7 @@ carousel-component {
 }
 
 .btn-prev img:hover {
-    width: 4em;
+    transform: scale(2);
     opacity: 50%;
 }
 
@@ -109,6 +111,7 @@ carousel-component {
     height: 5px;
     border-radius: 2px;
     cursor: pointer;
+    background-color: var(--primary-grey);
 }
 
 .current-dot {

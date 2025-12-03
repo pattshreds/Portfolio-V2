@@ -10,7 +10,8 @@
 #navbar::after {
     content: '';
     position: absolute;
-    top: 8%;
+    /* top: 8%; */
+    top: 4em;
     left: 50%;
     transform: translateX(-50%);
     width: 95%;

@@ -1,0 +1,133 @@
+#navbar {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 5em;
+    padding: 0;
+    max-width: 100vw;
+    height: 5.5em;
+}
+
+#navbar::after {
+    content: '';
+    position: absolute;
+    top: 6em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 1px;
+    background-color: var(--navbar-blue);
+}
+
+#logo {
+    margin-bottom: 4em;
+    padding: 0;
+    position: absolute;
+    top: -0.2em;
+    cursor: pointer;
+}
+
+/* Logo specific style and hover effect */
+
+#logo a {
+    font-size: 1em;
+    font-family: Covered;
+    color: #0000;
+    background: linear-gradient(90deg, var(--c) 50%, var(--primary-red) 0)
+            calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+}
+
+#logo:hover {
+    --_p: 100%;
+}
+
+/* General hover effect for all links */
+
+a {
+    font-size: 20px;
+    font-family: Open-Sans;
+    background: none;
+    text-decoration: none;
+    border: none;
+    /* hover effect */
+    color: #0000;
+    background: linear-gradient(90deg, var(--c) 50%, #ffffff 0)
+            calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+.home a:hover,
+.about a:hover,
+.projects a:hover,
+.contact a:hover {
+    --_p: 100%;
+}
+
+button {
+    background: none;
+    text-decoration: none;
+    border: none;
+}
+
+/* GitHub and Resume button specific style and hover effect */
+
+.github a,
+.resume a {
+    background: linear-gradient(90deg, var(--c) 50%, #9b9b9b 0)
+            calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    background-clip: text, padding-box;
+}
+
+.resume a:hover,
+.github a:hover {
+    --_p: 100%;
+}
+
+/* Larger Viewport adjustments */
+
+@media (min-width: 640px) {
+    #navbar {
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 1em;
+        height: 4em;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    #navbar::after {
+        top: 4em;
+    }
+
+    #logo {
+        padding: 0;
+        position: absolute;
+        left: 1em;
+        cursor: pointer;
+    }
+
+    #logo a {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 900px) {
+    #navbar {
+        padding: 0 5em;
+        gap: 0.3em;
+    }
+
+    #logo {
+        left: 3em;
+    }
+}

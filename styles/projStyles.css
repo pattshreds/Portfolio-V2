@@ -4,32 +4,14 @@
     align-items: center;
 }
 
-/* #projects-page-header {
-    font-family: Open-Sans;
-    color: var(--primary-yellow);
-    font-size: 70px;
-    width: 100vw;
-    text-align: center;
-    letter-spacing: 2px;
-} */
-
-/* Testing new projects page header /////////////////////// */
-
-/* #projects-page-header-top {
-    font-size: 6em;
-    font-family: Open-Sans;
-    margin: 1em auto auto auto;
-    border: 1px solid red;
-} */
+/* Projects Page Header + Animation ///////////////////////// */
 
 #projects-page-header {
-    /* border: 1px solid blue; */
+    font-size: 5em;
     position: relative;
-    margin-bottom: -20px;
-    margin-top: 1em;
-    margin-left: 3.5em;
+    left: 8.2rem;
+    margin: 0.3em auto -1rem auto;
     transform: translate(-50%, -50%);
-    font-size: 6em;
     font-family: Slabo;
     color: transparent;
     text-transform: uppercase;
@@ -79,19 +61,20 @@
     transform: translateY(-50%) scaleY(1);
 }
 
-/* End /////////////////////// */
+/* End ///////////////////////////////////////////////////////////// */
 
 .project {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5em;
-    width: 60svw;
+    width: 90%;
 }
 
 .project-title {
     color: var(--primary-yellow);
-    font-family: Open-Sans;
+    /* font-family: Open-Sans; */
+    font-family: Slabo;
     font-size: 30px;
     margin: 0;
 }
@@ -101,12 +84,9 @@
     width: 70%;
     color: var(--primary-grey);
     font-family: Open-Sans;
+    /* font-family: Slabo; */
+    /* letter-spacing: 1px; */
     font-size: 16px;
-}
-
-/* Not sure where this property is coming from but I found it in the DOM and it was preventing the UL from being centered*/
-.description ul {
-    padding-inline-start: 0;
 }
 
 .description li {
@@ -114,24 +94,26 @@
     list-style-type: none;
 }
 
-/* Split screen for 13" laptop 640px x 688px */
-@media (min-width: 630px) and (max-width: 650px) {
+/* Not sure where this property is coming from but I found it in the DOM and it was preventing the UL from being centered*/
+
+.description ul {
+    padding-inline-start: 0;
+}
+
+/* Larger Viewport adjustments */
+
+@media (min-width: 630px) {
     .description {
-        width: 100%;
+        width: 70%;
+    }
+
+    #projects-page-header {
+        margin-top: 0;
     }
 }
 
-@media (max-height: 840px) and (width < 500px) {
-    .project {
-        width: 90%;
-    }
+@media (min-width: 900px) {
     .description {
-        display: flex;
-        align-items: center;
-    }
-    #projects-page-header {
-        /* left: 0%; */
-        margin-top: 15px;
-        font-size: 5em;
+        width: 50%;
     }
 }
