@@ -126,3 +126,14 @@
 }
 
 /* Larger Viewport adjustments */
+
+@media (min-width: 900px) {
+    .home-title,
+    .home-closing {
+        font-size: 35px;
+    }
+
+    .home-sub {
+        font-size: 20px;
+    }
+}
