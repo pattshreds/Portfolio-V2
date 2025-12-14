@@ -5,35 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PMW</title>
-        <link rel="stylesheet" href="styles/globalStyles.css" />
-        <link rel="stylesheet" href="styles/contactStyles.css" />
-        <link rel="stylesheet" href="styles/navbarReStyle.css" />
-        <link rel="stylesheet" href="styles/footerStyles.css" />
     </head>
     <body>
-        <!-- For some reason the contact page is not stoked on the navbar styling -->
-        <!-- <style>
-            #navbar {
-                padding-top: 1em;
-            }
-            #logo {
-                margin-top: 0.1em;
-                margin-left: 0.8em;
-            }
-            @media (max-height: 840px) and (width < 500px) {
-                #navbar {
-                    height: 3.5em;
-                }
-                #logo a {
-                    margin-left: -0.6em;
-                    margin-top: -1em;
-                    font-size: 32px;
-                }
-                .nav-button {
-                    margin-top: 7.5em;
-                }
-            }
-        </style> -->
         <nav-component></nav-component>
 
         <div class="contact-container">
@@ -146,4 +119,38 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
         crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles/globalStyles.css" />
+    <link rel="stylesheet" href="styles/contactStyles.css" />
+    <link rel="stylesheet" href="styles/navbarReStyle.css" />
+    <link rel="stylesheet" href="styles/footerStyles.css" />
+    <!-- Bootstrap is making my own CSS for the nav and footer components weird -->
+    <!-- This style tag is to correct the CSS that isn't working properly. -->
+    <style>
+        body {
+            #navbar {
+                margin-bottom: -2em;
+            }
+            #logo {
+                margin-top: 0.8em;
+            }
+            #logo a {
+                font-size: 1.1em;
+            }
+            #misc {
+                margin-top: 20px;
+            }
+        }
+        @media (min-width: 640px) {
+            #logo {
+                font-size: 1.5em;
+                top: 0.1em;
+            }
+        }
+        @media (min-width: 900px) {
+            #logo {
+                font-size: 1.5em;
+                top: 0;
+            }
+        }
+    </style>
 </html>
